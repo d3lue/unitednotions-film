@@ -5,32 +5,24 @@ THE EDITING PAGE
 
       https://unitednotions.film/edit/
 
-  It asks for a name and a password. A page of the site is a folder: an HTML file and its pictures.
-  Write the page as you like, with any layout, styles or scripts. Then, on the editing page:
-
-      1. Choose all its files at once (index.html and the pictures), or one zip of the folder.
-      2. Say where it goes: Research (a lab note, listed by year on the Research page, at /research/<its-name>)
-         or News (an update, listed at the top of the News page, at /news/<its-name>). Research if nothing is said.
-         The page can say it itself:  <meta name="section" content="news">
-      3. Press "Add it".
-      4. Press "Publish". About two minutes later it is on the site, in the sitemap and in the guide for AI assistants.
-      A page is moved between Research and News with the "Where" menu in the list, then Publish.
-
-  The page tells the site about itself from inside the HTML:
-      the title           the first <h1>
-      the summary         <meta name="description" content="...">, or else the first paragraph
-      the date            <meta name="date" content="2026-10-07">   (or else the day it was added)
-      the place           <meta name="place" content="Cochabamba">
-      the card's picture  the first <img>
-  Pictures and videos are named as they are in the folder:  <img src="whale.jpg">   <video src="clip.mp4" controls>
-  The site puts its own header, title, date and footer around the page. The page's <body> is the body of the note.
-
-  Spanish: a second file in the same folder, named es.html. Without it, the Spanish site shows the English.
-  To correct a page: "Correct" opens its HTML in a box; save, then Publish. To replace its files, add them
-  again with the same name: new files win, the rest stay. "Remove" takes it out; Publish makes that real.
+  It asks for a name and a password. It lists the pages written there; "New page" opens the editor.
+  The editor is a form on the left and a preview on the right, which follows as you type:
+      Title, Where it goes (Research or News), Date, Place, Summary.
+      Content: the HTML of the page. Write it, or paste a whole page: its title, summary, date and place
+         fill the fields, its styles and body become the content. Layout and styles are kept as written.
+      Pictures and videos: drop the files on the box. They are kept with the page when you save, and are
+         named in the content as they are called:  <img src="whale.jpg" alt="...">. "Insert" writes that
+         line for you. The first picture of the page is the one shown in the list.
+      Spanish version (optional): a title, summary and content in Spanish. Without it the Spanish site
+         shows the English.
+      The address of the page: made from the first title (small letters, digits, dashes) and fixed after
+         that, so links keep working. It can be chosen before the first save.
+  "Save" keeps the page in the workshop. "Save and publish" also rebuilds the site: about two minutes later
+  the page is live at /research/<address> or /news/<address>, in the sitemap and in the guide for AI assistants.
+  "Remove this page" takes it out; the next Publish makes that real.
 
   The password: a person with SSH access adds names with
-      ssh danfal17@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
+      ssh USER@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
   The login for the first name, unf, is in ~/unf-workshop/EDIT-LOGIN.txt on the server.
 
 PUTTING THE EDITING PAGE ON THE SERVER (once)
@@ -49,8 +41,7 @@ WHERE THINGS ARE
       unitednotions.film/          the live site, written by the build. Never edit it by hand.
       unitednotions.film/edit/     the editing page
       unf-workshop/                the workshop: the program that writes the pages, and the texts it reads
-          build/pages-in/          the pages added on the editing page, one folder each (section.txt says Research or News)
-          build/.before/           the previous version of each text saved on the editing page
+          build/pages-in/          the pages written on the editing page, one folder each (section.txt says Research or News)
           build/research/en, es    the 30 lab notes of the old site, as tagged text (T:, P:, IMG: ...)
           build/content.py         the works on the home page
           build/content_pages.py   About, People, News, Film Futurism, Press
@@ -65,18 +56,12 @@ WHERE THINGS ARE
 THE OTHER PAGES: WORK, ABOUT, PEOPLE, FILM FUTURISM, NEWS, PRESS
 
   Their texts are plain sentences in three files: build/content.py (the home page), build/content_pages.py
-  (the rest) and build/strings_es.py (the Spanish, keyed by the English sentence). On the editing page,
-  under "The site's texts", each opens in a box: change the words, keep the quotes and the commas, Save,
-  Publish. A file with a mistake in it is not saved; the box says what Python objects to. A save that adds
-  or alters code, rather than words, is refused too (build/texts_check.py compares the shape of the file
-  before and after): the editing password changes what the site says and cannot make the server run
-  anything. New entries in a list, a new person, a new photo line, a new Spanish sentence all count as
-  words and pass. "Put back the previous version" undoes the last save. The 30 lab notes of the old site open the same way, in their
-  tagged form (T:, D:, S:, P:, IMG:, VIDEO:), English and Spanish.
-  The one trap: if an English sentence changes, its copy on the left in strings_es.py must change too,
-  or that Spanish is lost and the Spanish page shows the English.
-  The server's copies of these files are the ones that count. publish.sh brings them down before it sends
-  anything up; the GitHub workflow never sends them up.
+  (the rest) and build/strings_es.py (the Spanish, keyed by the English sentence). The 30 lab notes of the
+  old site are tagged text in build/research/en and es. They are edited in VS Code on a Mac, then
+      sh publish.sh
+  sends them up and rebuilds the site on the server. Or edit on GitHub and "Run workflow" under Actions.
+  Change the words, keep the quotes and the commas. The one trap: if an English sentence changes, its copy
+  on the left in strings_es.py must change too, or the Spanish page shows the English for that sentence.
 
 FROM A MAC
 

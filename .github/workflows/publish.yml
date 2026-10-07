@@ -1,9 +1,8 @@
 # A second way to publish, started by hand from the Actions tab on GitHub ("Run workflow").
 # The workshop on the DreamHost server is the one that counts: the editing page at /edit/ writes there.
 # This sends what is in git up to that workshop (without removing anything there) and asks the server to build.
-# Use it after changing the program itself here on GitHub (build/*.py other than the texts).
-# The texts (content.py, content_pages.py, strings_es.py, the lab notes, the pages added) are edited on the editing page
-# and live on the server: this never sends them up, so it cannot undo a change made there.
+# Use it after changing a text file or the program here on GitHub. The pages written on the editing page live on the
+# server: this never sends them up, so it cannot undo one.
 #
 # It needs one secret in the repository (Settings > Secrets and variables > Actions):
 #   DREAMHOST_SSH_KEY   the private half of the deploy key whose public half is in the server's ~/.ssh/authorized_keys
@@ -37,7 +36,7 @@ jobs:
 
       - name: Send what is here up to the server's workshop
         run: |
-          rsync -rlt --exclude='video-in' --exclude='pages-in' --exclude='picture-in' --exclude='.before' --exclude='research' --exclude='content.py' --exclude='content_pages.py' --exclude='strings_es.py' --exclude='data/research.json' --exclude='data/research-renditions.json' --exclude='data/research-videos.json' --exclude='__pycache__' \
+          rsync -rlt --exclude='video-in' --exclude='pages-in' --exclude='picture-in' --exclude='data/research.json' --exclude='data/research-renditions.json' --exclude='data/research-videos.json' --exclude='__pycache__' \
             build/ "$UNF_USER@$UNF_HOST:unf-workshop/build/"
           scp -q check.sh server/server-publish.sh "$UNF_USER@$UNF_HOST:unf-workshop/"
 

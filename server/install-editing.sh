@@ -19,9 +19,8 @@ W="unf-workshop"
 SITE="unitednotions.film"
 
 echo "== 1. The workshop: the program that writes the pages, the publish script, the checks"
-# the texts and pages edited on the editing page are never sent up: the server's are the ones that count
-tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' --exclude='./pages-in' --exclude='./picture-in' --exclude='./.before' \
-  --exclude='./research' --exclude='./content.py' --exclude='./content_pages.py' --exclude='./strings_es.py' --exclude='./data/research*.json' -C build . \
+# the pages written on the editing page are never sent up: the server's are the ones that count
+tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' --exclude='./pages-in' --exclude='./picture-in' --exclude='./data/research*.json' -C build . \
   | ssh "$AT" "mkdir -p $W/build && tar xf - -C $W/build && mkdir -p $W/build/pages-in $W/build/picture-in"
 ssh "$AT" "cat > $W/check.sh && chmod 755 $W/check.sh" < check.sh
 ssh "$AT" "cat > $W/server-publish.sh && chmod 755 $W/server-publish.sh" < server/server-publish.sh
@@ -29,7 +28,9 @@ ssh "$AT" "echo \"   pages from the editing page: \$(grep -c inbox_pages $W/buil
 
 echo "== 2. The editing page, at https://$SITE/edit/"
 ssh "$AT" "mkdir -p $SITE/edit && cat > $SITE/edit/index.php" < server/edit/index.php
-ssh "$AT" "cat > $SITE/edit/.htaccess && chmod 644 $SITE/edit/index.php $SITE/edit/.htaccess" < server/edit/.htaccess
+# the password file is named with its full path, which has the user in it
+sed "s|/home/[a-z0-9_]*/unf-workshop/.htpasswd|/home/$USER_NAME/unf-workshop/.htpasswd|" server/edit/.htaccess \
+  | ssh "$AT" "cat > $SITE/edit/.htaccess && chmod 644 $SITE/edit/index.php $SITE/edit/.htaccess"
 
 echo "== 3. The cron line: once a minute, run a publish if the editing page asked for one"
 ssh "$AT" 'LINE="* * * * * cd \$HOME/unf-workshop && if [ -f publish.requested ]; then rm -f publish.requested; sh server-publish.sh; fi >/dev/null 2>&1"; (crontab -l 2>/dev/null | grep -v publish.requested; echo "$LINE") | crontab -; echo "   $(crontab -l | grep -c publish.requested) cron line in place"'
