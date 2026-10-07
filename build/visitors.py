@@ -5,15 +5,21 @@
 It reads ~/logs/unitednotions.film/https/access.log from where it left off last time, keeps one small summary per day
 in ~/unf-workshop/stats/days/ (counts only: no addresses, no names, nothing that identifies a person), and writes
 the page ~/unitednotions.film/edit/visitors/index.html, which the editing page's password protects.
-Nothing is added to the site for this: no script, no cookie, no third party. DreamHost keeps only the current day's
+Nothing is added to the site for this: no script, no cookie, no third party. Countries come from the free
+address-to-country list of DB-IP (db-ip.com, CC BY 4.0), downloaded to the server once a month; no address leaves the server. DreamHost keeps only the current day's
 log, so the history on the page begins the day this started running. Days are the server's days (US Pacific time).
 """
+import bisect
+import gzip
 import hashlib
 import html
+import ipaddress
 import json
 import os
+import pickle
 import re
 import time
+import urllib.request
 from collections import Counter
 from datetime import date, timedelta
 
@@ -24,6 +30,7 @@ SITE = os.path.join(HOME, "unitednotions.film")
 STATS = os.path.join(HOME, "unf-workshop", "stats")
 DAYS = os.path.join(STATS, "days")
 STATE = os.path.join(STATS, "state.json")
+GEO = os.path.join(STATS, "geo")            # the address-to-country list of DB-IP, one file a month
 OUT = os.path.join(SITE, "edit", "visitors", "index.html")
 
 E = html.escape
@@ -86,7 +93,7 @@ def page_of(path):
 
 def empty(day):
     return dict(date=day, requests=0, visitors=0, views=dict(person=0, crawler=0, ai=0, robot=0), pages={}, referrers={},
-                es=0, en=0, agents={}, status={}, missing={}, guides={}, hours=[0] * 24, edit=0)
+                es=0, en=0, agents={}, status={}, missing={}, guides={}, hours=[0] * 24, edit=0, countries={})
 
 
 def load_day(day):
@@ -106,6 +113,108 @@ def top(counter, n):
     if len(counter) > n * 3:
         return dict(sorted(counter.items(), key=lambda kv: -kv[1])[:n])
     return counter
+
+
+
+# ---------------------------------------------------------------------------------------------- countries
+COUNTRY = {}        # loaded on first use: (v4 starts, v4 ends, v4 codes, v6 starts, v6 ends, v6 codes)
+
+
+def geo_file():
+    """This month's list, downloaded if it is not here yet. Last month's is kept while the download fails."""
+    os.makedirs(GEO, exist_ok=True)
+    month = time.strftime("%Y-%m")
+    path = os.path.join(GEO, "dbip-country-lite-%s.csv.gz" % month)
+    if not os.path.exists(path):
+        try:
+            req = urllib.request.Request("https://download.db-ip.com/free/dbip-country-lite-%s.csv.gz" % month,
+                                         headers={"User-Agent": "unitednotions.film visitors page (python-urllib)"})
+            with urllib.request.urlopen(req, timeout=120) as r, open(path + ".tmp", "wb") as f:
+                f.write(r.read())
+            os.replace(path + ".tmp", path)
+            for old in os.listdir(GEO):
+                if old != os.path.basename(path) and not old.endswith(".tmp"):
+                    os.remove(os.path.join(GEO, old))
+        except Exception:
+            if os.path.exists(path + ".tmp"):
+                os.remove(path + ".tmp")
+    have = sorted(f for f in os.listdir(GEO) if f.endswith(".csv.gz"))
+    return os.path.join(GEO, have[-1]) if have else None
+
+
+def load_geo():
+    """The list as six sorted arrays, kept beside the file in a form that loads in a moment."""
+    src = geo_file()
+    if not src:
+        return None
+    cache = src[:-7] + ".pickle"
+    if os.path.exists(cache) and os.path.getmtime(cache) >= os.path.getmtime(src):
+        return pickle.load(open(cache, "rb"))
+    v4, v6 = [], []
+    with gzip.open(src, "rt", encoding="utf-8") as f:
+        for line in f:
+            a, b, cc = line.rstrip("\n").split(",")
+            try:
+                lo, hi = ipaddress.ip_address(a), ipaddress.ip_address(b)
+            except ValueError:
+                continue
+            (v6 if lo.version == 6 else v4).append((int(lo), int(hi), cc))
+    v4.sort()
+    v6.sort()
+    data = ([r[0] for r in v4], [r[1] for r in v4], [r[2] for r in v4], [r[0] for r in v6], [r[1] for r in v6], [r[2] for r in v6])
+    pickle.dump(data, open(cache + ".tmp", "wb"))
+    os.replace(cache + ".tmp", cache)
+    return data
+
+
+def country(ip):
+    """The two-letter code of the country an address is in, or "" when unknown."""
+    if not COUNTRY:
+        COUNTRY["data"] = load_geo()
+    data = COUNTRY["data"]
+    if not data:
+        return ""
+    try:
+        a = ipaddress.ip_address(ip)
+    except ValueError:
+        return ""
+    starts, ends, codes = data[3:] if a.version == 6 else data[:3]
+    n = int(a)
+    i = bisect.bisect_right(starts, n) - 1
+    if i >= 0 and ends[i] >= n and codes[i] != "ZZ":
+        return codes[i]
+    return ""
+
+
+NAMES = {"AD": "Andorra", "AE": "United Arab Emirates", "AF": "Afghanistan", "AG": "Antigua and Barbuda", "AL": "Albania", "AM": "Armenia", "AO": "Angola",
+ "AR": "Argentina", "AT": "Austria", "AU": "Australia", "AZ": "Azerbaijan", "BA": "Bosnia and Herzegovina", "BB": "Barbados", "BD": "Bangladesh",
+ "BE": "Belgium", "BF": "Burkina Faso", "BG": "Bulgaria", "BH": "Bahrain", "BI": "Burundi", "BJ": "Benin", "BN": "Brunei", "BO": "Bolivia", "BR": "Brazil",
+ "BS": "Bahamas", "BT": "Bhutan", "BW": "Botswana", "BY": "Belarus", "BZ": "Belize", "CA": "Canada", "CD": "Congo (DRC)", "CF": "Central African Republic",
+ "CG": "Congo", "CH": "Switzerland", "CI": "Ivory Coast", "CL": "Chile", "CM": "Cameroon", "CN": "China", "CO": "Colombia", "CR": "Costa Rica", "CU": "Cuba",
+ "CV": "Cape Verde", "CY": "Cyprus", "CZ": "Czechia", "DE": "Germany", "DJ": "Djibouti", "DK": "Denmark", "DM": "Dominica", "DO": "Dominican Republic",
+ "DZ": "Algeria", "EC": "Ecuador", "EE": "Estonia", "EG": "Egypt", "ER": "Eritrea", "ES": "Spain", "ET": "Ethiopia", "FI": "Finland", "FJ": "Fiji",
+ "FR": "France", "GA": "Gabon", "GB": "United Kingdom", "GD": "Grenada", "GE": "Georgia", "GH": "Ghana", "GM": "Gambia", "GN": "Guinea", "GQ": "Equatorial Guinea",
+ "GR": "Greece", "GT": "Guatemala", "GW": "Guinea-Bissau", "GY": "Guyana", "HK": "Hong Kong", "HN": "Honduras", "HR": "Croatia", "HT": "Haiti", "HU": "Hungary",
+ "ID": "Indonesia", "IE": "Ireland", "IL": "Israel", "IN": "India", "IQ": "Iraq", "IR": "Iran", "IS": "Iceland", "IT": "Italy", "JM": "Jamaica", "JO": "Jordan",
+ "JP": "Japan", "KE": "Kenya", "KG": "Kyrgyzstan", "KH": "Cambodia", "KM": "Comoros", "KN": "Saint Kitts and Nevis", "KP": "North Korea", "KR": "South Korea",
+ "KW": "Kuwait", "KZ": "Kazakhstan", "LA": "Laos", "LB": "Lebanon", "LC": "Saint Lucia", "LI": "Liechtenstein", "LK": "Sri Lanka", "LR": "Liberia", "LS": "Lesotho",
+ "LT": "Lithuania", "LU": "Luxembourg", "LV": "Latvia", "LY": "Libya", "MA": "Morocco", "MC": "Monaco", "MD": "Moldova", "ME": "Montenegro", "MG": "Madagascar",
+ "MK": "North Macedonia", "ML": "Mali", "MM": "Myanmar", "MN": "Mongolia", "MO": "Macao", "MR": "Mauritania", "MT": "Malta", "MU": "Mauritius", "MV": "Maldives",
+ "MW": "Malawi", "MX": "Mexico", "MY": "Malaysia", "MZ": "Mozambique", "NA": "Namibia", "NE": "Niger", "NG": "Nigeria", "NI": "Nicaragua", "NL": "Netherlands",
+ "NO": "Norway", "NP": "Nepal", "NZ": "New Zealand", "OM": "Oman", "PA": "Panama", "PE": "Peru", "PG": "Papua New Guinea", "PH": "Philippines", "PK": "Pakistan",
+ "PL": "Poland", "PR": "Puerto Rico", "PS": "Palestine", "PT": "Portugal", "PY": "Paraguay", "QA": "Qatar", "RO": "Romania", "RS": "Serbia", "RU": "Russia",
+ "RW": "Rwanda", "SA": "Saudi Arabia", "SB": "Solomon Islands", "SC": "Seychelles", "SD": "Sudan", "SE": "Sweden", "SG": "Singapore", "SI": "Slovenia",
+ "SK": "Slovakia", "SL": "Sierra Leone", "SM": "San Marino", "SN": "Senegal", "SO": "Somalia", "SR": "Suriname", "SS": "South Sudan", "SV": "El Salvador",
+ "SY": "Syria", "SZ": "Eswatini", "TD": "Chad", "TG": "Togo", "TH": "Thailand", "TJ": "Tajikistan", "TL": "Timor-Leste", "TM": "Turkmenistan", "TN": "Tunisia",
+ "TO": "Tonga", "TR": "Turkey", "TT": "Trinidad and Tobago", "TW": "Taiwan", "TZ": "Tanzania", "UA": "Ukraine", "UG": "Uganda", "US": "United States",
+ "UY": "Uruguay", "UZ": "Uzbekistan", "VA": "Vatican City", "VC": "Saint Vincent and the Grenadines", "VE": "Venezuela", "VN": "Vietnam", "VU": "Vanuatu",
+ "WS": "Samoa", "YE": "Yemen", "ZA": "South Africa", "ZM": "Zambia", "ZW": "Zimbabwe", "RE": "Réunion", "GP": "Guadeloupe", "MQ": "Martinique", "GF": "French Guiana",
+ "NC": "New Caledonia", "PF": "French Polynesia", "AW": "Aruba", "CW": "Curaçao", "BM": "Bermuda", "KY": "Cayman Islands", "GI": "Gibraltar", "JE": "Jersey",
+ "GG": "Guernsey", "IM": "Isle of Man", "FO": "Faroe Islands", "GL": "Greenland", "AX": "Åland Islands", "XK": "Kosovo", "EU": "Europe (unspecified)"}
+
+
+def country_name(cc):
+    return NAMES.get(cc, cc)
 
 
 # ---------------------------------------------------------------------------------------------- reading the log
@@ -200,6 +309,9 @@ def count(line, days, seen):
     if v not in s["known"] and v not in s["new"]:
         s["new"].add(v)
         d["visitors"] += 1
+        cc = country(ip) or "?"
+        d.setdefault("countries", {})
+        d["countries"][cc] = d["countries"].get(cc, 0) + 1
 
 
 # ---------------------------------------------------------------------------------------------- the page
@@ -291,6 +403,27 @@ def columns(days, series, labels, colors, caption, note):
             '<svg viewBox="0 0 %d %d" role="img" aria-label="%s">%s</svg></figure>' % (E(caption), E(note), legend, W, H, E(caption), "".join(g)))
 
 
+
+def bars(rows, caption, note, color="var(--s1)"):
+    """Horizontal bars for a short ranked list: name on the left, bar, value at its tip. One series, so no legend."""
+    if not rows:
+        return '<figure class="chart"><figcaption><b>%s</b> <span>%s</span></figcaption><p class="none">Nothing yet.</p></figure>' % (E(caption), E(note))
+    W, L, R, row, bh = 720, 170, 56, 26, 16
+    H = row * len(rows) + 8
+    top_v = max(v for _, v in rows) or 1
+    g = []
+    for i, (name, v) in enumerate(rows):
+        y = 4 + i * row
+        w = max((W - L - R) * v / top_v, 1)
+        r = min(4, w / 2)
+        path = "M%d %.1fh%.1fa%d %d 0 0 1 %d %dv%.1fa%d %d 0 0 1 -%d %dh-%.1fz" % (L, y, w - r, r, r, r, r, bh - 2 * r, r, r, r, r, w - r)
+        g.append('<g class="slot" data-tip="%s"><text class="name" x="%d" y="%.1f">%s</text><path fill="%s" d="%s"/>'
+                 '<text class="val" x="%.1f" y="%.1f">%s</text><rect class="hit" x="0" y="%.1f" width="%d" height="%d"/><title>%s</title></g>'
+                 % (E("%s: %s" % (name, fmt(v))), L - 10, y + bh - 4, E(name[:26]), color, path, L + w + 8, y + bh - 4, fmt(v), y - 2, W, row, E("%s: %s" % (name, fmt(v)))))
+    return ('<figure class="chart"><figcaption><b>%s</b> <span>%s</span></figcaption>'
+            '<svg viewBox="0 0 %d %d" role="img" aria-label="%s">%s</svg></figure>' % (E(caption), E(note), W, H, E(caption), "".join(g)))
+
+
 def table(headers, rows, cls=""):
     if not rows:
         return '<p class="none">Nothing yet.</p>'
@@ -340,6 +473,13 @@ def render():
                      ["People", "Search engines and link previews", "AI assistants"], ["var(--s1)", "var(--s2)", "var(--s3)"],
                      "Pages read by day", "who asked, last 30 days")
     chart3 = columns(last90, [lambda d: d["visitors"]], ["visitors"], ["var(--s1)"], "Visitors by day", "last 90 days") if any(d["visitors"] for d in last90[:60]) else ""
+    countries = Counter()
+    for d in last30:
+        countries.update(d.get("countries", {}))
+    known = sum(v for k, v in countries.items() if k != "?")
+    chart_c = bars([(country_name(cc), n) for cc, n in countries.most_common(12) if cc != "?"], "Visitors by country",
+                   "people, last 30 days, each counted once a day" + (", %s of unknown origin" % fmt(countries["?"]) if countries.get("?") else ""))
+    rows_countries = [(E(country_name(cc)), fmt(n), "%d%%" % round(100 * n / max(known, 1))) for cc, n in countries.most_common(40) if cc != "?"]
     rows_pages = [(E(title_of(p)) + ' <small>%s</small>' % E(p), fmt(c)) for p, c in pages.most_common(15)]
     rows_refs = [(E(h), fmt(c)) for h, c in refs.most_common(15)]
     rows_agents = [(E(a), E(kinds.get(a, "other")), fmt(c), E(last_seen.get(a, ""))) for a, c in agents.most_common(25)]
@@ -372,6 +512,7 @@ def render():
   .chart svg { width:100%%; height:auto; display:block; background:var(--paper); }
   .grid { stroke:var(--line); stroke-width:1; } .tick { font-size:11px; fill:var(--mute); text-anchor:end; } .x { font-size:11px; fill:var(--mute); text-anchor:middle; }
   .hit { fill:transparent; } .slot:hover .hit { fill:var(--ink); fill-opacity:.05; }
+  .name { font-size:12.5px; fill:var(--ink2); text-anchor:end; } .val { font-size:12px; fill:var(--ink2); font-variant-numeric:tabular-nums; }
   .legend { margin:0 0 8px; font-size:13px; color:var(--ink2); } .legend span { margin-right:16px; } .legend i { display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:-1px; }
   table { width:100%%; border-collapse:collapse; } th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--mute); font-weight:600; } th.n, td.n { text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap; }
@@ -389,6 +530,8 @@ def render():
 %(chart1)s
 %(chart2)s
 %(chart3)s
+%(chart_c)s
+<details><summary>Every country, last 30 days</summary>%(countries)s</details>
 <div class="cols">
 <div><h2>Most read pages</h2>%(pages)s</div>
 <div><h2>Where visitors came from</h2>%(refs)s<p class="how" style="margin-top:10px">Only visits that arrived from another site are listed. Most visits name no origin: a typed address, a message, or a browser that keeps it private.</p></div>
@@ -403,7 +546,8 @@ def render():
 <p class="how">How this is made: the server writes one line per request to its log. Every quarter hour a small program reads the new lines and adds to one summary per day:
 how many different people (one count per address and browser per day, kept only as a hash and not kept at all after two days), which pages they read, where they came from,
 and which robots called. No script runs on the site for this, no cookie is set, and no address or name is stored. A person who reads the site from two devices counts twice;
-a shared office address counts once. Days are the server's, in US Pacific time.</p>
+a shared office address counts once. Days are the server's, in US Pacific time. Countries come from the free address-to-country list of
+<a href="https://db-ip.com" rel="noopener">DB-IP</a> (IP geolocation by DB-IP, CC BY 4.0), fetched to the server once a month; the lookup happens on the server and no address leaves it.</p>
 </div>
 <div id="tip"></div>
 <script>
@@ -414,7 +558,7 @@ a shared office address counts once. Days are the server's, in US Pacific time.<
 """ % dict(
         since=E(since), now=E(time.strftime("%-d %B %Y, %H:%M")),
         tiles="".join('<div class="tile"><div class="l">%s</div><div class="v">%s</div><div class="s">%s</div></div>' % (E(l), v, E(s)) for l, v, s in tiles),
-        chart1=chart1, chart2=chart2, chart3=chart3,
+        chart1=chart1, chart2=chart2, chart3=chart3, chart_c=chart_c, countries=table(["Country", "Visitors", "Share"], rows_countries),
         pages=table(["Page", "Read"], rows_pages), refs=table(["Site", "Visits"], rows_refs),
         agents=table(["Who", "Kind", "Requests", "Last seen"], rows_agents),
         missing=table(["Address", "Asked"], rows_missing),
