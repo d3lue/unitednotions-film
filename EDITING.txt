@@ -22,7 +22,7 @@ THE EDITING PAGE
   "Remove this page" takes it out; the next Publish makes that real.
 
   The password: a person with SSH access adds names with
-      ssh USER@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
+      ssh unfweb@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
   The login for the first name, unf, is in ~/unf-workshop/EDIT-LOGIN.txt on the server.
 
 PUTTING THE EDITING PAGE ON THE SERVER (once)
@@ -37,7 +37,7 @@ PUTTING THE EDITING PAGE ON THE SERVER (once)
 
 WHERE THINGS ARE
 
-  On the server, in /home/danfal17:
+  On the server, in /home/unfweb (a user that owns this site and nothing else, so the editing page can reach nothing else):
       unitednotions.film/          the live site, written by the build. Never edit it by hand.
       unitednotions.film/edit/     the editing page
       unf-workshop/                the workshop: the program that writes the pages, and the texts it reads

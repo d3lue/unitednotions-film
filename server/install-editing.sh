@@ -7,12 +7,12 @@
 # The password file must be readable by the web server (644): Apache runs as another user and answers 500 otherwise.
 #
 # The password file is made once, by hand, and asks you to type the password:
-#     ssh danfal17@iad1-shared-b7-43.dreamhost.com 'htpasswd -cB ~/unf-workshop/.htpasswd unf'
+#     ssh unfweb@iad1-shared-b7-43.dreamhost.com 'htpasswd -cB ~/unf-workshop/.htpasswd unf'
 # Files travel as tar over ssh: the rsync and scp of this Mac do not always deliver.
 
 set -eu
 cd "$(dirname "$0")/.."
-USER_NAME="${UNF_USER:-danfal17}"
+USER_NAME="${UNF_USER:-unfweb}"
 HOST="${UNF_HOST:-iad1-shared-b7-43.dreamhost.com}"
 AT="$USER_NAME@$HOST"
 W="unf-workshop"

@@ -6,7 +6,7 @@
 // Nothing here is public: the folder's .htaccess asks for the password kept in the workshop's .htpasswd.
 
 declare(strict_types=1);
-$HOME  = dirname($_SERVER['DOCUMENT_ROOT'] ?? '');                    // /home/<user>: the site is /home/<user>/unitednotions.film
+$HOME  = dirname($_SERVER['DOCUMENT_ROOT'] ?? '');                    // /home/unfweb: a user that owns only this site, nothing else
 $W     = "$HOME/unf-workshop";
 $IN    = "$W/build/pages-in";
 $LOG   = "$W/publish.log";

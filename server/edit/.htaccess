@@ -1,8 +1,8 @@
 # The editing page asks for a password. The names and passwords are in the workshop, outside the site:
-#   ssh danfal17@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
+#   ssh unfweb@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
 AuthType Basic
 AuthName "United Notions Film: editing"
-AuthUserFile /home/danfal17/unf-workshop/.htpasswd
+AuthUserFile /home/unfweb/unf-workshop/.htpasswd
 Require valid-user
 DirectoryIndex index.php
 DirectorySlash On

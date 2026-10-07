@@ -1,6 +1,6 @@
 #!/bin/sh
 # Runs on the DreamHost server, in the workshop (~/unf-workshop). The editing page starts it, and so can a person:
-#     ssh danfal17@iad1-shared-b7-43.dreamhost.com 'cd unf-workshop && sh server-publish.sh'
+#     ssh unfweb@iad1-shared-b7-43.dreamhost.com 'cd unf-workshop && sh server-publish.sh'
 # It makes the web copies of new pictures and videos, builds the pages, copies them into the live folder and checks the site.
 # Everything it says goes to publish.log. While it runs, publish.lock exists.
 

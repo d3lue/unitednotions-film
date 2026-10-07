@@ -6,13 +6,13 @@
 #     sh publish.sh              bring down, send up, build on the server, check the live site
 #     sh publish.sh --down       only bring the server's workshop down here (to look, or to edit)
 #
-# The SSH user is danfal17 unless UNF_USER says otherwise. The originals of the lab videos (build/video-in, 1.2 GB)
+# The SSH user is unfweb (the user that owns only this site) unless UNF_USER says otherwise. The originals of the lab videos (build/video-in, 1.2 GB)
 # stay here: the server has their web copies. A new video goes up with the page that shows it, through the editing page.
 # Files travel as tar over ssh: the rsync and scp of this Mac do not always deliver.
 
 set -eu
 cd "$(dirname "$0")"
-USER_NAME="${UNF_USER:-danfal17}"
+USER_NAME="${UNF_USER:-unfweb}"
 HOST="${UNF_HOST:-iad1-shared-b7-43.dreamhost.com}"
 W="unf-workshop"
 AT="$USER_NAME@$HOST"
