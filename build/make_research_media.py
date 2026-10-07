@@ -331,6 +331,8 @@ def inbox_pages(db):
             del db[k]
         shutil.rmtree(os.path.join(pages_dir, n["slug"]), ignore_errors=True)
         changed = True
+    if os.path.isdir(pages_dir) and not os.listdir(pages_dir):
+        os.rmdir(pages_dir)
     if changed:
         write("research.json", notes)
         write("research-renditions.json", db)

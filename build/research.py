@@ -480,6 +480,18 @@ def build_all(B, colour, order):
         note_page(n, news[i - 1] if i else None, news[i + 1] if i + 1 < len(news) else None)
     if news:
         print("  news: %d pages added on the editing page" % len(news), file=sys.stderr)
+    # a note or page whose source is gone leaves the site: its file is removed from research/ and news/
+    keep = {("research", n["slug"]) for n in notes} | {("news", n["slug"]) for n in news}
+    for folder in ("research", "news"):
+        d = os.path.join(B.OUT, folder)
+        if not os.path.isdir(d):
+            continue
+        for f in os.listdir(d):
+            if f.endswith(".html") and (folder, f[:-5]) not in keep:
+                os.remove(os.path.join(d, f))
+                print("  removed %s/%s: its page is gone" % (folder, f), file=sys.stderr)
+        if not os.listdir(d):
+            os.rmdir(d)
     if S["waiting"]:
         print("  %d pictures of the notes have no web copy yet (run build/make_research_media.py)" % len(S["waiting"]), file=sys.stderr)
     if S["no_video"]:
