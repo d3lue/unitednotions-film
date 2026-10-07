@@ -48,8 +48,8 @@ ErrorDocument 404 /404.html
 
   # ---- SHORT ADDRESSES: /about shows about.html, /research/a-note shows research/a-note.html
   # research and people are each a page and a folder: the page wins
-  RewriteRule ^(es/)?(research|people)/$ /$1$2 [R=301,L]
-  RewriteRule ^(es/)?(research|people)$ $1$2.html [L]
+  RewriteRule ^(es/)?(research|people|news)/$ /$1$2 [R=301,L]
+  RewriteRule ^(es/)?(research|people|news)$ $1$2.html [L]
   # the folder work has no page of its own: the list of works on the home page answers
   RewriteRule ^work/?$ /#works [R=302,NE,L]
   RewriteRule ^es/work/?$ /es/#works [R=302,NE,L]

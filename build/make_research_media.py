@@ -211,7 +211,15 @@ def page_head(html):
     if not date:
         m = re.search(r'<time[^>]+datetime=["\'](\d{4}-\d{2}-\d{2})', html, re.I)
         date = m.group(1) if m else ""
-    return dict(title=title, description=meta("description") or text("p"), date=date, place=meta("place"))
+    return dict(title=title, description=meta("description") or text("p"), date=date, place=meta("place"), section=meta("section"))
+
+
+def page_section(folder, head):
+    """Where a dropped page goes: research (the default) or news. The editing page writes section.txt;
+    the page itself can say <meta name="section" content="news">. The file wins."""
+    chosen = os.path.join(folder, "section.txt")
+    said = (open(chosen, encoding="utf-8").read().strip() if os.path.exists(chosen) else "") or head.get("section", "")
+    return "news" if said.strip().lower() in ("news", "noticias", "update", "updates", "novedades", "novedad") else "research"
 
 
 def page_key(slug, taken):
@@ -230,7 +238,7 @@ def copy_tree(src, dst):
         dirs[:] = [d for d in dirs if not d.startswith(".")]
         rel = os.path.relpath(base, src)
         for f in files:
-            if f.startswith(".") or (rel == "." and f.lower() in ("index.html", "es.html")):
+            if f.startswith(".") or (rel == "." and f.lower() in ("index.html", "es.html", "section.txt")):
                 continue
             a = os.path.join(base, f)
             b = os.path.join(dst, rel, f) if rel != "." else os.path.join(dst, f)
@@ -268,10 +276,11 @@ def inbox_pages(db):
             html = open(page, encoding="utf-8", errors="replace").read()
             head = page_head(html)
             title = head["title"] or slug.replace("-", " ")
+            section = page_section(folder, head)
             n = by_slug.get(slug)
             if not n:
                 key = page_key(slug, keys)
-                n = dict(slug=slug, key=key, title=title, page_title=title, iso=head["date"] or today, place=head["place"],
+                n = dict(slug=slug, key=key, title=title, page_title=title, iso=head["date"] or today, place=head["place"], section=section,
                          images=[], sizes={}, videos=[], posters={}, missing=[], embeds=[], changed=today, blocks=0, html=True)
                 notes.append(n)
                 by_slug[slug] = n
@@ -279,7 +288,7 @@ def inbox_pages(db):
                 new += 1
                 changed = True
             else:
-                want = dict(title=title, page_title=title, html=True)
+                want = dict(title=title, page_title=title, html=True, section=section)
                 if head["date"]:
                     want["iso"] = head["date"]
                 if head["place"]:

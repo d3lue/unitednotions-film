@@ -145,6 +145,15 @@ def llms(B, content, CP, research):
         add("- [%s](%sresearch/%s): %s%s" % (n["title"], U, n["slug"], (when + ". ") if when else "", one_line(n["summary"])))
     add("")
 
+    news = research.news_pages()
+    if news:
+        add("## " + t("News"))
+        add("")
+        for n in news:
+            when = research.when(n)
+            add("- [%s](%snews/%s): %s%s" % (n["title"], U, n["slug"], (when + ". ") if when else "", one_line(n["summary"])))
+        add("")
+
     add("## Optional")
     add("")
     add("- [sala.red](https://sala.red): %s" % t("Investigative tech journalism from Bolivia"))
@@ -244,9 +253,9 @@ ErrorDocument 404 /404.html
   RewriteRule ^(birdbot|educational-collection)/?$ / [R=302,L]
 
   # ---- SHORT ADDRESSES: /about shows about.html, /research/a-note shows research/a-note.html
-  # research and people are each a page and a folder: the page wins
-  RewriteRule ^(es/)?(research|people)/$ /$1$2 [R=301,L]
-  RewriteRule ^(es/)?(research|people)$ $1$2.html [L]
+  # research, people and news are each a page and a folder: the page wins
+  RewriteRule ^(es/)?(research|people|news)/$ /$1$2 [R=301,L]
+  RewriteRule ^(es/)?(research|people|news)$ $1$2.html [L]
   # the folder work has no page of its own: the list of works on the home page answers
   RewriteRule ^work/?$ /#works [R=302,NE,L]
   RewriteRule ^es/work/?$ /es/#works [R=302,NE,L]

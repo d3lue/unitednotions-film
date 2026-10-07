@@ -9,9 +9,12 @@ THE EDITING PAGE
   Write the page as you like, with any layout, styles or scripts. Then, on the editing page:
 
       1. Choose all its files at once (index.html and the pictures), or one zip of the folder.
-      2. Press "Add it".
-      3. Press "Publish". About two minutes later it is on the site, at /research/<its-name>,
-         listed with the lab notes, in the sitemap and in the guide for AI assistants.
+      2. Say where it goes: Research (a lab note, listed by year on the Research page, at /research/<its-name>)
+         or News (an update, listed at the top of the News page, at /news/<its-name>). Research if nothing is said.
+         The page can say it itself:  <meta name="section" content="news">
+      3. Press "Add it".
+      4. Press "Publish". About two minutes later it is on the site, in the sitemap and in the guide for AI assistants.
+      A page is moved between Research and News with the "Where" menu in the list, then Publish.
 
   The page tells the site about itself from inside the HTML:
       the title           the first <h1>
@@ -46,7 +49,8 @@ WHERE THINGS ARE
       unitednotions.film/          the live site, written by the build. Never edit it by hand.
       unitednotions.film/edit/     the editing page
       unf-workshop/                the workshop: the program that writes the pages, and the texts it reads
-          build/pages-in/          the pages added on the editing page, one folder each
+          build/pages-in/          the pages added on the editing page, one folder each (section.txt says Research or News)
+          build/.before/           the previous version of each text saved on the editing page
           build/research/en, es    the 30 lab notes of the old site, as tagged text (T:, P:, IMG: ...)
           build/content.py         the works on the home page
           build/content_pages.py   About, People, News, Film Futurism, Press
@@ -58,12 +62,18 @@ WHERE THINGS ARE
   The same folder lives on Dan's Mac and on GitHub (github.com/d3lue/unitednotions-film), as copies.
   The server's workshop is the one that counts.
 
-THE OTHER PAGES: ABOUT, PEOPLE, NEWS, WORK
+THE OTHER PAGES: WORK, ABOUT, PEOPLE, FILM FUTURISM, NEWS, PRESS
 
-  Their texts are plain sentences inside build/content_pages.py and build/content.py, with the Spanish in
-  build/strings_es.py keyed by the English sentence. They change rarely. Change them on a Mac and run
-      sh publish.sh
-  from the folder, or on GitHub and then "Run workflow" under Actions. Or ask Claude.
+  Their texts are plain sentences in three files: build/content.py (the home page), build/content_pages.py
+  (the rest) and build/strings_es.py (the Spanish, keyed by the English sentence). On the editing page,
+  under "The site's texts", each opens in a box: change the words, keep the quotes and the commas, Save,
+  Publish. A file with a mistake in it is not saved; the box says what Python objects to. "Put back the
+  previous version" undoes the last save. The 30 lab notes of the old site open the same way, in their
+  tagged form (T:, D:, S:, P:, IMG:, VIDEO:), English and Spanish.
+  The one trap: if an English sentence changes, its copy on the left in strings_es.py must change too,
+  or that Spanish is lost and the Spanish page shows the English.
+  The server's copies of these files are the ones that count. publish.sh brings them down before it sends
+  anything up; the GitHub workflow never sends them up.
 
 FROM A MAC
 

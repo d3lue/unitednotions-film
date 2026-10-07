@@ -17,10 +17,10 @@ HOST="${UNF_HOST:-iad1-shared-b7-43.dreamhost.com}"
 W="unf-workshop"
 AT="$USER_NAME@$HOST"
 
-echo "== 1. Bringing down what the server's workshop has (pages added on the editing page, dates, pictures)"
+echo "== 1. Bringing down what the server's workshop has (pages and texts changed on the editing page, dates, pictures)"
 mkdir -p build/pages-in build/picture-in
 rm -rf build/pages-in/*
-ssh "$AT" "cd $W/build && tar cf - pages-in data research picture-in 2>/dev/null" | tar xf - -C build
+ssh "$AT" "cd $W/build && tar cf - pages-in data research picture-in content.py content_pages.py strings_es.py 2>/dev/null" | tar xf - -C build
 if [ "${1:-}" = "--down" ]; then
   echo "Done. The workshop here now matches the server."
   exit 0

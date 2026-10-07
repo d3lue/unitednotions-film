@@ -614,6 +614,11 @@ ES = {
         "Esta dirección no lleva a ninguna parte. La página se movió o la dirección tiene un error.",
     "From here": "Desde aquí",
     "The maze": "El laberinto",
+    # the pages added to News on the editing page
+    "Update": "Novedad",
+    "Updates": "Novedades",
+    "More news": "Más noticias",
+    "All the news": "Todas las noticias",
 }
 
 for _s in SAME:

@@ -253,6 +253,12 @@ def build_news():
                         '<h2%s><a href="index.html#%s">%s</a></h2>%s</header><ul class="clips">%s</ul></section>'
                         % (slug, E(t("%s, %d. %d clippings.") % (w["kind"], w["year"], len(clips))), lang, slug, E(w["title"]), quote, "".join(items)))
         jump.append('<li><a href="#press-%s"%s>%s</a> <span>%d</span></li>' % (slug, lang, E(w["title"]), len(clips)))
+    import research
+    updates = research.news_rows(tones)
+    if updates:
+        jump.insert(0, '<li><a href="#updates">%s</a> <span>%d</span></li>' % (E(t("Updates")), len(updates)))
+        sections.insert(0, '<section class="block updates" id="updates"><h2 class="block-title">%s</h2><ul class="rows">%s</ul></section>'
+                        % (E(t("Updates")), "".join(updates)))
     extra = '<ul class="jump" aria-label="%s">%s</ul>' % (E(t("Works")), "".join(jump))
     lead = t("What the press wrote about each work. %d clippings. %d of them open the article.") % (total, linked)
     body = ('<a class="skip" href="#press">%s</a>\n' % E(t("Skip to the clippings")) + B.header(current="news.html") + '\n<main>\n'

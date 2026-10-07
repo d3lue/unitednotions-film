@@ -19,7 +19,9 @@ W="unf-workshop"
 SITE="unitednotions.film"
 
 echo "== 1. The workshop: the program that writes the pages, the publish script, the checks"
-tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' -C build . \
+# the texts and pages edited on the editing page are never sent up: the server's are the ones that count
+tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' --exclude='./pages-in' --exclude='./picture-in' --exclude='./.before' \
+  --exclude='./research' --exclude='./content.py' --exclude='./content_pages.py' --exclude='./strings_es.py' --exclude='./data/research*.json' -C build . \
   | ssh "$AT" "mkdir -p $W/build && tar xf - -C $W/build && mkdir -p $W/build/pages-in $W/build/picture-in"
 ssh "$AT" "cat > $W/check.sh && chmod 755 $W/check.sh" < check.sh
 ssh "$AT" "cat > $W/server-publish.sh && chmod 755 $W/server-publish.sh" < server/server-publish.sh

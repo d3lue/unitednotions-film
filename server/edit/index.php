@@ -1,16 +1,29 @@
 <?php
 // United Notions Film: the editing page. It lives at https://unitednotions.film/edit/ behind a password.
 // A page of the site is a folder in the workshop (build/pages-in/<name>/) holding index.html and its pictures.
-// Here you add one, replace one, correct one, or remove one, and press Publish. The server rebuilds the site.
+// Here you add one, replace one, correct one, move it between Research and News, or remove one, and press Publish.
+// The texts of the other pages (Work, About, People, Film Futurism, News, Press, and the Spanish) are files in the
+// workshop too; they open in a box here, are checked for syntax when saved, and the previous version can be put back.
+// This page runs nothing itself: it leaves a marker, and a cron job on the server (once a minute) runs server-publish.sh.
+// The one exception is python3, started only to check the syntax of a saved Python file, which it reads from its input.
 // Nothing here is public: the folder's .htaccess asks for the password kept in the workshop's .htpasswd.
 
 declare(strict_types=1);
-$W     = '/home/danfal17/unf-workshop';
-$IN    = "$W/build/pages-in";
-$LOG   = "$W/publish.log";
-$LOCK  = "$W/publish.lock";
-$LIVE  = 'https://unitednotions.film';
-$TYPES = ['html', 'htm', 'css', 'js', 'json', 'txt', 'md', 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'svg', 'mp4', 'webm', 'mov', 'm4v', 'mp3', 'm4a', 'wav', 'ogg', 'pdf', 'woff', 'woff2', 'glb', 'gltf', 'zip'];
+$W      = '/home/danfal17/unf-workshop';
+$IN     = "$W/build/pages-in";
+$BEFORE = "$W/build/.before";              // the previous version of each text saved here, for "Put back"
+$LOG    = "$W/publish.log";
+$LOCK   = "$W/publish.lock";
+$ASK    = "$W/publish.requested";
+$LIVE   = 'https://unitednotions.film';
+$TYPES  = ['html', 'htm', 'css', 'js', 'json', 'txt', 'md', 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif', 'svg', 'mp4', 'webm', 'mov', 'm4v', 'mp3', 'm4a', 'wav', 'ogg', 'pdf', 'woff', 'woff2', 'glb', 'gltf', 'zip'];
+$SECTIONS = ['research' => 'Research', 'news' => 'News'];
+// the texts of the pages that are not added here: key => [file in the workshop, what it is, a word of advice]
+$TEXTS = [
+    'work'    => ['build/content.py', 'Work: the home page', 'The works, their facts and the photos of the home page. The words are plain sentences inside quotes: change the words, keep the quotes and the commas.'],
+    'pages'   => ['build/content_pages.py', 'About, People, Film Futurism, News, Press', 'The texts of those pages, as plain sentences inside quotes. Change the words, keep the quotes and the commas.'],
+    'spanish' => ['build/strings_es.py', 'The Spanish of all of the above', 'Each line is the English sentence, then its Spanish. If you change an English sentence in the other two files, change it here on the left too, or that Spanish is lost.'],
+];
 
 $notes = [];
 function slugify(string $s): string {
@@ -29,14 +42,40 @@ function page_title(string $html): string {
     }
     return '';
 }
+function page_section(string $dir, string $html): string {
+    // the editing page writes section.txt; the page itself may say <meta name="section" content="news">. The file wins.
+    $said = is_file("$dir/section.txt") ? trim((string)file_get_contents("$dir/section.txt")) : '';
+    if ($said === '' && preg_match('~<meta\s+name=["\']section["\']\s+content=["\']([^"\']*)["\']~i', $html, $m)) $said = trim($m[1]);
+    return in_array(strtolower($said), ['news', 'noticias', 'update', 'updates', 'novedades', 'novedad'], true) ? 'news' : 'research';
+}
 function safe_name(string $f): string {
     $f = basename(str_replace('\\', '/', $f));
     return preg_replace('/[^A-Za-z0-9._-]+/', '-', $f);
 }
 function allowed(string $f): bool { global $TYPES; return in_array(strtolower(pathinfo($f, PATHINFO_EXTENSION)), $TYPES, true); }
-// This page never runs anything. It leaves a marker, and a cron job on the server (once a minute) sees it and runs server-publish.sh:
-//     * * * * * cd $HOME/unf-workshop && if [ -f publish.requested ]; then rm -f publish.requested; sh server-publish.sh; fi >/dev/null 2>&1
-$ASK = "$W/publish.requested";
+function text_file(string $key): ?array {
+    // [path, label, kind] of an editable text, or null. Only the files named in $TEXTS and the lab notes of the old site.
+    global $TEXTS, $W;
+    if (isset($TEXTS[$key])) return ["$W/{$TEXTS[$key][0]}", $TEXTS[$key][1], 'py', $TEXTS[$key][2]];
+    if (preg_match('/^note:(en|es):([a-z0-9][a-z0-9-]*)$/', $key, $m) && is_file("$W/build/research/$m[1]/$m[2].txt")) {
+        return ["$W/build/research/$m[1]/$m[2].txt", "$m[2], the " . ($m[1] === 'es' ? 'Spanish' : 'English'), 'txt',
+                'A lab note of the old site, in its tagged form: T: the title, D: the description, S: the summary, then P: paragraphs, IMG: pictures and VIDEO: clips.'];
+    }
+    return null;
+}
+function python_ok(string $code, ?string &$error): bool {
+    if (!function_exists('proc_open')) { $error = ''; return true; }      // no check possible: the publish will say if it is broken
+    $p = @proc_open(['python3', '-c', 'import ast,sys; ast.parse(sys.stdin.read())'], [0 => ['pipe', 'r'], 1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);
+    if (!is_resource($p)) { $error = ''; return true; }
+    fwrite($pipes[0], $code); fclose($pipes[0]);
+    $err = stream_get_contents($pipes[2]); fclose($pipes[1]); fclose($pipes[2]);
+    if (proc_close($p) !== 0) {
+        $lines = array_values(array_filter(array_map('trim', explode("\n", $err))));
+        $error = implode(' · ', array_slice($lines, -3));
+        return false;
+    }
+    return true;
+}
 function start_publish(): void { global $ASK; touch($ASK); }
 
 $running = (file_exists($LOCK) && (time() - (int)@filemtime($LOCK) < 900)) || (file_exists($ASK) && (time() - (int)@filemtime($ASK) < 300));
@@ -46,6 +85,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!in_array($site, ['same-origin', 'none'], true)) { http_response_code(403); exit('Not from this site.'); }
     $do = $_POST['do'] ?? '';
     $slug = slugify($_POST['name'] ?? '');
+    $section = $_POST['section'] ?? '';
+    if (!isset($SECTIONS[$section])) $section = '';
 
     if ($do === 'upload') {
         $files = $_FILES['files'] ?? null;
@@ -55,9 +96,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             mkdir($tmp, 0700, true);
             $got = [];
             foreach ($files['name'] as $i => $name) {
-                if ($files['error'][$i] !== UPLOAD_ERR_OK) { $notes[] = "$name was not received (error {$files['error'][$i]})."; continue; }
+                if ($files['error'][$i] !== UPLOAD_ERR_OK) { $notes[] = h($name) . " was not received (error {$files['error'][$i]})."; continue; }
                 $clean = safe_name($name);
-                if (!allowed($clean)) { $notes[] = "$name was left out: that kind of file is not used by a page."; continue; }
+                if (!allowed($clean)) { $notes[] = h($name) . ' was left out: that kind of file is not used by a page.'; continue; }
                 if (strtolower(pathinfo($clean, PATHINFO_EXTENSION)) === 'zip') {
                     $z = new ZipArchive();
                     if ($z->open($files['tmp_name'][$i]) === true) {
@@ -75,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             $got[] = $rel;
                         }
                         $z->close();
-                    } else { $notes[] = "$name could not be opened as a zip."; }
+                    } else { $notes[] = h($name) . ' could not be opened as a zip.'; }
                 } else {
                     move_uploaded_file($files['tmp_name'][$i], "$tmp/$clean");
                     $got[] = $clean;
@@ -102,7 +143,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         copy((string)$f, "$dest/$rel"); chmod("$dest/$rel", 0644);
                     }
                     rmtree($tmp);
-                    $notes[] = ($was ? 'Updated' : 'Added') . " the page <b>$slug</b> (" . count($got) . ' files). Press Publish to put it on the site.';
+                    if ($section !== '') file_put_contents("$dest/section.txt", $section . "\n");
+                    $where = page_section($dest, $html);
+                    $notes[] = ($was ? 'Updated' : 'Added') . " the page <b>$slug</b> (" . count($got) . " files). It goes to <b>{$SECTIONS[$where]}</b>, at /$where/$slug. Press Publish to put it on the site.";
                 }
             }
         }
@@ -110,9 +153,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $which = ($_POST['which'] ?? 'index') === 'es' ? 'es.html' : 'index.html';
         file_put_contents("$IN/$slug/$which", str_replace("\r\n", "\n", (string)($_POST['html'] ?? '')));
         $notes[] = "Saved $which of <b>$slug</b>. Press Publish to put it on the site.";
+    } elseif ($do === 'section' && $slug !== '' && is_dir("$IN/$slug") && $section !== '') {
+        file_put_contents("$IN/$slug/section.txt", $section . "\n");
+        $notes[] = "<b>$slug</b> now goes to <b>{$SECTIONS[$section]}</b>, at /$section/$slug. Press Publish to move it on the site.";
     } elseif ($do === 'delete' && $slug !== '' && is_dir("$IN/$slug")) {
         rmtree("$IN/$slug");
         $notes[] = "Removed the page <b>$slug</b>. Press Publish to take it off the site.";
+    } elseif ($do === 'savetext' && ($tf = text_file((string)($_POST['key'] ?? '')))) {
+        [$path, $label, $kind] = $tf;
+        $code = str_replace("\r\n", "\n", (string)($_POST['text'] ?? ''));
+        if ($kind === 'py' && !python_ok($code, $err)) {
+            $notes[] = ['bad', "Not saved: <b>" . h($label) . "</b> has a mistake in it, so the site could not be built from it. Python says: " . h($err) . ". Usually a quote or a comma is missing."];
+            $keep = $code;                       // shown again in the box, so nothing typed is lost
+        } else {
+            @mkdir($BEFORE, 0755, true);
+            if (is_file($path)) copy($path, "$BEFORE/" . safe_name($_POST['key']) . '.txt');
+            file_put_contents($path, $code);
+            $notes[] = "Saved <b>" . h($label) . "</b>. Press Publish to put it on the site." . ($kind === 'py' && $err === '' && !function_exists('proc_open') ? ' (It could not be checked for mistakes here; the publish will say.)' : '');
+        }
+    } elseif ($do === 'undotext' && ($tf = text_file((string)($_POST['key'] ?? '')))) {
+        [$path, $label] = $tf;
+        $back = "$BEFORE/" . safe_name($_POST['key']) . '.txt';
+        if (is_file($back)) {
+            $now = (string)file_get_contents($path);
+            copy($back, $path);
+            file_put_contents($back, $now);      // so that "put back" twice returns to where you were
+            $notes[] = "Put back the previous version of <b>" . h($label) . "</b>. Press Publish to put it on the site.";
+        }
     } elseif ($do === 'publish') {
         if ($running) $notes[] = 'A publish is already running.';
         else { @unlink($LOG); start_publish(); $running = true; $notes[] = 'Publishing. It starts within a minute and takes about two. This page refreshes by itself.'; }
@@ -126,11 +193,21 @@ if (is_dir($IN)) {
         if (!is_dir("$IN/$d") || $d[0] === '.') continue;
         $html = is_file("$IN/$d/index.html") ? (string)file_get_contents("$IN/$d/index.html") : '';
         $n = 0; foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator("$IN/$d", FilesystemIterator::SKIP_DOTS)) as $f) $n++;
-        $pages[$d] = ['title' => page_title($html) ?: $d, 'files' => $n, 'es' => is_file("$IN/$d/es.html"), 'when' => date('j M Y, H:i', (int)filemtime("$IN/$d"))];
+        $pages[$d] = ['title' => page_title($html) ?: $d, 'files' => $n, 'es' => is_file("$IN/$d/es.html"), 'section' => page_section("$IN/$d", $html),
+                      'when' => date('j M Y, H:i', (int)filemtime("$IN/$d"))];
     }
+}
+$old_notes = [];
+foreach (glob("$W/build/research/en/*.txt") ?: [] as $f) {
+    $s = basename($f, '.txt');
+    $first = (string)@file_get_contents($f, false, null, 0, 400);
+    $old_notes[$s] = preg_match('/^T:\s*(.+)$/m', $first, $m) ? trim($m[1]) : $s;
 }
 $editing = isset($_GET['edit']) && isset($pages[slugify($_GET['edit'])]) ? slugify($_GET['edit']) : null;
 $which = ($_GET['which'] ?? 'index') === 'es' ? 'es' : 'index';
+$text = isset($_GET['text']) ? text_file((string)$_GET['text']) : null;
+$text_key = $text ? (string)$_GET['text'] : (isset($keep) ? (string)$_POST['key'] : null);
+if (isset($keep)) $text = text_file($text_key);
 $log = is_file($LOG) ? (string)file_get_contents($LOG) : '';
 $done = !$running && $log !== '';
 $ok = $done && str_contains($log, 'failed: 0');
@@ -154,25 +231,31 @@ $ok = $done && str_contains($log, 'failed: 0');
   table { width:100%; border-collapse:collapse; } td, th { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { font-size:13px; text-transform:uppercase; letter-spacing:.04em; opacity:.7; }
   td small { opacity:.7; } a { color:var(--go); }
-  form.inline { display:inline; } button, .btn { font:inherit; padding:8px 14px; border:1px solid var(--line); background:var(--soft); color:var(--ink); border-radius:6px; cursor:pointer; }
+  form.inline { display:inline; } button, .btn { font:inherit; padding:8px 14px; border:1px solid var(--line); background:var(--soft); color:var(--ink); border-radius:6px; cursor:pointer; text-decoration:none; display:inline-block; }
   button.go { background:var(--go); color:#fff; border-color:var(--go); font-weight:600; padding:12px 22px; }
   button.quiet { background:none; border:none; color:var(--go); padding:4px 6px; text-decoration:underline; }
   button.danger { color:var(--warn); }
-  label { display:block; margin:14px 0 4px; font-weight:600; } input[type=text] { font:inherit; padding:8px 10px; width:100%; max-width:420px; border:1px solid var(--line); border-radius:6px; background:var(--paper); color:var(--ink); }
+  button.small, select.small { padding:4px 8px; font-size:14px; }
+  label { display:block; margin:14px 0 4px; font-weight:600; } input[type=text], select { font:inherit; padding:8px 10px; max-width:420px; border:1px solid var(--line); border-radius:6px; background:var(--paper); color:var(--ink); }
+  input[type=text] { width:100%; }
   input[type=file] { display:block; margin-top:4px; }
   .drop { border:2px dashed var(--line); border-radius:10px; padding:20px; margin-top:8px; background:var(--soft); }
   .hint { font-size:14px; opacity:.75; margin:6px 0 0; }
   textarea { width:100%; min-height:420px; font:13px/1.45 ui-monospace, SFMono-Regular, Menlo, monospace; padding:10px; border:1px solid var(--line); border-radius:6px; background:var(--paper); color:var(--ink); }
+  textarea.tall { min-height:70vh; }
   pre.log { background:var(--soft); padding:12px; border-radius:6px; font-size:12.5px; max-height:320px; overflow:auto; white-space:pre-wrap; }
+  details.notes summary { cursor:pointer; margin:10px 0; }
   .publish { position:fixed; bottom:0; left:0; right:0; background:var(--paper); border-top:1px solid var(--line); padding:12px 16px; display:flex; gap:14px; align-items:center; justify-content:center; }
   .publish span { font-size:14px; opacity:.8; }
 </style>
 </head>
 <body>
 <h1>United Notions Film: editing</h1>
-<p class="lead">A page is a folder with an HTML file and its pictures. Add it here, then press Publish. The site is rebuilt in about two minutes.</p>
+<p class="lead">A page is a folder with an HTML file and its pictures. Add it here, say whether it is Research or News, then press Publish. The site is rebuilt in about two minutes.</p>
 
-<?php foreach ($notes as $m): ?><p class="msg"><?= $m ?></p><?php endforeach; ?>
+<?php foreach ($notes as $m): ?>
+  <?php if (is_array($m)): ?><p class="msg <?= $m[0] ?>"><?= $m[1] ?></p><?php else: ?><p class="msg"><?= $m ?></p><?php endif; ?>
+<?php endforeach; ?>
 
 <?php if ($running): ?>
   <p class="msg"><?= file_exists($LOCK) ? 'Publishing now.' : 'Waiting for the publish to start (within a minute).' ?> This page refreshes by itself until it is done.</p>
@@ -180,6 +263,17 @@ $ok = $done && str_contains($log, 'failed: 0');
 <?php elseif ($done): ?>
   <p class="msg <?= $ok ? 'good' : 'bad' ?>"><?= $ok ? 'The last publish went through and the live site answered every check.' : 'The last publish ended with a problem. The log is below.' ?></p>
   <details<?= $ok ? '' : ' open' ?>><summary>Log of the last publish</summary><pre class="log"><?= h(substr($log, -6000)) ?></pre></details>
+<?php endif; ?>
+
+<?php if ($text): [$tpath, $tlabel, $tkind, $tadvice] = $text; $back = "$BEFORE/" . safe_name($text_key) . '.txt'; ?>
+  <h2>Correcting <?= h($tlabel) ?></h2>
+  <p class="hint"><?= h($tadvice) ?> · <a href="./">back to the list</a></p>
+  <form method="post">
+    <input type="hidden" name="do" value="savetext"><input type="hidden" name="key" value="<?= h($text_key) ?>">
+    <textarea name="text" class="tall" spellcheck="false"><?= h($keep ?? (is_file($tpath) ? (string)file_get_contents($tpath) : '')) ?></textarea>
+    <p><button type="submit" class="go">Save</button>
+    <?php if (is_file($back)): ?> <button type="submit" class="quiet" formaction="?text=<?= h($text_key) ?>" name="do" value="undotext" onclick="return confirm('Put back the version from before the last save?')">Put back the previous version</button><?php endif; ?></p>
+  </form>
 <?php endif; ?>
 
 <?php if ($editing): $file = "$IN/$editing/" . ($which === 'es' ? 'es.html' : 'index.html'); ?>
@@ -200,10 +294,17 @@ $ok = $done && str_contains($log, 'failed: 0');
     <input id="files" type="file" name="files[]" multiple required>
     <p class="hint">Choose them all at once: index.html and its pictures. Or one zip of the folder. Up to 512 MB.
       The Spanish version, if there is one, is a second file named es.html.</p>
+    <label for="section">Where it goes</label>
+    <select id="section" name="section">
+      <option value="">As the page says (Research if it says nothing)</option>
+      <option value="research">Research: a lab note</option>
+      <option value="news">News: an update</option>
+    </select>
+    <p class="hint">Research pages are listed by year on the Research page, at /research/<b>the-name</b>. News pages are listed at the top of the News page, at /news/<b>the-name</b>.
+      A page can also say it itself: <code>&lt;meta name="section" content="news"&gt;</code>.</p>
     <label for="name">Its address <small>(optional)</small></label>
     <input id="name" type="text" name="name" placeholder="taken from the page's title if left empty">
-    <p class="hint">Letters, digits and dashes. The page will be at <?= h($LIVE) ?>/research/<b>that-name</b>.
-      To replace a page, use its name again: new files win, the rest stay.</p>
+    <p class="hint">Letters, digits and dashes. To replace a page, use its name again: new files win, the rest stay.</p>
   </div>
   <p><button type="submit" class="go">Add it</button></p>
 </form>
@@ -213,13 +314,21 @@ $ok = $done && str_contains($log, 'failed: 0');
 
 <h2>Pages written here</h2>
 <?php if (!$pages): ?>
-  <p class="hint">None yet. The lab notes of the old site are kept another way and do not show here.</p>
+  <p class="hint">None yet. The lab notes of the old site are kept another way: see "The site's texts" below.</p>
 <?php else: ?>
 <table>
-  <tr><th>Page</th><th>Files</th><th>Changed</th><th></th></tr>
+  <tr><th>Page</th><th>Where</th><th>Files</th><th>Changed</th><th></th></tr>
   <?php foreach ($pages as $slug => $p): ?>
   <tr>
-    <td><b><?= h($p['title']) ?></b><br><small><a href="<?= h("$LIVE/research/$slug") ?>" target="_blank" rel="noopener"><?= h("/research/$slug") ?></a><?= $p['es'] ? ' · Spanish ✓' : ' · no Spanish yet' ?></small></td>
+    <td><b><?= h($p['title']) ?></b><br><small><a href="<?= h("$LIVE/{$p['section']}/$slug") ?>" target="_blank" rel="noopener"><?= h("/{$p['section']}/$slug") ?></a><?= $p['es'] ? ' · Spanish ✓' : ' · no Spanish yet' ?></small></td>
+    <td>
+      <form class="inline" method="post">
+        <input type="hidden" name="do" value="section"><input type="hidden" name="name" value="<?= h($slug) ?>">
+        <select class="small" name="section" onchange="this.form.submit()">
+          <?php foreach ($SECTIONS as $k => $label): ?><option value="<?= $k ?>"<?= $k === $p['section'] ? ' selected' : '' ?>><?= $label ?></option><?php endforeach; ?>
+        </select>
+      </form>
+    </td>
     <td><?= (int)$p['files'] ?></td>
     <td><small><?= h($p['when']) ?></small></td>
     <td>
@@ -233,6 +342,25 @@ $ok = $done && str_contains($log, 'failed: 0');
   <?php endforeach; ?>
 </table>
 <?php endif; ?>
+
+<h2>The site's texts</h2>
+<p class="hint">The pages that are not added above are written as plain sentences in three files. Open one, change the words, save, then Publish.
+  A file with a mistake in it is not saved: the box says what is wrong. The previous version of each file can be put back.</p>
+<table>
+  <tr><th>What</th><th>File</th><th></th></tr>
+  <?php foreach ($TEXTS as $key => [$file, $label]): ?>
+  <tr><td><b><?= h($label) ?></b></td><td><small><?= h($file) ?></small></td><td><a class="btn" href="?text=<?= h($key) ?>">Correct</a></td></tr>
+  <?php endforeach; ?>
+</table>
+<details class="notes">
+  <summary>The <?= count($old_notes) ?> lab notes of the old site, in their tagged form</summary>
+  <table>
+    <?php foreach ($old_notes as $s => $title): ?>
+    <tr><td><b><?= h($title) ?></b><br><small><a href="<?= h("$LIVE/research/$s") ?>" target="_blank" rel="noopener">/research/<?= h($s) ?></a></small></td>
+        <td><a class="btn" href="?text=note:en:<?= h($s) ?>">English</a> <?php if (is_file("$W/build/research/es/$s.txt")): ?><a class="btn" href="?text=note:es:<?= h($s) ?>">Spanish</a><?php endif; ?></td></tr>
+    <?php endforeach; ?>
+  </table>
+</details>
 
 <div class="publish">
   <form method="post"><input type="hidden" name="do" value="publish"><button type="submit" class="go" <?= $running ? 'disabled' : '' ?>>Publish</button></form>

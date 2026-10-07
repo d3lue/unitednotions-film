@@ -110,8 +110,11 @@ def load():
         head = {tag: text for tag, text in blocks[:3]}
         n["title"], n["description"], n["summary"] = head.get("T", n["title"]), head.get("D", ""), head.get("S", "")
         n["blocks"] = blocks[3:]
+    for n in notes:
+        n.setdefault("section", "research")
     notes.sort(key=lambda n: (n["iso"] + "-99")[:10], reverse=True)
-    S["notes"] = notes
+    S["all"] = notes                                                  # lab notes and the pages added to News
+    S["notes"] = [n for n in notes if n["section"] != "news"]
     path = os.path.join(HERE, "data", "research-renditions.json")
     S["rr"] = json.load(open(path)) if os.path.exists(path) else {}
     path = os.path.join(HERE, "data", "research-videos.json")
@@ -124,10 +127,17 @@ def load():
         while S["rr"].get("%s-%02d" % (n["key"], k + 1)):
             k += 1
         n["images"] = n["images"] + ["picture-in"] * (k - len(n["images"]))
-    return notes
+    return S["notes"]
+
+
+def news_pages():
+    """The pages added on the editing page with News as their section, newest first."""
+    load()
+    return [n for n in S["all"] if n["section"] == "news"]
 
 
 def latest(k):
+    """The newest lab notes, for the home page."""
     return load()[:k]
 
 
@@ -364,32 +374,36 @@ def note_page(n, newer, older):
     B = S["B"]
     root = "../"
     P = S["P"]
+    news = n["section"] == "news"
+    folder = "news" if news else "research"
+    kicker, kind = (t("News"), t("Update")) if news else (t("Research"), t("Lab note"))
+    every, more = (t("All the news"), t("More news")) if news else (t("Every note"), t("More notes"))
     tones = [tone(rendition("%s-%02d" % (n["key"], k + 1))) for k in range(len(n["images"])) if rendition("%s-%02d" % (n["key"], k + 1))]
     date = '<time datetime="%s">%s</time>' % (n["iso"], E(i18n.date(n["iso"]))) if n["iso"] else ""
-    meta = "".join("<li>%s</li>" % x for x in (date, E(n["place"]), E(t("Lab note"))) if x)
+    meta = "".join("<li>%s</li>" % x for x in (date, E(n["place"]), E(kind)) if x)
     body = body_of(n, root)
-    pager = '<nav class="pager" aria-label="%s">%s<a href="../research.html"><span class="label">%s</span>%s</a>%s</nav>' % (
-        E(t("More notes")),
+    pager = '<nav class="pager" aria-label="%s">%s<a href="../%s.html"><span class="label">%s</span>%s</a>%s</nav>' % (
+        E(more),
         ('<a href="%s.html"><span class="label">%s</span>%s</a>' % (newer["slug"], E(t("Newer")), E(newer["title"]))) if newer else "<span></span>",
-        E(t("Every note")), E(t("Research")),
+        folder, E(every), E(kicker),
         ('<a href="%s.html"><span class="label">%s</span>%s</a>' % (older["slug"], E(t("Older")), E(older["title"]))) if older else "<span></span>")
-    out = ('<a class="skip" href="#note">%s</a>\n' % E(t("Skip to the text")) + B.header(root=root, current="research.html") + '\n<main>\n'
+    out = ('<a class="skip" href="#note">%s</a>\n' % E(t("Skip to the text")) + B.header(root=root, current=folder + ".html") + '\n<main>\n'
            '<article class="lab-note">'
-           '<header class="note-head"><p class="label kicker"><a href="../research.html">%s</a></p>'
+           '<header class="note-head"><p class="label kicker"><a href="../%s.html">%s</a></p>'
            '<h1 class="note-title">%s</h1>%s<p class="page-lead">%s</p></header>\n'
            '<div class="note-wrap"><aside class="note-meta"><ul class="label">%s</ul></aside>\n'
            '<div class="note-body" id="note">\n%s\n</div></div>'
            '</article>\n%s\n</main>\n'
-           % (E(t("Research")), E(n["title"]), P.palette(tones) if len(tones) >= 3 else "", E(n["summary"]), meta, body, pager)
+           % (folder, E(kicker), E(n["title"]), P.palette(tones) if len(tones) >= 3 else "", E(n["summary"]), meta, body, pager)
            + B.footer(S["colour"], S["order"], root=root))
     first = rendition("%s-01" % n["key"]) if n["images"] else None
-    url = B.HOME_URL + "research/" + n["slug"]
+    url = B.HOME_URL + folder + "/" + n["slug"]
     data = {"@context": "https://schema.org", "@type": "Article", "@id": url + "#article", "headline": n["title"], "name": n["title"],
             "description": n["description"] or n["summary"], "abstract": n["summary"], "url": url, "mainEntityOfPage": url, "inLanguage": i18n.LANG,
             "author": [{"@type": "Organization", "@id": B.SITE_URL + "#organization", "name": "United Notions Film"}],
             "publisher": {"@type": "Organization", "@id": B.SITE_URL + "#organization", "name": "United Notions Film", "url": B.SITE_URL},
-            "isPartOf": {"@type": "CollectionPage", "@id": B.HOME_URL + "research#collection", "name": t("Research"), "url": B.HOME_URL + "research"},
-            "articleSection": t("Lab notes")}
+            "isPartOf": {"@type": "CollectionPage", "@id": B.HOME_URL + folder + "#collection", "name": kicker, "url": B.HOME_URL + folder},
+            "articleSection": t("News") if news else t("Lab notes")}
     if n["iso"]:
         data["datePublished"] = n["iso"]
     if n["place"]:
@@ -398,8 +412,8 @@ def note_page(n, newer, older):
     if first and "error" not in first:
         og = "assets/img/research/%s-01-%d.webp" % (n["key"], first["widths"][-1])
         data["image"] = B.SITE_URL + og
-    B.write("research/%s.html" % n["slug"],
-            B.page("%s | United Notions Film" % n["title"], short(n["description"] or n["summary"]), "research/" + n["slug"], out,
+    B.write("%s/%s.html" % (folder, n["slug"]),
+            B.page("%s | United Notions Film" % n["title"], short(n["description"] or n["summary"]), folder + "/" + n["slug"], out,
                    root=root, body_class="lab", extra_head=S["P"].ld(data), og_image=og))
 
 
@@ -410,6 +424,26 @@ DESCRIPTION = ("United Notions Film researches new forms of cinema across screen
                "computational creativity, XR, feminist AI, nonhuman characters, access and distribution.")
 
 
+def row(n, folder, tones, root=""):
+    """One note or page as a row of a list: date and place, title, summary, and its first picture when it has one."""
+    thumb = ""
+    if n["images"]:
+        item = picture(n, 1, root, "(min-width: 760px) 22vw, 92vw", want=480)
+        if item:
+            tones.append(item["tone"])
+            thumb = '<a class="thumb" href="%s%s/%s.html" tabindex="-1" aria-hidden="true" style="--tone:%s">%s</a>' % (root, folder, n["slug"], item["tone"], item["img"])
+    date = ('<time datetime="%s">%s</time>' % (n["iso"], E(i18n.date(n["iso"])))) if len(n["iso"]) > 4 else ""
+    line = ", ".join(x for x in (date, E(n["place"])) if x)
+    return ('<li class="row note%s"><p class="when">%s</p><h3><a href="%s%s/%s.html">%s</a></h3><p class="sum">%s</p>%s</li>'
+            % (" has-pic" if thumb else "", line, root, folder, n["slug"], E(n["title"]), E(n["summary"]), thumb))
+
+
+def news_rows(tones):
+    """The pages added to News, as rows for the News page. pages.py calls this before build_all has run."""
+    S.setdefault("waiting", set())
+    return [row(n, "news", tones) for n in news_pages()]
+
+
 def index_page():
     B, P = S["B"], S["P"]
     notes = load()
@@ -418,18 +452,7 @@ def index_page():
         years.setdefault(n["iso"][:4] or "", []).append(n)
     sections = []
     for year in sorted(years, reverse=True):
-        rows = []
-        for n in years[year]:
-            thumb = ""
-            if n["images"]:
-                item = picture(n, 1, "", "(min-width: 760px) 22vw, 92vw", want=480)
-                if item:
-                    tones.append(item["tone"])
-                    thumb = '<a class="thumb" href="research/%s.html" tabindex="-1" aria-hidden="true" style="--tone:%s">%s</a>' % (n["slug"], item["tone"], item["img"])
-            date = ('<time datetime="%s">%s</time>' % (n["iso"], E(i18n.date(n["iso"])))) if len(n["iso"]) > 4 else ""
-            line = ", ".join(x for x in (date, E(n["place"])) if x)
-            rows.append('<li class="row note%s"><p class="when">%s</p><h3><a href="research/%s.html">%s</a></h3><p class="sum">%s</p>%s</li>'
-                        % (" has-pic" if thumb else "", line, n["slug"], E(n["title"]), E(n["summary"]), thumb))
+        rows = [row(n, "research", tones) for n in years[year]]
         sections.append('<section class="lab-year" id="y%s"><h2>%s</h2><ul class="rows">%s</ul></section>' % (year, year, "".join(rows)))
     jump = '<p class="years" aria-label="%s">%s</p>' % (E(t("Years")), "".join(
         '<a href="#y%s">%s <span>%d</span></a>' % (y, y, len(years[y])) for y in sorted(years, reverse=True)))
@@ -446,12 +469,17 @@ def index_page():
 
 def build_all(B, colour, order):
     import pages as P
-    S.update(B=B, P=P, colour=colour, order=order, waiting=set(), no_video=[], no_embed=[])
+    S.update(B=B, P=P, colour=colour, order=order, waiting=S.get("waiting", set()), no_video=[], no_embed=[])
     notes = load()
     index_page()
     for i, n in enumerate(notes):
         note_page(n, notes[i - 1] if i else None, notes[i + 1] if i + 1 < len(notes) else None)
     print("  research: %d notes" % len(notes), file=sys.stderr)
+    news = news_pages()
+    for i, n in enumerate(news):
+        note_page(n, news[i - 1] if i else None, news[i + 1] if i + 1 < len(news) else None)
+    if news:
+        print("  news: %d pages added on the editing page" % len(news), file=sys.stderr)
     if S["waiting"]:
         print("  %d pictures of the notes have no web copy yet (run build/make_research_media.py)" % len(S["waiting"]), file=sys.stderr)
     if S["no_video"]:
