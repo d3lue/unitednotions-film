@@ -47,7 +47,8 @@ for up in ("..", os.path.join("..", "..")):
 IMG = os.path.join(SITE, "assets", "img", "research")
 VID = os.path.join(SITE, "assets", "video", "research")
 INBOX = os.path.join(HERE, "video-in")
-PIC_INBOX = os.path.join(HERE, "picture-in")      # pictures of new notes: <key>-01.jpg, <key>-02.png ...
+PIC_INBOX = os.path.join(HERE, "picture-in")
+PAGES_IN = os.path.join(HERE, "pages-in")          # a page written as HTML, with its files: pages-in/<name>/index.html      # pictures of new notes: <key>-01.jpg, <key>-02.png ...
 PICTURE_TYPES = (".jpg", ".jpeg", ".png", ".webp", ".tif", ".tiff", ".heic", ".gif")
 DATA = os.path.join(HERE, "data")
 LIMIT = float(sys.argv[sys.argv.index("--secs") + 1]) if "--secs" in sys.argv else None
@@ -190,6 +191,143 @@ def inbox_pictures(db):
     return new, bad
 
 
+
+# ---------------------------------------------------------------------------------------------- pages written as HTML
+STOP = {"the", "a", "an", "of", "and", "to", "in", "on", "for", "at", "by", "with", "from", "that", "this", "its", "is", "are", "how", "when", "what",
+        "el", "la", "los", "las", "de", "del", "y", "en", "un", "una"}
+
+
+def page_head(html):
+    """What a dropped page says about itself: title, description, date and place."""
+    def meta(name):
+        m = re.search(r'<meta\s+name=["\']%s["\']\s+content=["\']([^"\']*)["\']' % name, html, re.I) or \
+            re.search(r'<meta\s+content=["\']([^"\']*)["\']\s+name=["\']%s["\']' % name, html, re.I)
+        return m.group(1).strip() if m else ""
+    def text(tag):
+        m = re.search(r"<%s[^>]*>(.*?)</%s>" % (tag, tag), html, re.I | re.S)
+        return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip() if m else ""
+    title = text("h1") or text("title")
+    date = meta("date")
+    if not date:
+        m = re.search(r'<time[^>]+datetime=["\'](\d{4}-\d{2}-\d{2})', html, re.I)
+        date = m.group(1) if m else ""
+    return dict(title=title, description=meta("description") or text("p"), date=date, place=meta("place"))
+
+
+def page_key(slug, taken):
+    words = [w for w in slug.split("-") if w not in STOP] or slug.split("-")
+    key, n = "-".join(words[:2]), 2
+    while key in taken:
+        n += 1
+        key = "-".join(words[:n]) if n <= len(words) else "%s-%d" % ("-".join(words[:2]), n)
+    return key
+
+
+def copy_tree(src, dst):
+    """Copies what is newer. Returns how many files were copied."""
+    count = 0
+    for base, dirs, files in os.walk(src):
+        dirs[:] = [d for d in dirs if not d.startswith(".")]
+        rel = os.path.relpath(base, src)
+        for f in files:
+            if f.startswith(".") or (rel == "." and f.lower() in ("index.html", "es.html")):
+                continue
+            a = os.path.join(base, f)
+            b = os.path.join(dst, rel, f) if rel != "." else os.path.join(dst, f)
+            os.makedirs(os.path.dirname(b), exist_ok=True)
+            if not os.path.exists(b) or os.path.getmtime(a) > os.path.getmtime(b) or os.path.getsize(a) != os.path.getsize(b):
+                shutil.copy2(a, b)
+                count += 1
+    return count
+
+
+def inbox_pages(db):
+    """Pages dropped in build/pages-in/<name>/: index.html (English), es.html (Spanish, optional) and their files.
+    Each becomes a lab note at /research/<name>. The note is added to research.json the first time it is seen,
+    with the date the page names (<meta name="date" content="2026-10-07"> or a <time datetime>) or else today's.
+    Its files go to assets/pages/<name>/. Its first picture becomes the picture of its card."""
+    notes = read("research.json", [])
+    by_slug = {n["slug"]: n for n in notes}
+    keys = {n["key"] for n in notes}
+    pages_dir = os.path.join(SITE, "assets", "pages")
+    today = time.strftime("%Y-%m-%d")
+    seen, new, changed, bad = set(), 0, False, []
+    if os.path.isdir(PAGES_IN):
+        for slug in sorted(os.listdir(PAGES_IN)):
+            folder = os.path.join(PAGES_IN, slug)
+            page = os.path.join(folder, "index.html")
+            if not os.path.isdir(folder) or slug.startswith("."):
+                continue
+            if not re.match(r"^[a-z0-9][a-z0-9-]*$", slug):
+                bad.append("%s: the name of the folder must be small letters, digits and dashes" % slug)
+                continue
+            if not os.path.exists(page):
+                bad.append("%s: there is no index.html in the folder" % slug)
+                continue
+            seen.add(slug)
+            html = open(page, encoding="utf-8", errors="replace").read()
+            head = page_head(html)
+            title = head["title"] or slug.replace("-", " ")
+            n = by_slug.get(slug)
+            if not n:
+                key = page_key(slug, keys)
+                n = dict(slug=slug, key=key, title=title, page_title=title, iso=head["date"] or today, place=head["place"],
+                         images=[], sizes={}, videos=[], posters={}, missing=[], embeds=[], changed=today, blocks=0, html=True)
+                notes.append(n)
+                by_slug[slug] = n
+                keys.add(key)
+                new += 1
+                changed = True
+            else:
+                want = dict(title=title, page_title=title, html=True)
+                if head["date"]:
+                    want["iso"] = head["date"]
+                if head["place"]:
+                    want["place"] = head["place"]
+                for k, v in want.items():
+                    if n.get(k) != v:
+                        n[k] = v
+                        changed = True
+            copied = copy_tree(folder, os.path.join(pages_dir, slug))
+            # the first picture of the page is the picture of its card and of its link on other sites
+            name = "%s-01" % n["key"]
+            m = re.search(r'<img[^>]+src=["\'](?!https?:|//|/|data:)([^"\'?#]+)', html, re.I)
+            src = os.path.join(folder, m.group(1)) if m else None
+            if src and os.path.exists(src):
+                rec = db.get(name)
+                if not (made(name, rec) and rec.get("mtime") == int(os.path.getmtime(src))):
+                    try:
+                        im = Image.open(src)
+                        if im.format == "JPEG":
+                            im.draft("RGB", (3200, 3200))
+                        rec = web_copies(im, name, (480, 960, 1600), 78)
+                        rec["file"] = "pages-in/%s/%s" % (slug, m.group(1))
+                        rec["mtime"] = int(os.path.getmtime(src))
+                        db[name] = rec
+                        write("research-renditions.json", db)
+                    except Exception as e:
+                        bad.append("%s: its first picture could not be read (%s)" % (slug, str(e)[:80]))
+            if copied:
+                n["changed"] = today
+                changed = True
+    # a page whose folder is gone leaves the list, with its files
+    gone = [n for n in notes if n.get("html") and n["slug"] not in seen]
+    for n in gone:
+        notes.remove(n)
+        for k in [k for k in db if k.startswith(n["key"] + "-")]:
+            for w in db[k].get("widths", []):
+                f = os.path.join(IMG, "%s-%d.webp" % (k, w))
+                if os.path.exists(f):
+                    os.remove(f)
+            del db[k]
+        shutil.rmtree(os.path.join(pages_dir, n["slug"]), ignore_errors=True)
+        changed = True
+    if changed:
+        write("research.json", notes)
+        write("research-renditions.json", db)
+    return len(seen), new, len(gone), bad
+
+
 # ---------------------------------------------------------------------------------------------- videos
 def probe(path):
     p = subprocess.run(["ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", path], capture_output=True, text=True)
@@ -321,6 +459,11 @@ def main():
     print("Pictures: %d ready%s." % (ready + pnew, ", %d of them new" % new if new else ""))
     for line in pbad:
         print("  picture-in: " + line)
+    pages, pnew, pgone, pbad = inbox_pages(db)
+    if pages or pgone:
+        print("Pages written as HTML: %d%s%s." % (pages, ", %d new" % pnew if pnew else "", ", %d removed" % pgone if pgone else ""))
+    for line in pbad:
+        print("  pages-in: " + line)
     if lost:
         where = "" if BACKUP else " The backup folder unitednotions-film-backup is not beside the site."
         print("  %d could not be made.%s" % (len(lost), where))

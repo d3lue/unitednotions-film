@@ -1,73 +1,81 @@
 United Notions Film: how to change the site
 Written 7 October 2026, the day the site went live on DreamHost.
 
-THE SHAPE OF IT
+THE EDITING PAGE
 
-  The site is plain pages, written by a small program from text files. There is no database and no login.
-  The text files are the site. Change them, run one command, and the pages are rebuilt and uploaded.
+      https://unitednotions.film/edit/
 
-  site/        the pages, as the server has them. Never edit these by hand: the next build overwrites them.
-  build/       the program and the texts it reads.
-      research/en/<name>.txt      a lab note, in English
-      research/es/<name>.txt      the same note, in Spanish
-      content.py                  the works on the home page
-      content_pages.py            About, People, News, Film Futurism, Press
-      strings_es.py               the Spanish of everything that is not a lab note
-      picture-in/                 pictures of new lab notes go here
-      video-in/                   videos of new lab notes go here (also the 28 originals of the old site: 1.2 GB, keep them)
-      data/research.json          the list of lab notes with their date and place
+  It asks for a name and a password. A page of the site is a folder: an HTML file and its pictures.
+  Write the page as you like, with any layout, styles or scripts. Then, on the editing page:
 
-THE ONE COMMAND
+      1. Choose all its files at once (index.html and the pictures), or one zip of the folder.
+      2. Press "Add it".
+      3. Press "Publish". About two minutes later it is on the site, at /research/<its-name>,
+         listed with the lab notes, in the sitemap and in the guide for AI assistants.
 
+  The page tells the site about itself from inside the HTML:
+      the title           the first <h1>
+      the summary         <meta name="description" content="...">, or else the first paragraph
+      the date            <meta name="date" content="2026-10-07">   (or else the day it was added)
+      the place           <meta name="place" content="Cochabamba">
+      the card's picture  the first <img>
+  Pictures and videos are named as they are in the folder:  <img src="whale.jpg">   <video src="clip.mp4" controls>
+  The site puts its own header, title, date and footer around the page. The page's <body> is the body of the note.
+
+  Spanish: a second file in the same folder, named es.html. Without it, the Spanish site shows the English.
+  To correct a page: "Correct" opens its HTML in a box; save, then Publish. To replace its files, add them
+  again with the same name: new files win, the rest stay. "Remove" takes it out; Publish makes that real.
+
+  The password: a person with SSH access adds names with
+      ssh danfal17@iad1-shared-b7-43.dreamhost.com   then   htpasswd ~/unf-workshop/.htpasswd NAME
+  The login for the first name, unf, is in ~/unf-workshop/EDIT-LOGIN.txt on the server.
+
+PUTTING THE EDITING PAGE ON THE SERVER (once)
+
+  From this folder on a Mac:
+      sh server/install-editing.sh
+  It sends the workshop up, puts server/edit/ at /edit/ in the site, and adds one cron line to the server:
+  once a minute, if the editing page has left the marker file publish.requested, run server-publish.sh.
+  The editing page itself never runs anything; that cron line is what publishes. Without it, "Publish"
+  waits for ever. The password file (~/unf-workshop/.htpasswd) is made by hand, as above, and is not
+  touched by the script. Run it again whenever server/edit/index.php changes.
+
+WHERE THINGS ARE
+
+  On the server, in /home/danfal17:
+      unitednotions.film/          the live site, written by the build. Never edit it by hand.
+      unitednotions.film/edit/     the editing page
+      unf-workshop/                the workshop: the program that writes the pages, and the texts it reads
+          build/pages-in/          the pages added on the editing page, one folder each
+          build/research/en, es    the 30 lab notes of the old site, as tagged text (T:, P:, IMG: ...)
+          build/content.py         the works on the home page
+          build/content_pages.py   About, People, News, Film Futurism, Press
+          build/strings_es.py      the Spanish of everything that is not a lab note
+          publish.log              what the last publish said
+          server-publish.sh        the publish itself: pictures, build, copy to the live folder, 34 checks
+          EDIT-LOGIN.txt           the name and password of the editing page
+
+  The same folder lives on Dan's Mac and on GitHub (github.com/d3lue/unitednotions-film), as copies.
+  The server's workshop is the one that counts.
+
+THE OTHER PAGES: ABOUT, PEOPLE, NEWS, WORK
+
+  Their texts are plain sentences inside build/content_pages.py and build/content.py, with the Spanish in
+  build/strings_es.py keyed by the English sentence. They change rarely. Change them on a Mac and run
       sh publish.sh
+  from the folder, or on GitHub and then "Run workflow" under Actions. Or ask Claude.
 
-  It makes web copies of any new picture or video, builds the pages (about two minutes), uploads what changed
-  and checks 34 addresses of the live site. From a new Mac, once:   pip3 install --user pillow numpy fonttools brotli
-  and   brew install ffmpeg   for the videos.
+FROM A MAC
 
-A NEW LAB NOTE
+      sh publish.sh          brings down what the editing page added, sends up what changed here, builds on the server
+      sh publish.sh --down   only brings the server's workshop down, to look or to edit
+      sh check.sh            tries 34 addresses of the live site and names any that fails
 
-  1.   python3 build/new_note.py "The title of the note" --place Cochabamba
-       It makes the two text files and adds the note to the list. It prints where everything goes.
-  2.   Write build/research/en/<name>.txt. One block per line, each line starts with a tag:
-           T: title       D: one sentence for search engines       S: one-sentence summary      (these three first, in this order)
-           P: paragraph   H: heading   LI: list item   CAP: caption of the picture or video above
-           IMG: 1         the first picture               IMG: 2 | https://address   makes it a link
-           VIDEO: 01 | 16:9     a video; 16:9, 9:16 or 1:1 is its shape
-           YT: id | title       a YouTube video            VM: id | title     a Vimeo video
-           A: text | https://address      a link on its own line
-       Inside a line, a link is written [text](https://address).
-  3.   Pictures: build/picture-in/<key>-01.jpg, <key>-02.png ...  The key is the short name the script printed.
-       Videos:   build/video-in/<key>-01.mp4 (or .mov, any usual format).
-       A video of a few seconds plays by itself, silently, in a loop. A longer one waits for the visitor.
-  4.   Spanish: build/research/es/<name>.txt. Same lines, same tags, same order, translated.
-       build/research/BRIEF-es.md has Violeta's rules. Until it is translated the Spanish site shows the English.
-  5.   For people who cannot see the pictures: build/research/alts.json, a sentence per picture, in both languages.
-  6.   sh publish.sh
-
-CHANGING A NOTE THAT EXISTS
-
-  Edit its text files in build/research/en and es. Then   sh publish.sh
-  Its date and place are in build/data/research.json.
-
-THE OTHER PAGES
-
-  About, People, News, Film Futurism, Press: build/content_pages.py. The works of the home page: build/content.py.
-  They are Python files, but the texts in them are plain: find the sentence, change it, keep the quotes around it.
-  Their Spanish is in build/strings_es.py, keyed by the English sentence.
-  Then   sh publish.sh
-
-FROM A BROWSER, WITHOUT A MAC
-
-  The folder is a git repository. When it is on GitHub, every push to the branch main builds and uploads the site
-  by itself (.github/workflows/publish.yml, about three minutes). So a note can be written or corrected on github.com,
-  in the browser: open build/research/en/<name>.txt, press the pencil, change it, "Commit changes". Done.
-  A new note from the browser needs its line in build/data/research.json too (copy the shape of the last one).
-  New videos cannot go that way: they are too big for git. Add them from a Mac with sh publish.sh.
-  New pictures can: upload them to build/picture-in.
+  The originals of the 28 lab videos are in build/video-in on Dan's Mac (1.2 GB). The server has their web copies.
+  Keep the originals somewhere backed up: the old site that streamed them is gone.
 
 WHEN SOMETHING LOOKS WRONG
 
-  The build prints what is missing: a picture whose web copy is not made, a video it is waiting for,
-  a Spanish text that does not exist. Read the last lines.
-  sh check.sh   tries the 34 addresses of the live site and names any that fails.
+  The editing page shows the log of the last publish. The last line counts the checks: "passed: 34  failed: 0" is right.
+  A page whose folder has no index.html, or whose name has a capital letter or a space, is named in the log and left out.
+  If the editing page itself does not answer, the site still does: the two are separate.

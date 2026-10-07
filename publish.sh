@@ -1,35 +1,36 @@
 #!/bin/sh
-# Builds the site, uploads it to DreamHost and checks it. One command, from inside this folder:
+# Publishes from this Mac. The workshop on the server (~/unf-workshop) is the one that counts:
+# the editing page at https://unitednotions.film/edit/ writes there, and the server builds the site from it.
+# This script brings down what the server has, sends up what is new here, and asks the server to build.
 #
-#     sh publish.sh                 build, upload, check
-#     sh publish.sh --no-build      upload and check what is in site/ now
-#     sh publish.sh --dry           build, then only show what the upload would change
+#     sh publish.sh              bring down, send up, build on the server, check the live site
+#     sh publish.sh --down       only bring the server's workshop down here (to look, or to edit)
 #
-# The SSH user is danfal17 unless UNF_USER says otherwise:   UNF_USER=someone sh publish.sh
-# Before the first run on a new Mac:   pip3 install --user pillow numpy fonttools brotli
+# The SSH user is danfal17 unless UNF_USER says otherwise. The originals of the lab videos (build/video-in, 1.2 GB)
+# stay here: the server has their web copies. A new video goes up with the page that shows it, through the editing page.
+# Files travel as tar over ssh: the rsync and scp of this Mac do not always deliver.
 
 set -eu
 cd "$(dirname "$0")"
 USER_NAME="${UNF_USER:-danfal17}"
-MODE="${1:-}"
+HOST="${UNF_HOST:-iad1-shared-b7-43.dreamhost.com}"
+W="unf-workshop"
+AT="$USER_NAME@$HOST"
 
-if [ "$MODE" != "--no-build" ]; then
-  echo "== 1. Pictures and videos that are new since last time"
-  python3 build/make_research_media.py
-  echo
-  echo "== 2. Building the pages (about two minutes)"
-  python3 build/build.py | tail -3
-  echo
-fi
-
-if [ "$MODE" = "--dry" ]; then
-  echo "== 3. What the upload would change (dry run)"
-  sh upload.sh "$USER_NAME" | grep -E '^(<f|cd|\*deleting)' || true
+echo "== 1. Bringing down what the server's workshop has (pages added on the editing page, dates, pictures)"
+mkdir -p build/pages-in build/picture-in
+rm -rf build/pages-in/*
+ssh "$AT" "cd $W/build && tar cf - pages-in data research picture-in 2>/dev/null" | tar xf - -C build
+if [ "${1:-}" = "--down" ]; then
+  echo "Done. The workshop here now matches the server."
   exit 0
 fi
 
-echo "== 3. Uploading"
-sh upload.sh "$USER_NAME" go | grep -vE '^ +[0-9]' || true
-echo
-echo "== 4. Checking the live site"
-sh check.sh https://unitednotions.film
+echo "== 2. Sending up what is here"
+tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' -C build . | ssh "$AT" "tar xf - -C $W/build"
+ssh "$AT" "cat > $W/check.sh" < check.sh
+ssh "$AT" "cat > $W/server-publish.sh && chmod 755 $W/server-publish.sh" < server/server-publish.sh
+# The editing page (server/edit/) is put on the server by hand, once: see EDITING.txt.
+
+echo "== 3. Building on the server (about two minutes)"
+ssh "$AT" "cd $W && rm -f publish.log && sh server-publish.sh; cat publish.log"

@@ -1,17 +1,14 @@
-# Publishes the site whenever something is pushed to the main branch.
-# It builds the pages on GitHub's machine and sends them to DreamHost. Three minutes, more or less.
+# A second way to publish, started by hand from the Actions tab on GitHub ("Run workflow").
+# The workshop on the DreamHost server is the one that counts: the editing page at /edit/ writes there.
+# This sends what is in git up to that workshop (without removing anything there) and asks the server to build.
+# Use it after correcting a file here on GitHub, for example build/content_pages.py.
 #
 # It needs one secret in the repository (Settings > Secrets and variables > Actions):
 #   DREAMHOST_SSH_KEY   the private half of the deploy key whose public half is in the server's ~/.ssh/authorized_keys
-#
-# The videos of the lab notes (1.2 GB) are not in git. They live on the server, and are brought down
-# before the build so the pages know they exist. A new video is added from a Mac with   sh publish.sh
 
 name: Publish the site
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:
@@ -25,18 +22,9 @@ env:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Tools the build needs
-        run: |
-          pip install pillow numpy fonttools brotli
-          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg rsync
 
       - name: The key to the server
         run: |
@@ -45,19 +33,11 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H "$UNF_HOST" >> ~/.ssh/known_hosts 2>/dev/null
 
-      - name: Bring the videos down from the server
+      - name: Send what is here up to the server's workshop
         run: |
-          mkdir -p site/assets/video
-          rsync -rt "$UNF_USER@$UNF_HOST:unitednotions.film/assets/video/" site/assets/video/
+          rsync -rlt --exclude='video-in' --exclude='pages-in' --exclude='picture-in' --exclude='data/research.json' --exclude='data/research-renditions.json' --exclude='data/research-videos.json' --exclude='__pycache__' \
+            build/ "$UNF_USER@$UNF_HOST:unf-workshop/build/"
+          scp -q check.sh server/server-publish.sh "$UNF_USER@$UNF_HOST:unf-workshop/"
 
-      - name: Pictures and videos that are new
-        run: python3 build/make_research_media.py
-
-      - name: Build the pages
-        run: python3 build/build.py | tail -5
-
-      - name: Upload
-        run: sh upload.sh "$UNF_USER" go | grep -vE '^ +[0-9]' || true
-
-      - name: Check the live site
-        run: sh check.sh https://unitednotions.film
+      - name: Build on the server and check the live site
+        run: ssh "$UNF_USER@$UNF_HOST" "cd unf-workshop && rm -f publish.log && sh server-publish.sh; cat publish.log; grep -q 'failed: 0' publish.log"

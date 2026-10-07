@@ -13,7 +13,7 @@
 #   - sends everything inside site/, including the hidden .htaccess files
 #   - files become 644 and folders 755 on the server
 #   - deletes on the server what is no longer in site/ (so an old page does not linger),
-#     but leaves .well-known and .dh-diag alone: DreamHost uses them for the HTTPS certificate and diagnostics
+#     but leaves .well-known, .dh-diag and edit alone: the certificate, DreamHost diagnostics, and the editing page
 #   - .DS_Store files of the Mac are not sent
 
 set -eu
@@ -42,7 +42,7 @@ else
 fi
 
 rsync -rlt --progress --itemize-changes $DRY \
-  --delete --exclude='.well-known' --exclude='.dh-diag' --exclude='.DS_Store' \
+  --delete --exclude='.well-known' --exclude='.dh-diag' --exclude='edit' --exclude='.DS_Store' \
   site/ "$USER_NAME@$HOST:$DEST/"
 
 echo

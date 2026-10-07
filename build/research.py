@@ -11,6 +11,7 @@ Called from build.py.
 from __future__ import annotations
 
 import html
+import html as html_mod
 import json
 import os
 import re
@@ -45,11 +46,66 @@ def read_blocks(slug, lang=None):
     return out
 
 
+def read_page(n):
+    """A note written as a whole HTML page, in build/pages-in/<slug>/: index.html, and es.html for the Spanish when there is one.
+    The page's own title, description and styles are kept. Its <body> becomes the body of the note."""
+    folder = os.path.join(HERE, "pages-in", n["slug"])
+    path = os.path.join(folder, "es.html" if i18n.LANG == "es" else "index.html")
+    if not os.path.exists(path):
+        if i18n.LANG != "en":
+            print("  no %s page for the note %s: the English page is used" % (i18n.LANG, n["slug"]), file=sys.stderr)
+        path = os.path.join(folder, "index.html")
+    html = open(path, encoding="utf-8", errors="replace").read()
+
+    def meta(name):
+        m = re.search(r'<meta\s+name=["\']%s["\']\s+content=["\']([^"\']*)["\']' % name, html, re.I) or \
+            re.search(r'<meta\s+content=["\']([^"\']*)["\']\s+name=["\']%s["\']' % name, html, re.I)
+        return html_mod.unescape(m.group(1).strip()) if m else ""
+
+    def text(tag, source):
+        m = re.search(r"<%s[^>]*>(.*?)</%s>" % (tag, tag), source, re.I | re.S)
+        return html_mod.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", m.group(1))).strip()) if m else ""
+
+    m = re.search(r"<body[^>]*>(.*?)</body>", html, re.I | re.S)
+    body = m.group(1) if m else re.sub(r"(?is)<head>.*?</head>|<!doctype[^>]*>|</?html[^>]*>", "", html)
+    head_part = html[:m.start()] if m else ""
+    styles = "".join(re.findall(r"<style[^>]*>.*?</style>", head_part, re.I | re.S))
+    title = text("h1", body) or text("title", html) or n["title"]
+    body = re.sub(r"<h1[^>]*>.*?</h1>", "", body, count=1, flags=re.I | re.S)        # the layout shows the title
+    n["title"], n["page_title"] = title, title
+    n["description"] = meta("description") or text("p", body)
+    n["summary"] = n["description"]
+    n["blocks"] = []
+    n["html_body"] = styles + body.strip()
+    n["html_folder"] = folder
+
+
+def page_body(n, root):
+    """The body of a dropped page, with its own files pointed at assets/pages/<slug>/."""
+    folder, prefix = n["html_folder"], root + "assets/pages/" + n["slug"] + "/"
+
+    def fix(m):
+        attr, quote, target = m.group(1), m.group(2), m.group(3)
+        file = target.split("?")[0].split("#")[0]
+        if file and os.path.exists(os.path.join(folder, file)) and file.lower() not in ("index.html", "es.html"):
+            return "%s=%s%s%s%s" % (attr, quote, prefix, target, quote)
+        return m.group(0)
+    body = re.sub(r"""\b(src|href|poster|srcset)=(["'])(?!https?:|//|/|#|data:|mailto:|tel:)([^"']+)\2""", fix, n["html_body"], flags=re.I)
+    body = re.sub(r"""(url\()(["']?)(?!https?:|//|/|data:)([^"')]+)\2(\))""",
+                  lambda m: "%s%s%s%s%s%s" % (m.group(1), m.group(2), prefix if os.path.exists(os.path.join(folder, m.group(3).split("?")[0])) else "", m.group(3), m.group(2), m.group(4)),
+                  body, flags=re.I)
+    return body
+
+
+
 def load():
     if S.get("notes"):
         return S["notes"]
     notes = json.load(open(os.path.join(HERE, "data", "research.json"), encoding="utf-8"))
     for n in notes:
+        if n.get("html"):
+            read_page(n)
+            continue
         blocks = read_blocks(n["slug"])
         head = {tag: text for tag, text in blocks[:3]}
         n["title"], n["description"], n["summary"] = head.get("T", n["title"]), head.get("D", ""), head.get("S", "")
@@ -204,6 +260,8 @@ def play_link(kind, ident, title, label):
 # ---------------------------------------------------------------------------------------------- one note
 def body_of(n, root):
     """The blocks of a note as HTML."""
+    if n.get("html_body") is not None:
+        return page_body(n, root)
     B = S["B"]
     out, blocks, i = [], n["blocks"], 0
     sizes_one = "(min-width: 900px) 62vw, 92vw"
