@@ -67,8 +67,11 @@ THE OTHER PAGES: WORK, ABOUT, PEOPLE, FILM FUTURISM, NEWS, PRESS
   Their texts are plain sentences in three files: build/content.py (the home page), build/content_pages.py
   (the rest) and build/strings_es.py (the Spanish, keyed by the English sentence). On the editing page,
   under "The site's texts", each opens in a box: change the words, keep the quotes and the commas, Save,
-  Publish. A file with a mistake in it is not saved; the box says what Python objects to. "Put back the
-  previous version" undoes the last save. The 30 lab notes of the old site open the same way, in their
+  Publish. A file with a mistake in it is not saved; the box says what Python objects to. A save that adds
+  or alters code, rather than words, is refused too (build/texts_check.py compares the shape of the file
+  before and after): the editing password changes what the site says and cannot make the server run
+  anything. New entries in a list, a new person, a new photo line, a new Spanish sentence all count as
+  words and pass. "Put back the previous version" undoes the last save. The 30 lab notes of the old site open the same way, in their
   tagged form (T:, D:, S:, P:, IMG:, VIDEO:), English and Spanish.
   The one trap: if an English sentence changes, its copy on the left in strings_es.py must change too,
   or that Spanish is lost and the Spanish page shows the English.

@@ -5,7 +5,8 @@
 // The texts of the other pages (Work, About, People, Film Futurism, News, Press, and the Spanish) are files in the
 // workshop too; they open in a box here, are checked for syntax when saved, and the previous version can be put back.
 // This page runs nothing itself: it leaves a marker, and a cron job on the server (once a minute) runs server-publish.sh.
-// The one exception is python3, started only to check the syntax of a saved Python file, which it reads from its input.
+// The one exception is python3, started only to check a saved text file (build/texts_check.py): the new text must be the old
+// file with other words in it, so the editing password changes what the site says and cannot make the server run anything.
 // Nothing here is public: the folder's .htaccess asks for the password kept in the workshop's .htpasswd.
 
 declare(strict_types=1);
@@ -63,18 +64,21 @@ function text_file(string $key): ?array {
     }
     return null;
 }
-function python_ok(string $code, ?string &$error): bool {
-    if (!function_exists('proc_open')) { $error = ''; return true; }      // no check possible: the publish will say if it is broken
-    $p = @proc_open(['python3', '-c', 'import ast,sys; ast.parse(sys.stdin.read())'], [0 => ['pipe', 'r'], 1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);
-    if (!is_resource($p)) { $error = ''; return true; }
+function words_only(string $path, string $code, ?string &$error): bool {
+    // build/texts_check.py: the new text must be the old file with other words in it. Exit 1: broken; exit 2: it adds code.
+    global $W;
+    $error = '';
+    if (!function_exists('proc_open')) { $error = 'nocheck'; return false; }
+    $p = @proc_open(['python3', "$W/build/texts_check.py", $path], [0 => ['pipe', 'r'], 1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);
+    if (!is_resource($p)) { $error = 'nocheck'; return false; }
     fwrite($pipes[0], $code); fclose($pipes[0]);
-    $err = stream_get_contents($pipes[2]); fclose($pipes[1]); fclose($pipes[2]);
-    if (proc_close($p) !== 0) {
-        $lines = array_values(array_filter(array_map('trim', explode("\n", $err))));
-        $error = implode(' · ', array_slice($lines, -3));
-        return false;
-    }
-    return true;
+    $out = trim(stream_get_contents($pipes[1])); $err = trim(stream_get_contents($pipes[2])); fclose($pipes[1]); fclose($pipes[2]);
+    $rc = proc_close($p);
+    if ($rc === 0) return true;
+    if ($rc === 2) { $error = 'code'; return false; }
+    $lines = array_values(array_filter(array_map('trim', explode("\n", $out . "\n" . $err))));
+    $error = implode(' · ', array_slice($lines, -3)) ?: 'the check could not run';
+    return false;
 }
 function start_publish(): void { global $ASK; touch($ASK); }
 
@@ -162,14 +166,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif ($do === 'savetext' && ($tf = text_file((string)($_POST['key'] ?? '')))) {
         [$path, $label, $kind] = $tf;
         $code = str_replace("\r\n", "\n", (string)($_POST['text'] ?? ''));
-        if ($kind === 'py' && !python_ok($code, $err)) {
-            $notes[] = ['bad', "Not saved: <b>" . h($label) . "</b> has a mistake in it, so the site could not be built from it. Python says: " . h($err) . ". Usually a quote or a comma is missing."];
+        if ($kind === 'py' && !words_only($path, $code, $err)) {
+            if ($err === 'code') $notes[] = ['bad', "Not saved: this change to <b>" . h($label) . "</b> adds or alters code, not only words. This box only changes words, lists and the Spanish. A change to the code is made on a Mac."];
+            elseif ($err === 'nocheck') $notes[] = ['bad', "Not saved: the check that only words changed could not run on the server, so nothing was written."];
+            else $notes[] = ['bad', "Not saved: <b>" . h($label) . "</b> has a mistake in it, so the site could not be built from it. Python says: " . h($err) . ". Usually a quote or a comma is missing."];
             $keep = $code;                       // shown again in the box, so nothing typed is lost
         } else {
             @mkdir($BEFORE, 0755, true);
             if (is_file($path)) copy($path, "$BEFORE/" . safe_name($_POST['key']) . '.txt');
             file_put_contents($path, $code);
-            $notes[] = "Saved <b>" . h($label) . "</b>. Press Publish to put it on the site." . ($kind === 'py' && $err === '' && !function_exists('proc_open') ? ' (It could not be checked for mistakes here; the publish will say.)' : '');
+            $notes[] = "Saved <b>" . h($label) . "</b>. Press Publish to put it on the site.";
         }
     } elseif ($do === 'undotext' && ($tf = text_file((string)($_POST['key'] ?? '')))) {
         [$path, $label] = $tf;
