@@ -263,7 +263,7 @@ $editing = $open !== null || $new;
 <div class="top">
   <div><h1>United Notions Film: editing</h1>
   <p class="lead"><?= $editing ? 'Write or paste the page on the left; the right shows it as it will read. Save keeps it in the workshop; Publish puts the whole site live.' : 'The pages written here. Open one to change it, or start a new one. Publish puts everything live, in about two minutes.' ?></p></div>
-  <div><?php if ($editing): ?><a class="btn" href="./">All pages</a><?php else: ?><a class="btn go" href="?new=1">New page</a><?php endif; ?></div>
+  <div><?php if ($editing): ?><a class="btn" href="./">All pages</a><?php else: ?><a class="btn" href="visitors/">Visitors</a> <a class="btn go" href="?new=1">New page</a><?php endif; ?></div>
 </div>
 
 <?php foreach ($notes as $m): ?>

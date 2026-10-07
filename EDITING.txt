@@ -53,6 +53,16 @@ WHERE THINGS ARE
   The same folder lives on Dan's Mac and on GitHub (github.com/d3lue/unitednotions-film), as copies.
   The server's workshop is the one that counts.
 
+THE VISITORS PAGE
+
+      https://unitednotions.film/edit/visitors/      (same name and password as the editing page)
+
+  Who read the site: people by day, pages read, where visits came from, which search engines and AI assistants
+  called, addresses that did not exist. It is made from the server's own log by build/visitors.py, which cron runs
+  every quarter hour and which keeps one small summary per day in unf-workshop/stats/days. No script on the site,
+  no cookie, no address or name stored. DreamHost keeps only the current day's log, so the history starts the day
+  this began. Days are the server's, US Pacific time.
+
 THE OTHER PAGES: WORK, ABOUT, PEOPLE, FILM FUTURISM, NEWS, PRESS
 
   Their texts are plain sentences in three files: build/content.py (the home page), build/content_pages.py

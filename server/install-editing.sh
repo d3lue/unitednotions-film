@@ -32,8 +32,8 @@ ssh "$AT" "mkdir -p $SITE/edit && cat > $SITE/edit/index.php" < server/edit/inde
 sed "s|/home/[a-z0-9_]*/unf-workshop/.htpasswd|/home/$USER_NAME/unf-workshop/.htpasswd|" server/edit/.htaccess \
   | ssh "$AT" "cat > $SITE/edit/.htaccess && chmod 644 $SITE/edit/index.php $SITE/edit/.htaccess"
 
-echo "== 3. The cron line: once a minute, run a publish if the editing page asked for one"
-ssh "$AT" 'LINE="* * * * * cd \$HOME/unf-workshop && if [ -f publish.requested ]; then rm -f publish.requested; sh server-publish.sh; fi >/dev/null 2>&1"; (crontab -l 2>/dev/null | grep -v publish.requested; echo "$LINE") | crontab -; echo "   $(crontab -l | grep -c publish.requested) cron line in place"'
+echo "== 3. The cron lines: once a minute, run a publish if the editing page asked for one; every quarter hour, count the visitors"
+ssh "$AT" 'LINE="* * * * * cd \$HOME/unf-workshop && if [ -f publish.requested ]; then rm -f publish.requested; sh server-publish.sh; fi >/dev/null 2>&1"; VIS="*/15 * * * * cd \$HOME/unf-workshop && python3 build/visitors.py >/dev/null 2>&1"; (crontab -l 2>/dev/null | grep -v -e publish.requested -e visitors.py; echo "$LINE"; echo "$VIS") | crontab -; echo "   $(crontab -l | grep -c -e publish.requested -e visitors.py) cron lines in place"'
 
 echo "== 4. The password file"
 ssh "$AT" "if [ -s $W/.htpasswd ]; then chmod 644 $W/.htpasswd; echo \"   exists, names: \$(cut -d: -f1 $W/.htpasswd | tr '\n' ' ')\"; else echo \"   MISSING. Make it:  ssh $AT 'htpasswd -cB ~/$W/.htpasswd unf'\"; fi"
