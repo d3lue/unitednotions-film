@@ -24,7 +24,7 @@ tar cf - --exclude='video-in' --exclude='__pycache__' --exclude='.DS_Store' --ex
   | ssh "$AT" "mkdir -p $W/build && tar xf - -C $W/build && mkdir -p $W/build/pages-in $W/build/picture-in"
 ssh "$AT" "cat > $W/check.sh && chmod 755 $W/check.sh" < check.sh
 ssh "$AT" "cat > $W/server-publish.sh && chmod 755 $W/server-publish.sh" < server/server-publish.sh
-ssh "$AT" "echo \"   pages from the editing page: \$(grep -c inbox_pages $W/build/make_research_media.py) (1 is right)\""
+ssh "$AT" "echo \"   pages from the editing page: \$(grep -c inbox_pages $W/build/make_research_media.py) (1 or more is right)\""
 
 echo "== 2. The editing page, at https://$SITE/edit/"
 ssh "$AT" "mkdir -p $SITE/edit && cat > $SITE/edit/index.php" < server/edit/index.php
