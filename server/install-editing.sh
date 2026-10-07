@@ -4,6 +4,7 @@
 # It sends the workshop up (the program that writes the pages), puts the editing page at /edit/ in the site,
 # adds the cron line that runs a publish when the editing page asks for one, and checks that /edit/ asks for a password.
 # Running it again is harmless: it only replaces what it put there before.
+# The password file must be readable by the web server (644): Apache runs as another user and answers 500 otherwise.
 #
 # The password file is made once, by hand, and asks you to type the password:
 #     ssh danfal17@iad1-shared-b7-43.dreamhost.com 'htpasswd -cB ~/unf-workshop/.htpasswd unf'
@@ -32,7 +33,7 @@ echo "== 3. The cron line: once a minute, run a publish if the editing page aske
 ssh "$AT" 'LINE="* * * * * cd \$HOME/unf-workshop && if [ -f publish.requested ]; then rm -f publish.requested; sh server-publish.sh; fi >/dev/null 2>&1"; (crontab -l 2>/dev/null | grep -v publish.requested; echo "$LINE") | crontab -; echo "   $(crontab -l | grep -c publish.requested) cron line in place"'
 
 echo "== 4. The password file"
-ssh "$AT" "if [ -s $W/.htpasswd ]; then echo \"   exists, names: \$(cut -d: -f1 $W/.htpasswd | tr '\n' ' ')\"; else echo \"   MISSING. Make it:  ssh $AT 'htpasswd -cB ~/$W/.htpasswd unf'\"; fi"
+ssh "$AT" "if [ -s $W/.htpasswd ]; then chmod 644 $W/.htpasswd; echo \"   exists, names: \$(cut -d: -f1 $W/.htpasswd | tr '\n' ' ')\"; else echo \"   MISSING. Make it:  ssh $AT 'htpasswd -cB ~/$W/.htpasswd unf'\"; fi"
 
 echo "== 5. Does the page ask for a password?"
 CODE=$(curl -s -o /dev/null -m 20 -w '%{http_code}' "https://$SITE/edit/")
