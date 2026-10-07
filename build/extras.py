@@ -234,6 +234,9 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  # ---- WWW: the site has one name. www.unitednotions.film is sent to unitednotions.film, same page
+  RewriteCond %{HTTP_HOST} ^www\.unitednotions\.film$ [NC]
+  RewriteRule ^(.*)$ https://unitednotions.film/$1 [R=301,L]
 
   # ---- NOT FOR THE PUBLIC: the workshop and the notes to ourselves, in case they are uploaded by mistake
   RewriteRule ^(build(/.*)?|README\\.txt|FOR-DAN\\.txt|htaccess\\.txt|robots-no-ai-training\\.txt)$ - [R=404,L]
