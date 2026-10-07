@@ -1,0 +1,46 @@
+T: La araña aprende a tejer, la gecko aprende a sentir y SIGGRAPH llama
+D: En la semana 9 del laboratorio de creatividad computacional koa.xyz, Violeta Ayala, Dan Fallshaw y Brian Condori desarrollaron nuevos comportamientos de criaturas en tiempo real en los pipelines de la araña y de la gecko mientras preparaban la postulación de Huk’s World: Somatic Puppeteering a SIGGRAPH 2026. La araña evolucionó de un rig FK estático a una criatura que camina, se controla con los dedos y teje telarañas, con construcción autónoma de telas orbiculares. El sistema emocional de la gecko se reconstruyó tras descubrir que los datos viejos de los sensores la tenían atrapada de forma permanente en respuestas de miedo. La semana exploró el movimiento, la recuperación, la memoria y cómo las criaturas computacionales heredan la emoción tanto del código como de los cuerpos humanos.
+S: Sistemas de tela orbicular, memoria emocional de la gecko, integración de Qwen y documentación para SIGGRAPH.
+MISSING-VIDEO: 338595 | 9:16
+P: Esta semana tuvo tres cuerpos moviéndose a la vez.
+P: Una araña.
++: Una gecko.
++: Un artículo que intentaba explicárselas a SIGGRAPH.
+P: La araña empezó siendo un rig. Es una manera muy fría de ser: huesos sin intención. Cuarenta huesos FK en las patas, cinco pares de patas, cuatro segmentos cada una. Una pequeña matemática del pánico. El lado izquierdo no estaba de acuerdo con el derecho. Algunos huesos querían X. Otros querían Z. Otros se reflejaban a sí mismos como si guardaran un secreto.
+P: Así que fuimos hueso por hueso, preguntándole a cada uno:
++: ¿Qué haces?
++: ¿En qué dirección crees?
++: ¿Por qué eres así?
+P: Al final de la semana, ella ya podía caminar.
+P: De esa manera imperfecta que se siente viva porque es un poco incómoda. Ahora sus patas se mueven en ola:
+P: 1L → 3R → 5L → 2R → 4L → 1R → 3L → 5R → 2L → 4R
+P: Un joystick ESP32 le da la dirección. Avanzar. Girar. Pausar. Continuar. Un pequeño animal robot que decide dónde poner sus muchas patas.
+P: Luego aprendió a escuchar los dedos.
+P: Cada dedo humano se volvió un par de patas. Doblas el dedo y la pata se levanta. Lo estiras y la pata vuelve al suelo. La mano se volvió un controlador de títere, pero también algo más extraño: una negociación entre la anatomía humana y la anatomía de la araña.
+P: Después hizo seda.
+P: Mientras se movía, su cuerpo y los dedos de la intérprete empezaron a dejar un rastro de curvas. Blender las dibujó como tubos visibles, líneas finas que se volvían una telaraña. Una telaraña de verdad, hecha de código, movimiento y pequeñas decisiones.
+P: Ahora también hay otra versión de ella: ara_tejedora.py, la robot autotejedora. Construye sola una tela orbicular: 16 radios, 8 anillos, un estado tras otro.
+P: radial_out → arc → radial_in → next spoke
+P: Una araña con horario.
+P: La gecko tuvo una semana distinta.
+P: Tenía miedo de algo que ya no estaba ahí.
+P: Durante días siguió reaccionando como si se acercara una mano rápida. Incluso cuando la mano de la intérprete ya había salido de cámara, el sistema recordaba la última velocidad, muchas veces 0.66, y se aferraba a ella como a un mal recuerdo. No había una bandera hand_detected. Las posiciones anteriores de la mano nunca se reiniciaban. Así que el cerebro seguía recibiendo el mismo mensaje:
+P: El peligro sigue aquí.
++: El peligro sigue aquí.
++: El peligro sigue aquí.
+P: Esto disparaba el reflejo ASUSTADA en cada ciclo. A la gecko la perseguía un fantasma de datos viejos.
+P: El arreglo fue pequeño: cuando no se detecta ninguna mano, la velocidad ahora se desvanece 0.8× por fotograma hasta llegar a cero en más o menos medio segundo.
+P: De pronto pudo recuperarse.
+P: Había otros fantasmas. hand_near decía que había una mano cerca incluso cuando no había ninguna. El color de ánimo rojo estaba descrito como “sangre y fuego, peligro”, lo que hacía que Qwen exagerara. El umbral de voz estaba demasiado alto, así que el habla normal no se escuchaba. is_talking se enviaba como 0/1 pero se leía como booleano, el tipo de malentendido minúsculo que puede cambiar toda una personalidad.
+P: Ninguno de estos errores era enorme. Juntos, hacían una criatura que no podía relajarse.
+P: Con las señales limpias, el cerebro pudo volverse menos mecánico. El prompt cambió. Se acabó el “Tu personalidad es SPICY”, porque Qwen se lo tomaba muy en serio. Ahora a la gecko se la guía como impredecible, con pistas de ánimo, reglas contra la repetición y un nuevo campo hold_seconds.
+P: Esto significa que puede quedarse en algún lugar, emocionalmente.
+P: Si está cansada, se queda ahí al menos 15 segundos. Duerme de verdad.
++: Si está asustada, se queda ahí 5 segundos. Se congela. Respira. Después vuelve.
+P: Brian empezó el rig del mono, el pipeline 15. Dan trabajó en conectar la orquídea Maxillaria con los datos en vivo de incendios de NASA FIRMS, y empezó a llevar la araña a Resonite VR.
+P: El lunes y el martes escribimos, formateamos y enviamos el póster de Huk’s World: Somatic Puppeteering para SIGGRAPH 2026.
+P: La semana 9 se sintió así:
++: una araña aprendiendo cómo poner las patas,
++: una gecko aprendiendo que el peligro ya pasó,
++: un proyecto de investigación aprendiendo a describirse sin matar lo extraño que lleva adentro.
+GAL: 1 2 3 4 5 6 7 8 9 10

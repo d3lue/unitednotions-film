@@ -1,0 +1,15 @@
+T: El cóndor obedeció a la mano de Violeta
+D: En la inauguración de la exposición SURREALITY de HKUST en Guangzhou, Violeta Ayala presentó una temprana demostración en vivo de titiritería somática, en la que un cóndor digital respondía directamente a los movimientos de su mano en tiempo real. Construida con Blender, visión por computadora y sistemas de movimiento a medida desarrollados en el laboratorio koa.xyz, la obra exploró cómo animar criaturas no humanas mediante la interacción encarnada en lugar de la animación tradicional por fotogramas clave o los trajes de captura de movimiento. El cuerpo se volvió el controlador. El cóndor se volvió datos, memoria, vuelo y performance al mismo tiempo.
+S: En la inauguración de Surreality en Guangzhou un cóndor digital sigue la mano de Violeta Ayala en tiempo real. Sin traje de captura de movimiento. Una temprana demostración pública de titiritería somática.
+IMG: 1 | https://cinemagicar.com
+P: En la inauguración de SURREALITY en Guangzhou, el cóndor voló desde la palma de mi mano.
+P: Sin traje de captura de movimiento. Sin animación grabada. Solo una cámara, Blender, visión por computadora y un sistema de movimiento construido a fuerza de experimentar en nuestro pequeño laboratorio de Cochabamba.
+P: El cóndor respondía directamente al movimiento de la mano en tiempo real. Los dedos se volvieron estructuras de ala. La rotación se volvió vuelo. El cuerpo dejó de actuar como un operador parado fuera de la imagen y entró al propio sistema de animación.
+P: Fue una de las primeras demostraciones públicas de lo que después evolucionaría hacia nuestra investigación más amplia sobre titiritería somática y sistemas de personajes no humanos. La pregunta era simple pero difícil: ¿qué pasa cuando las criaturas surgen en vivo de las relaciones entre cuerpos, sensores, código, memoria y espacio, sin que nadie las anime fotograma por fotograma?
+P: El cóndor importaba porque no podía moverse como un humano. Los sistemas de captura de movimiento centrados en lo humano se rompen al aplicarlos a alas, raíces, tentáculos o anatomías no humanas. Tuvimos que inventar otras formas de traducción entre intérprete y criatura: sistemas basados en el gesto, la proximidad, el ritmo y el movimiento relacional en lugar de la imitación directa.
+P: La tecnología se volvió performance.
+P: La exposición en HKUST marcó un momento importante en esa evolución: un puente entre XR, cine, interacción encarnada y creatividad computacional. El cóndor era solo un modelo 3D en una pantalla. Se volvió reactivo, inestable, vivo a través de la interacción.
+P: El cuerpo se volvió el controlador.
++: El cóndor se volvió movimiento.
++: El movimiento volvió a ser cine.
+MISSING-VIDEO: 326156 | 9:16

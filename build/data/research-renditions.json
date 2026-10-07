@@ -1,0 +1,3762 @@
+{
+ "whale-watches-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-whale-that-watches-back/images/A5368DEF-895B-44B6-B92E-C3521356CA49.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 640,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 9944,
+   "960": 27562,
+   "1290": 40498
+  },
+  "w": 1290,
+  "h": 640,
+  "mean": [
+   242,
+   243,
+   243
+  ]
+ },
+ "whale-watches-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-whale-that-watches-back/images/815CF1EB-C036-46CB-B034-084D098801F4.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 616,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 9220,
+   "960": 25560,
+   "1290": 36724
+  },
+  "w": 1290,
+  "h": 616,
+  "mean": [
+   244,
+   245,
+   246
+  ]
+ },
+ "whale-watches-03": {
+  "file": "unitednotions-film-backup/site/pages/research/the-whale-that-watches-back/images/4D11E8CB-D8B6-4616-BF43-17520391BC60.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1440,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 8656,
+   "960": 26282,
+   "1600": 57722
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   120,
+   136,
+   156
+  ]
+ },
+ "body-decides-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-body-decides-the-interface/images/FDC251CB-15D8-4271-9BCB-F4A56C3D41EF.png",
+  "frames": 1,
+  "ow": 4032,
+  "oh": 3024,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 12838,
+   "960": 32882,
+   "1600": 67034
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   75,
+   86,
+   102
+  ]
+ },
+ "body-decides-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-body-decides-the-interface/images/27D4B79E-B9A1-4528-B3EF-05ECC3D45C08.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 959,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 28222,
+   "960": 66346,
+   "1290": 90324
+  },
+  "w": 1290,
+  "h": 959,
+  "mean": [
+   80,
+   77,
+   78
+  ]
+ },
+ "monkey-body-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-monkey-learns-the-shape-of-its-own-body/images/C38F3995-A932-4F7F-BB20-CE40EFC38BA8.png",
+  "frames": 1,
+  "ow": 2179,
+  "oh": 1180,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 4684,
+   "960": 11766,
+   "1600": 23294
+  },
+  "w": 1600,
+  "h": 866,
+  "mean": [
+   20,
+   18,
+   17
+  ]
+ },
+ "monkey-body-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-monkey-learns-the-shape-of-its-own-body/images/8737A537-F869-44A5-828C-D64E08D6FB36.png",
+  "frames": 1,
+  "ow": 2179,
+  "oh": 1357,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 8140,
+   "960": 21614,
+   "1600": 41134
+  },
+  "w": 1600,
+  "h": 996,
+  "mean": [
+   16,
+   15,
+   14
+  ]
+ },
+ "monkey-body-03": {
+  "file": "unitednotions-film-backup/site/pages/research/the-monkey-learns-the-shape-of-its-own-body/images/2603FC7D-672B-4425-985C-4035712DB057.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1172,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 4882,
+   "960": 13340,
+   "1600": 26114
+  },
+  "w": 1600,
+  "h": 732,
+  "mean": [
+   15,
+   14,
+   13
+  ]
+ },
+ "monkey-body-04": {
+  "file": "unitednotions-film-backup/site/pages/research/the-monkey-learns-the-shape-of-its-own-body/images/AC968488-F737-44F0-9726-66A2E017A69C.png",
+  "frames": 1,
+  "ow": 2550,
+  "oh": 998,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 4128,
+   "960": 11596,
+   "1600": 23966
+  },
+  "w": 1600,
+  "h": 626,
+  "mean": [
+   13,
+   13,
+   13
+  ]
+ },
+ "spider-weaves-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/F9478F84-49CF-4512-95F7-875246DF2CD4.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21960,
+   "960": 66460,
+   "1600": 168634
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   129,
+   118,
+   96
+  ]
+ },
+ "spider-weaves-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/3DCC0AFC-168E-4360-911A-FB34862BBC90.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21570,
+   "960": 97350,
+   "1600": 417412
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   127,
+   126,
+   114
+  ]
+ },
+ "spider-weaves-03": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/EA857EAD-9FB5-4099-841C-83C97CB682CD.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 25984,
+   "960": 70562,
+   "1600": 168022
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   98,
+   106,
+   106
+  ]
+ },
+ "spider-weaves-04": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/3588D82D-90D7-4B4F-AE04-B0B501C19682.png",
+  "frames": 1,
+  "ow": 1440,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1440
+  ],
+  "bytes": {
+   "480": 70622,
+   "960": 280698,
+   "1440": 631446
+  },
+  "w": 1440,
+  "h": 2560,
+  "mean": [
+   104,
+   100,
+   97
+  ]
+ },
+ "spider-weaves-05": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/B47BF492-349B-478F-AA11-4C956DB202ED.png",
+  "frames": 1,
+  "ow": 1226,
+  "oh": 690,
+  "widths": [
+   480,
+   960,
+   1226
+  ],
+  "bytes": {
+   "480": 13250,
+   "960": 31480,
+   "1226": 42138
+  },
+  "w": 1226,
+  "h": 690,
+  "mean": [
+   131,
+   114,
+   122
+  ]
+ },
+ "spider-weaves-06": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/236C6A9E-90E0-41A2-910A-253E4F545ED0.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 25044,
+   "960": 63988,
+   "1600": 123758
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   129,
+   120,
+   104
+  ]
+ },
+ "spider-weaves-07": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/21514C10-CDBE-4E55-B72E-628096BEE687.png",
+  "frames": 1,
+  "ow": 1182,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1182
+  ],
+  "bytes": {
+   "480": 30492,
+   "960": 71412,
+   "1182": 92794
+  },
+  "w": 1182,
+  "h": 2560,
+  "mean": [
+   145,
+   143,
+   142
+  ]
+ },
+ "spider-weaves-08": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/BD054D74-6EC8-473A-A8F6-283933FAB3BC.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1712,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 12936,
+   "960": 26178,
+   "1290": 37364
+  },
+  "w": 1290,
+  "h": 1712,
+  "mean": [
+   52,
+   51,
+   53
+  ]
+ },
+ "spider-weaves-09": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/E4B4E43F-9D69-4E4A-BA92-C9CC8BDEACE8.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1720,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 21726,
+   "960": 50448,
+   "1290": 72718
+  },
+  "w": 1290,
+  "h": 1720,
+  "mean": [
+   194,
+   201,
+   196
+  ]
+ },
+ "spider-weaves-10": {
+  "file": "unitednotions-film-backup/site/pages/research/the-spider-learns-to-weave-the-gecko-learns-to-feel/images/D9E2E403-3D8A-484F-9A9C-A788808B0E55.png",
+  "frames": 1,
+  "ow": 1225,
+  "oh": 1633,
+  "widths": [
+   480,
+   960,
+   1225
+  ],
+  "bytes": {
+   "480": 48380,
+   "960": 113374,
+   "1225": 150264
+  },
+  "w": 1225,
+  "h": 1633,
+  "mean": [
+   230,
+   230,
+   230
+  ]
+ },
+ "gecko-feels-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-gecko-learns-to-feel-qwen-finds-its-voice/images/6C6BC98B-4981-4B7A-B0BE-4A3A39209B06.png",
+  "frames": 1,
+  "ow": 3840,
+  "oh": 2160,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 14256,
+   "960": 38018,
+   "1600": 72256
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   78,
+   89,
+   104
+  ]
+ },
+ "gecko-feels-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-gecko-learns-to-feel-qwen-finds-its-voice/images/30B06FC8-FBE3-4144-A2F4-DACB5F3167BB.png",
+  "frames": 1,
+  "ow": 3840,
+  "oh": 2160,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 14588,
+   "960": 40904,
+   "1600": 81834
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   80,
+   93,
+   106
+  ]
+ },
+ "water-lily-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-water-lily-learns-to-breathe/images/495BEAB3-B246-4070-9F9F-C257385596CD.png",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 6540,
+   "960": 16992,
+   "1600": 34364
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   85,
+   100,
+   115
+  ]
+ },
+ "water-lily-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-water-lily-learns-to-breathe/images/5BA6AAB7-DB40-4538-83CC-01C0D7046D08.png",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 10598,
+   "960": 26448,
+   "1600": 49658
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   95,
+   105,
+   108
+  ]
+ },
+ "water-lily-03": {
+  "file": "unitednotions-film-backup/site/pages/research/the-water-lily-learns-to-breathe/images/A5AC2760-2988-4745-BCEC-6DCD9D3A9A8F.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1440,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21382,
+   "960": 65974,
+   "1600": 135908
+  },
+  "w": 1600,
+  "h": 900,
+  "mean": [
+   131,
+   83,
+   71
+  ]
+ },
+ "tree-fear-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-tree-learns-fear-the-orchid-mourns-fire/images/1FF03FDA-7EF7-4CAE-9042-E400450F561B.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 25530,
+   "960": 73546,
+   "1290": 118864
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   113,
+   113,
+   115
+  ]
+ },
+ "tree-fear-02": {
+  "file": "unitednotions-film-backup/site/pages/research/the-tree-learns-fear-the-orchid-mourns-fire/images/6207677F-FA50-4B58-8372-7C84C111B6B8.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 24682,
+   "960": 83760,
+   "1290": 159036
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   154,
+   150,
+   143
+  ]
+ },
+ "comteco-01": {
+  "file": "unitednotions-film-backup/site/pages/research/technologies-of-distribution-comteco-transparency/images/0DC4F3BE-E431-4991-943F-3FDC2A868401.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 41828,
+   "960": 123484,
+   "1290": 199854
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   77,
+   77,
+   65
+  ]
+ },
+ "comteco-02": {
+  "file": "unitednotions-film-backup/site/pages/research/technologies-of-distribution-comteco-transparency/images/2776B131-AA2F-433F-980F-3B1E686B1C61.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 36106,
+   "960": 94324,
+   "1290": 140940
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   209,
+   179,
+   120
+  ]
+ },
+ "documentary-thinks-01": {
+  "file": "unitednotions-film-backup/site/pages/research/when-documentary-begins-to-think/images/395EC599-A675-45C6-A2E7-C1C3215D5189.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 25038,
+   "960": 68146,
+   "1290": 112794
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   107,
+   93,
+   80
+  ]
+ },
+ "documentary-thinks-02": {
+  "file": "unitednotions-film-backup/site/pages/research/when-documentary-begins-to-think/images/589D220D-FCCB-48FD-98C2-D98FAA4E9267.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 43886,
+   "960": 146266,
+   "1290": 258678
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   96,
+   90,
+   81
+  ]
+ },
+ "documentary-thinks-03": {
+  "file": "unitednotions-film-backup/site/pages/research/when-documentary-begins-to-think/images/A8870957-056A-4601-A962-6A865C0D1CBC.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 38658,
+   "960": 104012,
+   "1290": 154648
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   173,
+   162,
+   152
+  ]
+ },
+ "living-systems-01": {
+  "file": "unitednotions-film-backup/site/pages/research/from-documentary-to-living-systems/images/26E209C7-23E4-4FDF-820A-6941EF958408.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 16640,
+   "960": 50348,
+   "1290": 86742
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   80,
+   74,
+   67
+  ]
+ },
+ "living-systems-02": {
+  "file": "unitednotions-film-backup/site/pages/research/from-documentary-to-living-systems/images/3635DBA0-F544-4E41-A814-CE02E64BE2E2.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1290,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 48210,
+   "960": 115340,
+   "1290": 155876
+  },
+  "w": 1290,
+  "h": 1290,
+  "mean": [
+   150,
+   146,
+   144
+  ]
+ },
+ "living-systems-03": {
+  "file": "unitednotions-film-backup/site/pages/research/from-documentary-to-living-systems/images/5BE9F26A-A585-4CCC-9028-E769D5E59D3B.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1290,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 43652,
+   "960": 118312,
+   "1290": 188032
+  },
+  "w": 1290,
+  "h": 1290,
+  "mean": [
+   170,
+   161,
+   163
+  ]
+ },
+ "living-systems-04": {
+  "file": "unitednotions-film-backup/site/pages/research/from-documentary-to-living-systems/images/039D6E69-0639-41C6-A0D8-196F55D353FA.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 967,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 22102,
+   "960": 59036,
+   "1290": 90820
+  },
+  "w": 1290,
+  "h": 967,
+  "mean": [
+   143,
+   139,
+   139
+  ]
+ },
+ "condor-hand-01": {
+  "file": "unitednotions-film-backup/site/pages/research/the-condor-obeyed-violetas-hand/images/4362BADA-5770-4589-B451-EF522805E871.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1290,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 32416,
+   "960": 73140,
+   "1290": 101648
+  },
+  "w": 1290,
+  "h": 1290,
+  "mean": [
+   151,
+   149,
+   157
+  ]
+ },
+ "feminist-ai-01": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/106793ED-385B-4B2B-9797-588ED6E6C33F.png",
+  "frames": 1,
+  "ow": 1146,
+  "oh": 2037,
+  "widths": [
+   480,
+   960,
+   1146
+  ],
+  "bytes": {
+   "480": 63770,
+   "960": 170660,
+   "1146": 221770
+  },
+  "w": 1146,
+  "h": 2037,
+  "mean": [
+   169,
+   164,
+   160
+  ]
+ },
+ "feminist-ai-02": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/0FD8D87C-05EF-4977-A8BD-3DF14BFC3DB9.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1295,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 12140,
+   "960": 34552,
+   "1290": 54920
+  },
+  "w": 1290,
+  "h": 1295,
+  "mean": [
+   234,
+   224,
+   218
+  ]
+ },
+ "feminist-ai-03": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/A03E65E2-77CD-4414-B97B-5C8CB10B2ED8.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 34950,
+   "960": 111230,
+   "1600": 244840
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   115,
+   107,
+   92
+  ]
+ },
+ "feminist-ai-04": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/20A70362-8694-4020-AD19-88A1411170D9.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 28266,
+   "960": 87274,
+   "1600": 185896
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   132,
+   117,
+   108
+  ]
+ },
+ "feminist-ai-05": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/589E6D30-9560-4546-81C6-1392F2B4AE8B.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 24380,
+   "960": 84138,
+   "1600": 226726
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   94,
+   82,
+   85
+  ]
+ },
+ "feminist-ai-06": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/FBE99341-1F5A-4218-8C6B-3CB5CAC20B38.png",
+  "frames": 1,
+  "ow": 1290,
+  "oh": 1983,
+  "widths": [
+   480,
+   960,
+   1290
+  ],
+  "bytes": {
+   "480": 29540,
+   "960": 75320,
+   "1290": 109350
+  },
+  "w": 1290,
+  "h": 1983,
+  "mean": [
+   111,
+   145,
+   136
+  ]
+ },
+ "feminist-ai-07": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/847B5B1D-FB9B-4887-802F-5583635025A0.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21024,
+   "960": 57802,
+   "1600": 112982
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   116,
+   103,
+   91
+  ]
+ },
+ "feminist-ai-08": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/52FAB2C9-DC69-4C6B-A499-B58524C17014.png",
+  "frames": 1,
+  "ow": 2048,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 24034,
+   "960": 82636,
+   "1600": 203580
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   92,
+   83,
+   85
+  ]
+ },
+ "feminist-ai-09": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/B8B79576-43DE-4A53-96F5-FB5A4B4294EB.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21940,
+   "960": 51652,
+   "1600": 99938
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   108,
+   105,
+   101
+  ]
+ },
+ "feminist-ai-10": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/816EA1A3-F3FE-40CF-9DE9-6B65BF11B515.png",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 37032,
+   "960": 139442,
+   "1600": 353194
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   146,
+   139,
+   132
+  ]
+ },
+ "feminist-ai-11": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/B752B02E-E38D-44A9-A427-EB595C671E6C.png",
+  "frames": 1,
+  "ow": 1450,
+  "oh": 1264,
+  "widths": [
+   480,
+   960,
+   1450
+  ],
+  "bytes": {
+   "480": 27598,
+   "960": 70144,
+   "1450": 116810
+  },
+  "w": 1450,
+  "h": 1264,
+  "mean": [
+   229,
+   224,
+   226
+  ]
+ },
+ "feminist-ai-12": {
+  "file": "unitednotions-film-backup/site/pages/research/fair-future-feminist-ai/images/97125F6D-12CF-47BF-BFA3-93D6900D6391.png",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 13162,
+   "960": 31556,
+   "1600": 69190
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   56,
+   47,
+   42
+  ]
+ },
+ "luna-01": {
+  "file": "unitednotions-film-backup/site/pages/research/luna-feminist-ai/images/f9b415b1-3d87-4575-87d7-6c59f323cff0.jpg",
+  "frames": 1,
+  "ow": 1289,
+  "oh": 959,
+  "widths": [
+   480,
+   960,
+   1289
+  ],
+  "bytes": {
+   "480": 5966,
+   "960": 13284,
+   "1289": 19804
+  },
+  "w": 1289,
+  "h": 959,
+  "mean": [
+   16,
+   13,
+   13
+  ]
+ },
+ "prison-x-gen-z-01": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/2e6d3465-37c2-465a-828d-93cc2b8e4d5c.jpg",
+  "frames": 1,
+  "ow": 1024,
+  "oh": 1024,
+  "widths": [
+   480,
+   960,
+   1024
+  ],
+  "bytes": {
+   "480": 59826,
+   "960": 158944,
+   "1024": 179370
+  },
+  "w": 1024,
+  "h": 1024,
+  "mean": [
+   93,
+   95,
+   126
+  ]
+ },
+ "prison-x-gen-z-02": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/91c9f60a-fab7-45f3-b5bd-67fab565f963.jpg",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 51546,
+   "960": 153280,
+   "1600": 310886
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   67,
+   62,
+   56
+  ]
+ },
+ "prison-x-gen-z-03": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/1044fd56-3cfb-464a-b31f-0884aca81649.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 14430,
+   "960": 44538,
+   "1600": 106050
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   75,
+   64,
+   79
+  ]
+ },
+ "prison-x-gen-z-04": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/aa119f81-13d0-4800-a4d8-0052a21d5226.jpg",
+  "frames": 1,
+  "ow": 1024,
+  "oh": 768,
+  "widths": [
+   480,
+   960,
+   1024
+  ],
+  "bytes": {
+   "480": 24084,
+   "960": 80202,
+   "1024": 91320
+  },
+  "w": 1024,
+  "h": 768,
+  "mean": [
+   82,
+   71,
+   71
+  ]
+ },
+ "prison-x-gen-z-05": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/5b8c2179-c942-4a88-9f64-6b23e0a9d6ec.jpg",
+  "frames": 1,
+  "ow": 1024,
+  "oh": 768,
+  "widths": [
+   480,
+   960,
+   1024
+  ],
+  "bytes": {
+   "480": 30964,
+   "960": 88150,
+   "1024": 98850
+  },
+  "w": 1024,
+  "h": 768,
+  "mean": [
+   86,
+   77,
+   67
+  ]
+ },
+ "prison-x-gen-z-06": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/f4f365b8-6462-4c06-a461-7e014cd69e0f.jpg",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 44330,
+   "960": 172836,
+   "1600": 424770
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   74,
+   66,
+   66
+  ]
+ },
+ "prison-x-gen-z-07": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/5c12330d-cbd7-4081-9b3a-5c57ce014ac4.jpg",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 47662,
+   "960": 160934,
+   "1600": 352210
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   85,
+   73,
+   67
+  ]
+ },
+ "prison-x-gen-z-08": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/3a7d003e-3e90-4268-8f99-41ca732afd1f.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 18758,
+   "960": 52216,
+   "1600": 109718
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   43,
+   36,
+   32
+  ]
+ },
+ "prison-x-gen-z-09": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/dce10e49-1c7e-45fe-b14c-c42e8e9a1456.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 21702,
+   "960": 79578,
+   "1600": 194026
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   61,
+   46,
+   42
+  ]
+ },
+ "prison-x-gen-z-10": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/992ebdff-d128-4977-a211-0b3c091acff0.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 949,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 27170,
+   "960": 80638,
+   "1284": 126664
+  },
+  "w": 1284,
+  "h": 949,
+  "mean": [
+   97,
+   76,
+   76
+  ]
+ },
+ "prison-x-gen-z-11": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/f9871ec1-4850-4be9-ad18-79c09f6bc9aa.png",
+  "frames": 1,
+  "ow": 2000,
+  "oh": 3002,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 85856,
+   "960": 214546,
+   "1600": 372256
+  },
+  "w": 1600,
+  "h": 2402,
+  "mean": [
+   100,
+   94,
+   75
+  ]
+ },
+ "prison-x-gen-z-12": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/b76bc3ff-205b-4c07-85b0-7b4b1d84b5cd.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 723,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 30818,
+   "960": 78830,
+   "1284": 119692
+  },
+  "w": 1284,
+  "h": 723,
+  "mean": [
+   117,
+   104,
+   106
+  ]
+ },
+ "prison-x-gen-z-13": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/8d21a94b-d2f1-459d-8cc5-77920d5d63fd.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1691,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 52458,
+   "960": 170734,
+   "1284": 257908
+  },
+  "w": 1284,
+  "h": 1691,
+  "mean": [
+   119,
+   124,
+   121
+  ]
+ },
+ "prison-x-gen-z-14": {
+  "file": "unitednotions-film-backup/site/pages/research/prisonx-storytelling-evolution-through-gen-z/images/0b22aca8-6c32-487c-8be7-6759c2e0668d.jpg",
+  "frames": 1,
+  "ow": 1792,
+  "oh": 1024,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 30762,
+   "960": 100480,
+   "1600": 206652
+  },
+  "w": 1600,
+  "h": 914,
+  "mean": [
+   85,
+   62,
+   78
+  ]
+ },
+ "sxsw-sydney-01": {
+  "file": "unitednotions-film-backup/site/pages/research/sxsw-sydney-2023/images/b525fe17-a447-42ce-92c8-8223bda32afb.png",
+  "frames": 1,
+  "ow": 1584,
+  "oh": 396,
+  "widths": [
+   480,
+   960,
+   1584
+  ],
+  "bytes": {
+   "480": 7762,
+   "960": 18222,
+   "1584": 34460
+  },
+  "w": 1584,
+  "h": 396,
+  "mean": [
+   26,
+   24,
+   23
+  ]
+ },
+ "sxsw-sydney-02": {
+  "file": "unitednotions-film-backup/site/pages/research/sxsw-sydney-2023/images/b5076a27-a33d-4e93-9508-5460322fb043.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 35650,
+   "960": 102238,
+   "1284": 149976
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   79,
+   171,
+   89
+  ]
+ },
+ "sxsw-sydney-03": {
+  "file": "unitednotions-film-backup/site/pages/research/sxsw-sydney-2023/images/68f1f5dd-849f-428b-aeb0-166aaa7814a4.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 41858,
+   "960": 114490,
+   "1284": 179722
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   157,
+   149,
+   59
+  ]
+ },
+ "awichas-glow-01": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/be150901-e40d-4eca-bbbf-37713c45a474.jpg",
+  "frames": 1,
+  "ow": 2166,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 17086,
+   "960": 46714,
+   "1600": 100464
+  },
+  "w": 1600,
+  "h": 1891,
+  "mean": [
+   22,
+   15,
+   14
+  ]
+ },
+ "awichas-glow-02": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/9c5fa115-ef2a-4b6a-949c-6cf1c305e81d.jpg",
+  "frames": 1,
+  "ow": 2421,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 4576,
+   "960": 12716,
+   "1600": 32466
+  },
+  "w": 1600,
+  "h": 1692,
+  "mean": [
+   14,
+   13,
+   13
+  ]
+ },
+ "awichas-glow-03": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/822bb9e0-b9c3-407c-a7e1-90601f53387d.jpg",
+  "frames": 1,
+  "ow": 2027,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 4322,
+   "960": 15806,
+   "1600": 42986
+  },
+  "w": 1600,
+  "h": 2021,
+  "mean": [
+   5,
+   5,
+   5
+  ]
+ },
+ "awichas-glow-04": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/13130ac2-9500-4ca0-a37a-00edc83915bd.jpg",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 11862,
+   "960": 28354,
+   "1600": 56158
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   18,
+   12,
+   12
+  ]
+ },
+ "awichas-glow-05": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/99466d07-50af-4231-bcfb-2af404a303c6.jpg",
+  "frames": 1,
+  "ow": 1835,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 22160,
+   "960": 79922,
+   "1600": 206806
+  },
+  "w": 1600,
+  "h": 2232,
+  "mean": [
+   18,
+   17,
+   18
+  ]
+ },
+ "awichas-glow-06": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/7ef8c17b-cd4b-4828-8d55-b98257a5ad78.jpg",
+  "frames": 1,
+  "ow": 2027,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 18396,
+   "960": 54358,
+   "1600": 126608
+  },
+  "w": 1600,
+  "h": 2021,
+  "mean": [
+   25,
+   16,
+   22
+  ]
+ },
+ "awichas-glow-07": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/94a6fabf-857e-4482-bf0f-38c4dc29883d.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1098,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 24700,
+   "960": 79738,
+   "1536": 177532
+  },
+  "w": 1536,
+  "h": 1098,
+  "mean": [
+   182,
+   172,
+   169
+  ]
+ },
+ "awichas-glow-08": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/1ee5f926-0317-4910-b13d-51bb9cd0204d.jpg",
+  "frames": 1,
+  "ow": 1280,
+  "oh": 720,
+  "widths": [
+   480,
+   960,
+   1280
+  ],
+  "bytes": {
+   "480": 17166,
+   "960": 41244,
+   "1280": 58138
+  },
+  "w": 1280,
+  "h": 720,
+  "mean": [
+   85,
+   74,
+   70
+  ]
+ },
+ "awichas-glow-09": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/09368914-cd91-4702-b127-c75356139601.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1152,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 15392,
+   "960": 46522,
+   "1536": 132138
+  },
+  "w": 1536,
+  "h": 1152,
+  "mean": [
+   136,
+   133,
+   127
+  ]
+ },
+ "awichas-glow-10": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/5f2acc88-3ccd-401d-b3f7-f74c4f6fb038.jpg",
+  "frames": 1,
+  "ow": 4032,
+  "oh": 3024,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 20818,
+   "960": 53136,
+   "1600": 98144
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   143,
+   147,
+   137
+  ]
+ },
+ "awichas-glow-11": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/3bc6fcdb-a371-4577-907a-d49c66cc98c8.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 74422,
+   "960": 227622,
+   "1284": 353318
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   130,
+   140,
+   146
+  ]
+ },
+ "awichas-glow-12": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/c4604f87-a716-4855-a1ea-cf652de7f3e3.jpg",
+  "frames": 1,
+  "ow": 1600,
+  "oh": 1200,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 42364,
+   "960": 144778,
+   "1600": 346208
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   102,
+   119,
+   114
+  ]
+ },
+ "awichas-glow-13": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/ea7b5ce4-e3c0-4a51-8817-ba6b745e287d.jpg",
+  "frames": 1,
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1080
+  ],
+  "bytes": {
+   "480": 14360,
+   "960": 36778,
+   "1080": 43772
+  },
+  "w": 1080,
+  "h": 1920,
+  "mean": [
+   83,
+   76,
+   66
+  ]
+ },
+ "awichas-glow-14": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/5550b473-7bfe-4369-b237-3eb0c88eb0f0.jpg",
+  "frames": 1,
+  "ow": 4032,
+  "oh": 3024,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 33926,
+   "960": 112968,
+   "1600": 270296
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   111,
+   113,
+   104
+  ]
+ },
+ "awichas-glow-15": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/c6d73dee-1d77-4bd9-b0f8-bc99c4a27338.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 34036,
+   "960": 94904,
+   "1284": 159940
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   65,
+   32,
+   32
+  ]
+ },
+ "awichas-glow-16": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/f4f93e28-5a3f-49fe-9b7c-fa4beea94d99.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 23060,
+   "960": 62026,
+   "1284": 101952
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   75,
+   74,
+   72
+  ]
+ },
+ "awichas-glow-17": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/7039afcd-a970-4005-aac7-c082733fed0e.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 10490,
+   "960": 27672,
+   "1284": 43466
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   241,
+   239,
+   237
+  ]
+ },
+ "awichas-glow-18": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/854f4976-4ba5-423e-96db-66cfbd538b74.jpg",
+  "frames": 1,
+  "ow": 1088,
+  "oh": 1440,
+  "widths": [
+   480,
+   960,
+   1088
+  ],
+  "bytes": {
+   "480": 47814,
+   "960": 124000,
+   "1088": 153710
+  },
+  "w": 1088,
+  "h": 1440,
+  "mean": [
+   131,
+   131,
+   125
+  ]
+ },
+ "awichas-glow-19": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/b623286d-a56c-42b4-bfcc-929757a4a31c.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 21644,
+   "960": 59788,
+   "1284": 96338
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   235,
+   234,
+   231
+  ]
+ },
+ "awichas-glow-20": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/15406b66-4d1d-4ce2-8488-55bcd6bc0586.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 2778,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 19878,
+   "960": 60864,
+   "1284": 112268
+  },
+  "w": 1284,
+  "h": 2778,
+  "mean": [
+   64,
+   63,
+   63
+  ]
+ },
+ "awichas-glow-21": {
+  "file": "unitednotions-film-backup/site/pages/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024/images/21cb0426-903d-4973-b9a8-95c179968816.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 49370,
+   "960": 158614,
+   "1284": 260930
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   152,
+   147,
+   140
+  ]
+ },
+ "awichas-glow-poster-a163ff9d": {
+  "file": "still of a163ff9d-ef80-4d7e-a9e2-5adf02aea16a.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 9050,
+   "640": 13140
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   133,
+   125,
+   121
+  ]
+ },
+ "awichas-glow-poster-1c051fe2": {
+  "file": "still of 1c051fe2-c45a-4da7-a281-98679521e4ea.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 13028,
+   "640": 17234
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   126,
+   121,
+   107
+  ]
+ },
+ "awichas-glow-poster-d5880e5f": {
+  "file": "still of d5880e5f-1030-4ee6-aa3c-d81af56582e9.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 14364
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   135,
+   130,
+   125
+  ]
+ },
+ "awichas-glow-poster-58076fef": {
+  "file": "still of 58076fef-decf-49f2-8b0f-67ee01e64f3e.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 7214,
+   "640": 10468
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   142,
+   144,
+   144
+  ]
+ },
+ "awichas-glow-poster-2d369cd6": {
+  "file": "still of 2d369cd6-2cb5-403a-aef6-34d75158cb8b.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 12586,
+   "640": 17180
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   138,
+   136,
+   131
+  ]
+ },
+ "awichas-glow-poster-1af6ed24": {
+  "file": "still of 1af6ed24-8b35-49c0-8b97-26ad33f837d0.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 12436,
+   "640": 17330
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   127,
+   112,
+   111
+  ]
+ },
+ "awichas-glow-poster-b775f69b": {
+  "file": "still of b775f69b-423f-4773-9524-1cd15665d0bf.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 25800
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   90,
+   106,
+   121
+  ]
+ },
+ "awichas-glow-poster-69c9a3d1": {
+  "file": "still of 69c9a3d1-92dd-4a34-988d-7bdc45aa09c0.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 25220,
+   "640": 34446
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   101,
+   80,
+   81
+  ]
+ },
+ "awichas-glow-poster-eb2fa12c": {
+  "file": "still of eb2fa12c-4b99-45c8-9e46-e352bc015306.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 19932
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   97,
+   106,
+   104
+  ]
+ },
+ "awichas-glow-poster-7f75ad34": {
+  "file": "still of 7f75ad34-e210-4235-9c1f-050be7dd7e76.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 10446
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   71,
+   71,
+   73
+  ]
+ },
+ "voices-of-vr-01": {
+  "file": "unitednotions-film-backup/site/pages/research/redefining-reality-xr-ai-voices-of-vr-kent-bye/images/c392553c-2414-45f7-99a0-4bc23be382ae.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 866,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 45070,
+   "960": 127224,
+   "1536": 243862
+  },
+  "w": 1536,
+  "h": 866,
+  "mean": [
+   134,
+   113,
+   106
+  ]
+ },
+ "voices-of-vr-poster-62379131": {
+  "file": "still of 62379131-72dc-43f4-946d-b704ea06c5fd.mp4",
+  "ow": 640,
+  "oh": 364,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 15564,
+   "640": 20900
+  },
+  "w": 640,
+  "h": 364,
+  "mean": [
+   150,
+   145,
+   171
+  ]
+ },
+ "voices-of-vr-poster-54058552": {
+  "file": "still of 54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4",
+  "ow": 640,
+  "oh": 364,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 8212,
+   "640": 11316
+  },
+  "w": 640,
+  "h": 364,
+  "mean": [
+   79,
+   93,
+   120
+  ]
+ },
+ "voices-of-vr-poster-bcafb0c1": {
+  "file": "still of bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4",
+  "ow": 640,
+  "oh": 364,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 13154,
+   "640": 16860
+  },
+  "w": 640,
+  "h": 364,
+  "mean": [
+   204,
+   181,
+   171
+  ]
+ },
+ "voices-of-vr-poster-0793ddbe": {
+  "file": "still of 0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4",
+  "ow": 640,
+  "oh": 364,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 5734,
+   "640": 7706
+  },
+  "w": 640,
+  "h": 364,
+  "mean": [
+   236,
+   223,
+   176
+  ]
+ },
+ "nsw-policy-01": {
+  "file": "unitednotions-film-backup/site/pages/research/policy-recommendations-nsw-arts-culture-tech-equity/images/832c80d4-d7be-4694-a213-bf719d6768ed.png",
+  "frames": 1,
+  "ow": 1596,
+  "oh": 988,
+  "widths": [
+   480,
+   960,
+   1596
+  ],
+  "bytes": {
+   "480": 33664,
+   "960": 91058,
+   "1596": 173360
+  },
+  "w": 1596,
+  "h": 988,
+  "mean": [
+   134,
+   121,
+   115
+  ]
+ },
+ "la-lucha-outreach-01": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/fe385e32-4160-4bbd-b0b0-867f3ae06927.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 10376,
+   "960": 24662,
+   "1536": 43284
+  },
+  "w": 1536,
+  "h": 1536,
+  "mean": [
+   25,
+   23,
+   29
+  ]
+ },
+ "la-lucha-outreach-02": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/2517455e-b98f-4295-b0d9-1596156fd199.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 26822,
+   "960": 65162,
+   "1536": 104188
+  },
+  "w": 1536,
+  "h": 1536,
+  "mean": [
+   41,
+   31,
+   24
+  ]
+ },
+ "la-lucha-outreach-03": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/26d87b1d-e4bd-4f1d-866f-7d4eb0257d34.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 866,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 38384,
+   "960": 99512,
+   "1536": 176566
+  },
+  "w": 1536,
+  "h": 866,
+  "mean": [
+   135,
+   113,
+   98
+  ]
+ },
+ "la-lucha-outreach-04": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/1f2688c2-616e-48e5-8ef1-e133910dafad.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 42802,
+   "960": 106176,
+   "1536": 189186
+  },
+  "w": 1536,
+  "h": 1536,
+  "mean": [
+   132,
+   131,
+   135
+  ]
+ },
+ "la-lucha-outreach-05": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/1b0a6deb-8a7b-4f7c-81eb-de70c5e8b56e.jpg",
+  "frames": 1,
+  "ow": 1152,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1152
+  ],
+  "bytes": {
+   "480": 76224,
+   "960": 278170,
+   "1152": 394462
+  },
+  "w": 1152,
+  "h": 1536,
+  "mean": [
+   125,
+   124,
+   125
+  ]
+ },
+ "la-lucha-outreach-06": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-20-2023/images/61955862-4508-4ce4-a597-676e440c2b0c.jpg",
+  "frames": 1,
+  "ow": 1112,
+  "oh": 1087,
+  "widths": [
+   480,
+   960,
+   1112
+  ],
+  "bytes": {
+   "480": 25126,
+   "960": 50382,
+   "1112": 58344
+  },
+  "w": 1112,
+  "h": 1087,
+  "mean": [
+   249,
+   224,
+   211
+  ]
+ },
+ "la-lucha-blackstar-01": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/d4eaa232-be05-47b6-9cad-f9e01610f9a6.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 22932,
+   "960": 71352,
+   "1284": 161296
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   159,
+   152,
+   151
+  ]
+ },
+ "la-lucha-blackstar-02": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/efed534e-24ab-4ea1-b656-d36b6e9d36e3.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 13162,
+   "960": 32646,
+   "1284": 46190
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   178,
+   185,
+   176
+  ]
+ },
+ "la-lucha-blackstar-03": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/6767baa7-cf67-41ed-b61a-02a1dcf5a140.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 19626,
+   "960": 51532,
+   "1284": 87160
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   161,
+   153,
+   150
+  ]
+ },
+ "la-lucha-blackstar-04": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/c16d931d-aad8-4ee6-89a1-7b0d918d3dfa.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 15476,
+   "960": 33820,
+   "1284": 46648
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   180,
+   180,
+   182
+  ]
+ },
+ "la-lucha-blackstar-05": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/4561f5bc-081a-4b47-a838-4e62a8e69666.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 11660,
+   "960": 38134,
+   "1284": 88154
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   182,
+   187,
+   176
+  ]
+ },
+ "la-lucha-blackstar-06": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/2325ac53-0976-4ece-a70e-0586967f0462.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 23032,
+   "960": 75566,
+   "1284": 130776
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   206,
+   200,
+   193
+  ]
+ },
+ "la-lucha-blackstar-07": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/c9e42b00-34cc-4153-898f-b2863c66965c.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 27586,
+   "960": 100030,
+   "1284": 187502
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   197,
+   190,
+   182
+  ]
+ },
+ "la-lucha-blackstar-08": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/e354e0ea-4a09-4ef0-bae4-1f4c55a12d07.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 18188,
+   "960": 54172,
+   "1284": 94906
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   184,
+   188,
+   184
+  ]
+ },
+ "la-lucha-blackstar-09": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/889c3f80-8188-49e7-809b-6cebded58524.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 10832,
+   "960": 27208,
+   "1284": 39424
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   155,
+   146,
+   135
+  ]
+ },
+ "la-lucha-blackstar-10": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/f22914fa-92d5-4938-9d37-d3d93c1c2a90.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 15214,
+   "960": 38398,
+   "1284": 73464
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   135,
+   120,
+   118
+  ]
+ },
+ "la-lucha-blackstar-11": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/14ae96e6-3319-486e-99a9-1d89612b5bbe.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 723,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 21768,
+   "960": 56204,
+   "1284": 85718
+  },
+  "w": 1284,
+  "h": 723,
+  "mean": [
+   131,
+   129,
+   125
+  ]
+ },
+ "la-lucha-blackstar-12": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/2c77570d-8c5b-431b-94bf-1dc8e24219e0.png",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 73124,
+   "960": 228364,
+   "1284": 382228
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   120,
+   131,
+   134
+  ]
+ },
+ "la-lucha-blackstar-13": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/5ca80b26-7538-4b8b-9f7b-4b5455554b8f.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1152,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 21034,
+   "960": 62822,
+   "1536": 180148
+  },
+  "w": 1536,
+  "h": 1152,
+  "mean": [
+   102,
+   77,
+   67
+  ]
+ },
+ "la-lucha-blackstar-14": {
+  "file": "unitednotions-film-backup/site/pages/research/aug-19-2023/images/27ae0570-768c-4f1c-a76f-dcd103fa2ec2.png",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 23866,
+   "960": 52950,
+   "1536": 87720
+  },
+  "w": 1536,
+  "h": 1536,
+  "mean": [
+   47,
+   39,
+   37
+  ]
+ },
+ "la-lucha-blackstar-poster-3c2968bd": {
+  "file": "still of 3c2968bd-57cd-44fd-832b-f29ceae13e92.mp4",
+  "ow": 640,
+  "oh": 360,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 20512,
+   "640": 28374
+  },
+  "w": 640,
+  "h": 360,
+  "mean": [
+   57,
+   49,
+   81
+  ]
+ },
+ "brain-jam-01": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/ab079c12-8af4-4f47-b687-f19ac78c2ce2.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1152,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 33628,
+   "960": 90840,
+   "1536": 177064
+  },
+  "w": 1536,
+  "h": 1152,
+  "mean": [
+   129,
+   120,
+   86
+  ]
+ },
+ "brain-jam-02": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/49f93958-903d-4dc3-907c-9856b38a6878.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 25584,
+   "960": 74506,
+   "1600": 161028
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   127,
+   129,
+   125
+  ]
+ },
+ "brain-jam-03": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/ef4fc490-40e5-46ba-a199-b8762c32a90f.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 31660,
+   "960": 91102,
+   "1600": 189106
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   120,
+   106,
+   102
+  ]
+ },
+ "brain-jam-04": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/d3a4f101-73d6-4524-b1c2-926bbfb901c6.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 29858,
+   "960": 97880,
+   "1600": 228092
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   114,
+   109,
+   103
+  ]
+ },
+ "brain-jam-05": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/66f0e566-45c5-4cc9-8ad9-bbb7ff3ee737.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 30596,
+   "960": 105706,
+   "1600": 265266
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   119,
+   108,
+   102
+  ]
+ },
+ "brain-jam-06": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/f2131373-1ac4-443b-ae18-8f848fca65f5.jpg",
+  "frames": 1,
+  "ow": 1284,
+  "oh": 1284,
+  "widths": [
+   480,
+   960,
+   1284
+  ],
+  "bytes": {
+   "480": 38610,
+   "960": 116650,
+   "1284": 218766
+  },
+  "w": 1284,
+  "h": 1284,
+  "mean": [
+   160,
+   88,
+   118
+  ]
+ },
+ "brain-jam-07": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/53d96e59-349d-4d2a-a572-0f1fc4355b41.jpg",
+  "frames": 1,
+  "ow": 2000,
+  "oh": 1127,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 13956,
+   "960": 39820,
+   "1600": 100440
+  },
+  "w": 1600,
+  "h": 902,
+  "mean": [
+   202,
+   193,
+   188
+  ]
+ },
+ "brain-jam-08": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/e8f4671d-370a-4770-aca6-26e594fe05e4.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 27522,
+   "960": 86058,
+   "1600": 205008
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   131,
+   110,
+   95
+  ]
+ },
+ "brain-jam-09": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/d7ad8f15-4221-4aa2-bba3-342c7be65e72.jpg",
+  "frames": 1,
+  "ow": 1920,
+  "oh": 2560,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 44888,
+   "960": 143192,
+   "1600": 309614
+  },
+  "w": 1600,
+  "h": 2133,
+  "mean": [
+   146,
+   132,
+   117
+  ]
+ },
+ "brain-jam-10": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/71f8f75a-0ff1-4b2f-a754-4759e36635c6.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 25580,
+   "960": 68844,
+   "1600": 139278
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   116,
+   111,
+   109
+  ]
+ },
+ "brain-jam-11": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/90065270-79f1-4f42-a503-8513e89e8642.jpg",
+  "frames": 1,
+  "ow": 2560,
+  "oh": 1920,
+  "widths": [
+   480,
+   960,
+   1600
+  ],
+  "bytes": {
+   "480": 22708,
+   "960": 58528,
+   "1600": 117828
+  },
+  "w": 1600,
+  "h": 1200,
+  "mean": [
+   131,
+   120,
+   110
+  ]
+ },
+ "brain-jam-12": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/3217648f-b08a-421c-88dd-ba2a58a76c52.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 866,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 17146,
+   "960": 44654,
+   "1536": 80624
+  },
+  "w": 1536,
+  "h": 866,
+  "mean": [
+   182,
+   173,
+   173
+  ]
+ },
+ "brain-jam-13": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/37ee8ffd-f446-4f5d-aced-a6270e2e7fc9.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1152,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 23898,
+   "960": 80828,
+   "1536": 202324
+  },
+  "w": 1536,
+  "h": 1152,
+  "mean": [
+   128,
+   119,
+   109
+  ]
+ },
+ "brain-jam-14": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/36394a0b-f3d8-45f3-a7b0-abaf507abe44.jpg",
+  "frames": 1,
+  "ow": 1152,
+  "oh": 1536,
+  "widths": [
+   480,
+   960,
+   1152
+  ],
+  "bytes": {
+   "480": 54502,
+   "960": 153264,
+   "1152": 202196
+  },
+  "w": 1152,
+  "h": 1536,
+  "mean": [
+   138,
+   103,
+   63
+  ]
+ },
+ "brain-jam-15": {
+  "file": "unitednotions-film-backup/site/pages/research/brain-jam-games-for-change-nyc/images/5e6cfaf9-9cae-448e-9c85-b249e6257628.jpg",
+  "frames": 1,
+  "ow": 1536,
+  "oh": 1152,
+  "widths": [
+   480,
+   960,
+   1536
+  ],
+  "bytes": {
+   "480": 37678,
+   "960": 122228,
+   "1536": 259140
+  },
+  "w": 1536,
+  "h": 1152,
+  "mean": [
+   100,
+   96,
+   103
+  ]
+ },
+ "brain-jam-poster-84d3d6e4": {
+  "file": "still of 84d3d6e4-b2c6-4235-853b-0d443dd3c739.mp4",
+  "ow": 640,
+  "oh": 364,
+  "widths": [
+   480,
+   640
+  ],
+  "bytes": {
+   "480": 17414,
+   "640": 26010
+  },
+  "w": 640,
+  "h": 364,
+  "mean": [
+   116,
+   70,
+   50
+  ]
+ },
+ "brain-jam-poster-8f114445": {
+  "file": "still of 8f114445-1189-4b28-8440-02f3b9f102df.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 13426
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   120,
+   108,
+   96
+  ]
+ },
+ "brain-jam-poster-73e2ae6a": {
+  "file": "still of 73e2ae6a-01d3-433d-8ce7-31a97cc024e6.mp4",
+  "ow": 360,
+  "oh": 640,
+  "widths": [
+   360
+  ],
+  "bytes": {
+   "360": 13456
+  },
+  "w": 360,
+  "h": 640,
+  "mean": [
+   123,
+   115,
+   105
+  ]
+ },
+ "whale-watches-poster-340432": {
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 10110,
+   "960": 22874
+  },
+  "w": 960,
+  "h": 540,
+  "mean": [
+   145,
+   134,
+   119
+  ],
+  "file": "still of whale-watches-340432.mp4"
+ },
+ "body-decides-poster-340252": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 4280,
+   "960": 10434
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   9,
+   7,
+   9
+  ],
+  "file": "still of body-decides-340252.mp4"
+ },
+ "monkey-body-poster-339709": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 16500,
+   "960": 37130
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   54,
+   52,
+   53
+  ],
+  "file": "still of monkey-body-339709.mp4"
+ },
+ "monkey-body-poster-339710": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 14274,
+   "960": 31886
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   65,
+   65,
+   64
+  ],
+  "file": "still of monkey-body-339710.mp4"
+ },
+ "monkey-body-poster-339910": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 9540,
+   "960": 22810
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   40,
+   40,
+   40
+  ],
+  "file": "still of monkey-body-339910.mp4"
+ },
+ "monkey-moves-poster-339331": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 19282,
+   "960": 40768
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   123,
+   114,
+   106
+  ],
+  "file": "still of monkey-moves-339331.mp4"
+ },
+ "llama-feels-poster-339072": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 21898,
+   "960": 47524
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   129,
+   103,
+   96
+  ],
+  "file": "still of llama-feels-339072.mp4"
+ },
+ "heartbeat-flower-poster-338980": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 17304,
+   "960": 36688
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   157,
+   142,
+   127
+  ],
+  "file": "still of heartbeat-flower-338980.mp4"
+ },
+ "spider-weaves-poster-338595": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 32400,
+   "960": 70632
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   106,
+   114,
+   123
+  ],
+  "file": "still of spider-weaves-338595.mp4"
+ },
+ "gecko-feels-poster-337816": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 43642,
+   "960": 93758
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   72,
+   69,
+   59
+  ],
+  "file": "still of gecko-feels-337816.mp4"
+ },
+ "15-creatures-poster-337686": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 13992,
+   "960": 32062
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   35,
+   31,
+   33
+  ],
+  "file": "still of 15-creatures-337686.mp4"
+ },
+ "water-lily-poster-337405": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 26706,
+   "960": 63452
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   113,
+   106,
+   93
+  ],
+  "file": "still of water-lily-337405.mp4"
+ },
+ "water-lily-poster-337406": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 26156,
+   "960": 54372
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   158,
+   146,
+   137
+  ],
+  "file": "still of water-lily-337406.mp4"
+ },
+ "water-lily-poster-337407": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 45262,
+   "960": 103638
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   124,
+   120,
+   99
+  ],
+  "file": "still of water-lily-337407.mp4"
+ },
+ "tree-fear-poster-336137": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 15908,
+   "960": 36388
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   132,
+   106,
+   89
+  ],
+  "file": "still of tree-fear-336137.mp4"
+ },
+ "gyroscope-poster-335419": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 11540,
+   "960": 28068
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   148,
+   129,
+   99
+  ],
+  "file": "still of gyroscope-335419.mp4"
+ },
+ "embodied-intelligence-poster-335420": {
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 15880,
+   "960": 45820
+  },
+  "w": 960,
+  "h": 540,
+  "mean": [
+   122,
+   117,
+   106
+  ],
+  "file": "still of embodied-intelligence-335420.mp4"
+ },
+ "somatic-puppeteering-poster-334329": {
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 19854,
+   "960": 48326
+  },
+  "w": 960,
+  "h": 540,
+  "mean": [
+   128,
+   113,
+   100
+  ],
+  "file": "still of somatic-puppeteering-334329.mp4"
+ },
+ "somatic-puppeteering-poster-334390": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 24294,
+   "960": 55192
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   106,
+   94,
+   83
+  ],
+  "file": "still of somatic-puppeteering-334390.mp4"
+ },
+ "somatic-puppeteering-poster-334330": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 20456,
+   "960": 46190
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   142,
+   118,
+   98
+  ],
+  "file": "still of somatic-puppeteering-334330.mp4"
+ },
+ "somatic-puppeteering-poster-334391": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 41378,
+   "960": 100552
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   120,
+   113,
+   103
+  ],
+  "file": "still of somatic-puppeteering-334391.mp4"
+ },
+ "condor-hand-poster-326156": {
+  "ow": 1080,
+  "oh": 1920,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 33750,
+   "960": 74876
+  },
+  "w": 960,
+  "h": 1707,
+  "mean": [
+   105,
+   112,
+   125
+  ],
+  "file": "still of condor-hand-326156.mp4"
+ },
+ "nsw-policy-poster-253801": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 16202,
+   "960": 34768
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   192,
+   187,
+   153
+  ],
+  "file": "still of nsw-policy-253801.mp4"
+ },
+ "nsw-policy-poster-253802": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 27752,
+   "960": 53830
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   121,
+   79,
+   69
+  ],
+  "file": "still of nsw-policy-253802.mp4"
+ },
+ "nsw-policy-poster-253803": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 15572,
+   "960": 32760
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   202,
+   179,
+   193
+  ],
+  "file": "still of nsw-policy-253803.mp4"
+ },
+ "nsw-policy-poster-253804": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 22048,
+   "960": 43222
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   164,
+   144,
+   134
+  ],
+  "file": "still of nsw-policy-253804.mp4"
+ },
+ "nsw-policy-poster-253805": {
+  "ow": 1080,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 32812,
+   "960": 78434
+  },
+  "w": 960,
+  "h": 960,
+  "mean": [
+   70,
+   67,
+   68
+  ],
+  "file": "still of nsw-policy-253805.mp4"
+ },
+ "brain-jam-poster-252835": {
+  "ow": 1920,
+  "oh": 1080,
+  "widths": [
+   480,
+   960
+  ],
+  "bytes": {
+   "480": 14798,
+   "960": 35328
+  },
+  "w": 960,
+  "h": 540,
+  "mean": [
+   55,
+   51,
+   47
+  ],
+  "file": "still of brain-jam-252835.mp4"
+ }
+}

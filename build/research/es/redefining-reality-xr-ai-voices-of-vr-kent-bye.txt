@@ -1,0 +1,16 @@
+T: Explorar el futuro de la XR y la IA: una conversación con Kent Bye
+D: Conoce cómo Violeta Ayala, cineasta y tecnóloga creativa, usa el poder de la realidad extendida (XR) y de la inteligencia artificial (IA) para redefinir la manera de contar historias. Con su mirada particular sobre la semántica y una práctica diaria de programación creativa, Violeta empuja los límites del cine tradicional, enfrenta los sesgos sociales y fomenta la expresión cultural con tecnologías inmersivas.
+S: Violeta Ayala conversa con Kent Bye en el podcast Voices of VR sobre XR, IA y soberanía creativa.
+IMG: 1
+P: Es un enorme honor para mí haber sido parte de [la serie de podcasts Voices of VR](https://voicesofvr.com/1254-using-ai-to-upskill-creative-sovereignty-with-xr-artist-violeta-ayala/), el trabajo pionero de Kent Bye. En un episodio detallado de 17 partes, él se adentra en el cruce fascinante entre la realidad extendida (XR) y la inteligencia artificial (IA), con una gran cantidad de artistas inmersivos y desarrolladores de XR. La serie indaga a fondo en cómo la IA generativa y las interfaces conversacionales están revolucionando los pipelines de producción y las interacciones sociales con los NPC (personajes no jugadores).
+H: Una odisea personal
+P: Ser parte de esta serie me hizo reflexionar sobre mi propio camino de experimentación. En ese camino jugué con imágenes, desarmé los mitos que rodean los procesos creativos y llegué a entender la construcción y la reconstrucción de los paradigmas visuales. Ha sido un laberinto de creatividad donde me deconstruí y me reconstruí, y en el recorrido descubrí una versión nueva y profunda de mi identidad artística. Es un relato que sigue en evolución.
+H: Cambios profundos
+P: En este proceso de reinvención, los cambios han sido profundos. No estamos hablando de ajustes superficiales, sino de transformaciones que aún estoy lejos de comprender en su totalidad. Ha sido un camino de deconstruirme para encontrarme, de inventar y reinventar imágenes desde una perspectiva que me es entrañable.
+H: Por qué escuchar la serie
+P: Entender cómo la IA puede integrarse al mundo de la XR nunca ha sido tan importante. La serie Voices of VR va más allá de la superficie y explora cómo estos cambios tecnológicos están revolucionando nuestra industria. Si desarrollas, haces cine, eres artista o simplemente te fascina el futuro de la tecnología, tienes que escuchar esta serie.
+VID: 62379131-72dc-43f4-946d-b704ea06c5fd.mp4
+VID: 54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4
+VID: bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4
+VID: 0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4
+A: Escucha el episodio | https://voicesofvr.com/1254-using-ai-to-upskill-creative-sovereignty-with-xr-artist-violeta-ayala/

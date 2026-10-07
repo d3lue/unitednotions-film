@@ -1,0 +1,73 @@
+United Notions Film: how to change the site
+Written 7 October 2026, the day the site went live on DreamHost.
+
+THE SHAPE OF IT
+
+  The site is plain pages, written by a small program from text files. There is no database and no login.
+  The text files are the site. Change them, run one command, and the pages are rebuilt and uploaded.
+
+  site/        the pages, as the server has them. Never edit these by hand: the next build overwrites them.
+  build/       the program and the texts it reads.
+      research/en/<name>.txt      a lab note, in English
+      research/es/<name>.txt      the same note, in Spanish
+      content.py                  the works on the home page
+      content_pages.py            About, People, News, Film Futurism, Press
+      strings_es.py               the Spanish of everything that is not a lab note
+      picture-in/                 pictures of new lab notes go here
+      video-in/                   videos of new lab notes go here (also the 28 originals of the old site: 1.2 GB, keep them)
+      data/research.json          the list of lab notes with their date and place
+
+THE ONE COMMAND
+
+      sh publish.sh
+
+  It makes web copies of any new picture or video, builds the pages (about two minutes), uploads what changed
+  and checks 34 addresses of the live site. From a new Mac, once:   pip3 install --user pillow numpy fonttools brotli
+  and   brew install ffmpeg   for the videos.
+
+A NEW LAB NOTE
+
+  1.   python3 build/new_note.py "The title of the note" --place Cochabamba
+       It makes the two text files and adds the note to the list. It prints where everything goes.
+  2.   Write build/research/en/<name>.txt. One block per line, each line starts with a tag:
+           T: title       D: one sentence for search engines       S: one-sentence summary      (these three first, in this order)
+           P: paragraph   H: heading   LI: list item   CAP: caption of the picture or video above
+           IMG: 1         the first picture               IMG: 2 | https://address   makes it a link
+           VIDEO: 01 | 16:9     a video; 16:9, 9:16 or 1:1 is its shape
+           YT: id | title       a YouTube video            VM: id | title     a Vimeo video
+           A: text | https://address      a link on its own line
+       Inside a line, a link is written [text](https://address).
+  3.   Pictures: build/picture-in/<key>-01.jpg, <key>-02.png ...  The key is the short name the script printed.
+       Videos:   build/video-in/<key>-01.mp4 (or .mov, any usual format).
+       A video of a few seconds plays by itself, silently, in a loop. A longer one waits for the visitor.
+  4.   Spanish: build/research/es/<name>.txt. Same lines, same tags, same order, translated.
+       build/research/BRIEF-es.md has Violeta's rules. Until it is translated the Spanish site shows the English.
+  5.   For people who cannot see the pictures: build/research/alts.json, a sentence per picture, in both languages.
+  6.   sh publish.sh
+
+CHANGING A NOTE THAT EXISTS
+
+  Edit its text files in build/research/en and es. Then   sh publish.sh
+  Its date and place are in build/data/research.json.
+
+THE OTHER PAGES
+
+  About, People, News, Film Futurism, Press: build/content_pages.py. The works of the home page: build/content.py.
+  They are Python files, but the texts in them are plain: find the sentence, change it, keep the quotes around it.
+  Their Spanish is in build/strings_es.py, keyed by the English sentence.
+  Then   sh publish.sh
+
+FROM A BROWSER, WITHOUT A MAC
+
+  The folder is a git repository. When it is on GitHub, every push to the branch main builds and uploads the site
+  by itself (.github/workflows/publish.yml, about three minutes). So a note can be written or corrected on github.com,
+  in the browser: open build/research/en/<name>.txt, press the pencil, change it, "Commit changes". Done.
+  A new note from the browser needs its line in build/data/research.json too (copy the shape of the last one).
+  New videos cannot go that way: they are too big for git. Add them from a Mac with sh publish.sh.
+  New pictures can: upload them to build/picture-in.
+
+WHEN SOMETHING LOOKS WRONG
+
+  The build prints what is missing: a picture whose web copy is not made, a video it is waiting for,
+  a Spanish text that does not exist. Read the last lines.
+  sh check.sh   tries the 34 addresses of the live site and names any that fails.

@@ -1,0 +1,730 @@
+[
+ {
+  "name": "whale-watches-01",
+  "note": "the-whale-that-watches-back",
+  "asset": "a5368def-895b-44b6-b92e-c3521356ca49"
+ },
+ {
+  "name": "whale-watches-02",
+  "note": "the-whale-that-watches-back",
+  "asset": "815cf1eb-c036-46cb-b034-084d098801f4"
+ },
+ {
+  "name": "whale-watches-03",
+  "note": "the-whale-that-watches-back",
+  "asset": "4d11e8cb-d8b6-4616-bf43-17520391bc60"
+ },
+ {
+  "name": "body-decides-01",
+  "note": "the-body-decides-the-interface",
+  "asset": "fdc251cb-15d8-4271-9bcb-f4a56c3d41ef"
+ },
+ {
+  "name": "body-decides-02",
+  "note": "the-body-decides-the-interface",
+  "asset": "27d4b79e-b9a1-4528-b3ef-05ecc3d45c08"
+ },
+ {
+  "name": "monkey-body-01",
+  "note": "the-monkey-learns-the-shape-of-its-own-body",
+  "asset": "c38f3995-a932-4f7f-bb20-ce40efc38ba8"
+ },
+ {
+  "name": "monkey-body-02",
+  "note": "the-monkey-learns-the-shape-of-its-own-body",
+  "asset": "8737a537-f869-44a5-828c-d64e08d6fb36"
+ },
+ {
+  "name": "monkey-body-03",
+  "note": "the-monkey-learns-the-shape-of-its-own-body",
+  "asset": "2603fc7d-672b-4425-985c-4035712db057"
+ },
+ {
+  "name": "monkey-body-04",
+  "note": "the-monkey-learns-the-shape-of-its-own-body",
+  "asset": "ac968488-f737-44f0-9726-66a2e017a69c"
+ },
+ {
+  "name": "spider-weaves-01",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "f9478f84-49cf-4512-95f7-875246df2cd4"
+ },
+ {
+  "name": "spider-weaves-02",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "3dcc0afc-168e-4360-911a-fb34862bbc90"
+ },
+ {
+  "name": "spider-weaves-03",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "ea857ead-9fb5-4099-841c-83c97cb682cd"
+ },
+ {
+  "name": "spider-weaves-04",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "3588d82d-90d7-4b4f-ae04-b0b501c19682"
+ },
+ {
+  "name": "spider-weaves-05",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "b47bf492-349b-478f-aa11-4c956db202ed"
+ },
+ {
+  "name": "spider-weaves-06",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "236c6a9e-90e0-41a2-910a-253e4f545ed0"
+ },
+ {
+  "name": "spider-weaves-07",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "21514c10-cdbe-4e55-b72e-628096bee687"
+ },
+ {
+  "name": "spider-weaves-08",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "bd054d74-6ec8-473a-a8f6-283933fab3bc"
+ },
+ {
+  "name": "spider-weaves-09",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "e4b4e43f-9d69-4e4a-ba92-c9cc8bdeace8"
+ },
+ {
+  "name": "spider-weaves-10",
+  "note": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "asset": "d9e2e403-3d8a-484f-9a9c-a788808b0e55"
+ },
+ {
+  "name": "gecko-feels-01",
+  "note": "the-gecko-learns-to-feel-qwen-finds-its-voice",
+  "asset": "6c6bc98b-4981-4b7a-b0be-4a3a39209b06"
+ },
+ {
+  "name": "gecko-feels-02",
+  "note": "the-gecko-learns-to-feel-qwen-finds-its-voice",
+  "asset": "30b06fc8-fbe3-4144-a2f4-dacb5f3167bb"
+ },
+ {
+  "name": "water-lily-01",
+  "note": "the-water-lily-learns-to-breathe",
+  "asset": "495beab3-b246-4070-9f9f-c257385596cd"
+ },
+ {
+  "name": "water-lily-02",
+  "note": "the-water-lily-learns-to-breathe",
+  "asset": "5ba6aab7-db40-4538-83cc-01c0d7046d08"
+ },
+ {
+  "name": "water-lily-03",
+  "note": "the-water-lily-learns-to-breathe",
+  "asset": "a5ac2760-2988-4745-bcec-6dcd9d3a9a8f"
+ },
+ {
+  "name": "tree-fear-01",
+  "note": "the-tree-learns-fear-the-orchid-mourns-fire",
+  "asset": "1ff03fda-7ef7-4cae-9042-e400450f561b"
+ },
+ {
+  "name": "tree-fear-02",
+  "note": "the-tree-learns-fear-the-orchid-mourns-fire",
+  "asset": "6207677f-fa50-4b58-8372-7c84c111b6b8"
+ },
+ {
+  "name": "comteco-01",
+  "note": "technologies-of-distribution-comteco-transparency",
+  "asset": "0dc4f3be-e431-4991-943f-3fdc2a868401"
+ },
+ {
+  "name": "comteco-02",
+  "note": "technologies-of-distribution-comteco-transparency",
+  "asset": "2776b131-aa2f-433f-980f-3b1e686b1c61"
+ },
+ {
+  "name": "documentary-thinks-01",
+  "note": "when-documentary-begins-to-think",
+  "asset": "395ec599-a675-45c6-a2e7-c1c3215d5189"
+ },
+ {
+  "name": "documentary-thinks-02",
+  "note": "when-documentary-begins-to-think",
+  "asset": "589d220d-fccb-48fd-98c2-d98faa4e9267"
+ },
+ {
+  "name": "documentary-thinks-03",
+  "note": "when-documentary-begins-to-think",
+  "asset": "a8870957-056a-4601-a962-6a865c0d1cbc"
+ },
+ {
+  "name": "living-systems-01",
+  "note": "from-documentary-to-living-systems",
+  "asset": "26e209c7-23e4-4fdf-820a-6941ef958408"
+ },
+ {
+  "name": "living-systems-02",
+  "note": "from-documentary-to-living-systems",
+  "asset": "3635dba0-f544-4e41-a814-ce02e64be2e2"
+ },
+ {
+  "name": "living-systems-03",
+  "note": "from-documentary-to-living-systems",
+  "asset": "5be9f26a-a585-4ccc-9028-e769d5e59d3b"
+ },
+ {
+  "name": "living-systems-04",
+  "note": "from-documentary-to-living-systems",
+  "asset": "039d6e69-0639-41c6-a0d8-196f55d353fa"
+ },
+ {
+  "name": "condor-hand-01",
+  "note": "the-condor-obeyed-violetas-hand",
+  "asset": "4362bada-5770-4589-b451-ef522805e871"
+ },
+ {
+  "name": "feminist-ai-01",
+  "note": "fair-future-feminist-ai",
+  "asset": "106793ed-385b-4b2b-9797-588ed6e6c33f"
+ },
+ {
+  "name": "feminist-ai-02",
+  "note": "fair-future-feminist-ai",
+  "asset": "0fd8d87c-05ef-4977-a8bd-3df14bfc3db9"
+ },
+ {
+  "name": "feminist-ai-03",
+  "note": "fair-future-feminist-ai",
+  "asset": "a03e65e2-77cd-4414-b97b-5c8cb10b2ed8"
+ },
+ {
+  "name": "feminist-ai-04",
+  "note": "fair-future-feminist-ai",
+  "asset": "20a70362-8694-4020-ad19-88a1411170d9"
+ },
+ {
+  "name": "feminist-ai-05",
+  "note": "fair-future-feminist-ai",
+  "asset": "589e6d30-9560-4546-81c6-1392f2b4ae8b"
+ },
+ {
+  "name": "feminist-ai-06",
+  "note": "fair-future-feminist-ai",
+  "asset": "fbe99341-1f5a-4218-8c6b-3cb5cac20b38"
+ },
+ {
+  "name": "feminist-ai-07",
+  "note": "fair-future-feminist-ai",
+  "asset": "847b5b1d-fb9b-4887-802f-5583635025a0"
+ },
+ {
+  "name": "feminist-ai-08",
+  "note": "fair-future-feminist-ai",
+  "asset": "52fab2c9-dc69-4c6b-a499-b58524c17014"
+ },
+ {
+  "name": "feminist-ai-09",
+  "note": "fair-future-feminist-ai",
+  "asset": "b8b79576-43de-4a53-96f5-fb5a4b4294eb"
+ },
+ {
+  "name": "feminist-ai-10",
+  "note": "fair-future-feminist-ai",
+  "asset": "816ea1a3-f3fe-40cf-9de9-6b65bf11b515"
+ },
+ {
+  "name": "feminist-ai-11",
+  "note": "fair-future-feminist-ai",
+  "asset": "b752b02e-e38d-44a9-a427-eb595c671e6c"
+ },
+ {
+  "name": "feminist-ai-12",
+  "note": "fair-future-feminist-ai",
+  "asset": "97125f6d-12cf-47bf-bfa3-93d6900d6391"
+ },
+ {
+  "name": "luna-01",
+  "note": "luna-feminist-ai",
+  "asset": "f9b415b1-3d87-4575-87d7-6c59f323cff0"
+ },
+ {
+  "name": "prison-x-gen-z-01",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "2e6d3465-37c2-465a-828d-93cc2b8e4d5c"
+ },
+ {
+  "name": "prison-x-gen-z-02",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "91c9f60a-fab7-45f3-b5bd-67fab565f963"
+ },
+ {
+  "name": "prison-x-gen-z-03",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "1044fd56-3cfb-464a-b31f-0884aca81649"
+ },
+ {
+  "name": "prison-x-gen-z-04",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "aa119f81-13d0-4800-a4d8-0052a21d5226"
+ },
+ {
+  "name": "prison-x-gen-z-05",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "5b8c2179-c942-4a88-9f64-6b23e0a9d6ec"
+ },
+ {
+  "name": "prison-x-gen-z-06",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "f4f365b8-6462-4c06-a461-7e014cd69e0f"
+ },
+ {
+  "name": "prison-x-gen-z-07",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "5c12330d-cbd7-4081-9b3a-5c57ce014ac4"
+ },
+ {
+  "name": "prison-x-gen-z-08",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "3a7d003e-3e90-4268-8f99-41ca732afd1f"
+ },
+ {
+  "name": "prison-x-gen-z-09",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "dce10e49-1c7e-45fe-b14c-c42e8e9a1456"
+ },
+ {
+  "name": "prison-x-gen-z-10",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "992ebdff-d128-4977-a211-0b3c091acff0"
+ },
+ {
+  "name": "prison-x-gen-z-11",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "f9871ec1-4850-4be9-ad18-79c09f6bc9aa"
+ },
+ {
+  "name": "prison-x-gen-z-12",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "b76bc3ff-205b-4c07-85b0-7b4b1d84b5cd"
+ },
+ {
+  "name": "prison-x-gen-z-13",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "8d21a94b-d2f1-459d-8cc5-77920d5d63fd"
+ },
+ {
+  "name": "prison-x-gen-z-14",
+  "note": "prisonx-storytelling-evolution-through-gen-z",
+  "asset": "0b22aca8-6c32-487c-8be7-6759c2e0668d"
+ },
+ {
+  "name": "sxsw-sydney-01",
+  "note": "sxsw-sydney-2023",
+  "asset": "b525fe17-a447-42ce-92c8-8223bda32afb"
+ },
+ {
+  "name": "sxsw-sydney-02",
+  "note": "sxsw-sydney-2023",
+  "asset": "b5076a27-a33d-4e93-9508-5460322fb043"
+ },
+ {
+  "name": "sxsw-sydney-03",
+  "note": "sxsw-sydney-2023",
+  "asset": "68f1f5dd-849f-428b-aeb0-166aaa7814a4"
+ },
+ {
+  "name": "awichas-glow-01",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "be150901-e40d-4eca-bbbf-37713c45a474"
+ },
+ {
+  "name": "awichas-glow-02",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "9c5fa115-ef2a-4b6a-949c-6cf1c305e81d"
+ },
+ {
+  "name": "awichas-glow-03",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "822bb9e0-b9c3-407c-a7e1-90601f53387d"
+ },
+ {
+  "name": "awichas-glow-04",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "13130ac2-9500-4ca0-a37a-00edc83915bd"
+ },
+ {
+  "name": "awichas-glow-05",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "99466d07-50af-4231-bcfb-2af404a303c6"
+ },
+ {
+  "name": "awichas-glow-06",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "7ef8c17b-cd4b-4828-8d55-b98257a5ad78"
+ },
+ {
+  "name": "awichas-glow-07",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "94a6fabf-857e-4482-bf0f-38c4dc29883d"
+ },
+ {
+  "name": "awichas-glow-08",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "1ee5f926-0317-4910-b13d-51bb9cd0204d"
+ },
+ {
+  "name": "awichas-glow-09",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "09368914-cd91-4702-b127-c75356139601"
+ },
+ {
+  "name": "awichas-glow-10",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "5f2acc88-3ccd-401d-b3f7-f74c4f6fb038"
+ },
+ {
+  "name": "awichas-glow-11",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "3bc6fcdb-a371-4577-907a-d49c66cc98c8"
+ },
+ {
+  "name": "awichas-glow-12",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "c4604f87-a716-4855-a1ea-cf652de7f3e3"
+ },
+ {
+  "name": "awichas-glow-13",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "ea7b5ce4-e3c0-4a51-8817-ba6b745e287d"
+ },
+ {
+  "name": "awichas-glow-14",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "5550b473-7bfe-4369-b237-3eb0c88eb0f0"
+ },
+ {
+  "name": "awichas-glow-15",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "c6d73dee-1d77-4bd9-b0f8-bc99c4a27338"
+ },
+ {
+  "name": "awichas-glow-16",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "f4f93e28-5a3f-49fe-9b7c-fa4beea94d99"
+ },
+ {
+  "name": "awichas-glow-17",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "7039afcd-a970-4005-aac7-c082733fed0e"
+ },
+ {
+  "name": "awichas-glow-18",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "854f4976-4ba5-423e-96db-66cfbd538b74"
+ },
+ {
+  "name": "awichas-glow-19",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "b623286d-a56c-42b4-bfcc-929757a4a31c"
+ },
+ {
+  "name": "awichas-glow-20",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "15406b66-4d1d-4ce2-8488-55bcd6bc0586"
+ },
+ {
+  "name": "awichas-glow-21",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "21cb0426-903d-4973-b9a8-95c179968816"
+ },
+ {
+  "name": "awichas-glow-poster-a163ff9d",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "dda120a7-b6ab-4a77-9ad5-19b9e04aa05f",
+  "poster": "a163ff9d-ef80-4d7e-a9e2-5adf02aea16a.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-1c051fe2",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "c375ea1e-9096-461e-afd8-1d40356728db",
+  "poster": "1c051fe2-c45a-4da7-a281-98679521e4ea.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-d5880e5f",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "0c152d40-b33a-4b4d-8780-70bcea0bf9e2",
+  "poster": "d5880e5f-1030-4ee6-aa3c-d81af56582e9.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-58076fef",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "fdadec71-9e55-468e-85d6-88a5b2ec85ce",
+  "poster": "58076fef-decf-49f2-8b0f-67ee01e64f3e.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-2d369cd6",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "5fe49b4f-d0e4-4b57-b9c8-da0e3c9cd91c",
+  "poster": "2d369cd6-2cb5-403a-aef6-34d75158cb8b.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-1af6ed24",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "40bb64f4-e042-4ac3-a002-90a036969c49",
+  "poster": "1af6ed24-8b35-49c0-8b97-26ad33f837d0.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-b775f69b",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "aa832301-1af2-44b0-b503-cb585ad79c1f",
+  "poster": "b775f69b-423f-4773-9524-1cd15665d0bf.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-69c9a3d1",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "56b1ce9f-0f33-41c5-9cc7-fcce788c3f5e",
+  "poster": "69c9a3d1-92dd-4a34-988d-7bdc45aa09c0.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-eb2fa12c",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "45e9fe3f-f52d-4bcf-bb88-65571dd74a80",
+  "poster": "eb2fa12c-4b99-45c8-9e46-e352bc015306.mp4"
+ },
+ {
+  "name": "awichas-glow-poster-7f75ad34",
+  "note": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "asset": "51968dbe-6a88-426e-9d26-25b585cd3810",
+  "poster": "7f75ad34-e210-4235-9c1f-050be7dd7e76.mp4"
+ },
+ {
+  "name": "voices-of-vr-01",
+  "note": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "asset": "c392553c-2414-45f7-99a0-4bc23be382ae"
+ },
+ {
+  "name": "voices-of-vr-poster-62379131",
+  "note": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "asset": "71cad09d-ae49-499e-a5fc-95a7cf069e4b",
+  "poster": "62379131-72dc-43f4-946d-b704ea06c5fd.mp4"
+ },
+ {
+  "name": "voices-of-vr-poster-54058552",
+  "note": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "asset": "53da19bb-63c5-47cc-a53a-a63c314bf227",
+  "poster": "54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4"
+ },
+ {
+  "name": "voices-of-vr-poster-bcafb0c1",
+  "note": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "asset": "d43c9dfd-f8c8-415c-b238-d1f48913b3dc",
+  "poster": "bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4"
+ },
+ {
+  "name": "voices-of-vr-poster-0793ddbe",
+  "note": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "asset": "ceefced2-dbb6-4077-88e6-7b5ee72116fb",
+  "poster": "0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4"
+ },
+ {
+  "name": "nsw-policy-01",
+  "note": "policy-recommendations-nsw-arts-culture-tech-equity",
+  "asset": "832c80d4-d7be-4694-a213-bf719d6768ed"
+ },
+ {
+  "name": "la-lucha-outreach-01",
+  "note": "aug-20-2023",
+  "asset": "fe385e32-4160-4bbd-b0b0-867f3ae06927"
+ },
+ {
+  "name": "la-lucha-outreach-02",
+  "note": "aug-20-2023",
+  "asset": "2517455e-b98f-4295-b0d9-1596156fd199"
+ },
+ {
+  "name": "la-lucha-outreach-03",
+  "note": "aug-20-2023",
+  "asset": "26d87b1d-e4bd-4f1d-866f-7d4eb0257d34"
+ },
+ {
+  "name": "la-lucha-outreach-04",
+  "note": "aug-20-2023",
+  "asset": "1f2688c2-616e-48e5-8ef1-e133910dafad"
+ },
+ {
+  "name": "la-lucha-outreach-05",
+  "note": "aug-20-2023",
+  "asset": "1b0a6deb-8a7b-4f7c-81eb-de70c5e8b56e"
+ },
+ {
+  "name": "la-lucha-outreach-06",
+  "note": "aug-20-2023",
+  "asset": "61955862-4508-4ce4-a597-676e440c2b0c"
+ },
+ {
+  "name": "la-lucha-blackstar-01",
+  "note": "aug-19-2023",
+  "asset": "d4eaa232-be05-47b6-9cad-f9e01610f9a6"
+ },
+ {
+  "name": "la-lucha-blackstar-02",
+  "note": "aug-19-2023",
+  "asset": "efed534e-24ab-4ea1-b656-d36b6e9d36e3"
+ },
+ {
+  "name": "la-lucha-blackstar-03",
+  "note": "aug-19-2023",
+  "asset": "6767baa7-cf67-41ed-b61a-02a1dcf5a140"
+ },
+ {
+  "name": "la-lucha-blackstar-04",
+  "note": "aug-19-2023",
+  "asset": "c16d931d-aad8-4ee6-89a1-7b0d918d3dfa"
+ },
+ {
+  "name": "la-lucha-blackstar-05",
+  "note": "aug-19-2023",
+  "asset": "4561f5bc-081a-4b47-a838-4e62a8e69666"
+ },
+ {
+  "name": "la-lucha-blackstar-06",
+  "note": "aug-19-2023",
+  "asset": "2325ac53-0976-4ece-a70e-0586967f0462"
+ },
+ {
+  "name": "la-lucha-blackstar-07",
+  "note": "aug-19-2023",
+  "asset": "c9e42b00-34cc-4153-898f-b2863c66965c"
+ },
+ {
+  "name": "la-lucha-blackstar-08",
+  "note": "aug-19-2023",
+  "asset": "e354e0ea-4a09-4ef0-bae4-1f4c55a12d07"
+ },
+ {
+  "name": "la-lucha-blackstar-09",
+  "note": "aug-19-2023",
+  "asset": "889c3f80-8188-49e7-809b-6cebded58524"
+ },
+ {
+  "name": "la-lucha-blackstar-10",
+  "note": "aug-19-2023",
+  "asset": "f22914fa-92d5-4938-9d37-d3d93c1c2a90"
+ },
+ {
+  "name": "la-lucha-blackstar-11",
+  "note": "aug-19-2023",
+  "asset": "14ae96e6-3319-486e-99a9-1d89612b5bbe"
+ },
+ {
+  "name": "la-lucha-blackstar-12",
+  "note": "aug-19-2023",
+  "asset": "2c77570d-8c5b-431b-94bf-1dc8e24219e0"
+ },
+ {
+  "name": "la-lucha-blackstar-13",
+  "note": "aug-19-2023",
+  "asset": "5ca80b26-7538-4b8b-9f7b-4b5455554b8f"
+ },
+ {
+  "name": "la-lucha-blackstar-14",
+  "note": "aug-19-2023",
+  "asset": "27ae0570-768c-4f1c-a76f-dcd103fa2ec2"
+ },
+ {
+  "name": "la-lucha-blackstar-poster-3c2968bd",
+  "note": "aug-19-2023",
+  "asset": "07692cb5-2d02-4d42-b950-21539b43c57b",
+  "poster": "3c2968bd-57cd-44fd-832b-f29ceae13e92.mp4"
+ },
+ {
+  "name": "brain-jam-01",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "ab079c12-8af4-4f47-b687-f19ac78c2ce2"
+ },
+ {
+  "name": "brain-jam-02",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "49f93958-903d-4dc3-907c-9856b38a6878"
+ },
+ {
+  "name": "brain-jam-03",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "ef4fc490-40e5-46ba-a199-b8762c32a90f"
+ },
+ {
+  "name": "brain-jam-04",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "d3a4f101-73d6-4524-b1c2-926bbfb901c6"
+ },
+ {
+  "name": "brain-jam-05",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "66f0e566-45c5-4cc9-8ad9-bbb7ff3ee737"
+ },
+ {
+  "name": "brain-jam-06",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "f2131373-1ac4-443b-ae18-8f848fca65f5"
+ },
+ {
+  "name": "brain-jam-07",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "53d96e59-349d-4d2a-a572-0f1fc4355b41"
+ },
+ {
+  "name": "brain-jam-08",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "e8f4671d-370a-4770-aca6-26e594fe05e4"
+ },
+ {
+  "name": "brain-jam-09",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "d7ad8f15-4221-4aa2-bba3-342c7be65e72"
+ },
+ {
+  "name": "brain-jam-10",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "71f8f75a-0ff1-4b2f-a754-4759e36635c6"
+ },
+ {
+  "name": "brain-jam-11",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "90065270-79f1-4f42-a503-8513e89e8642"
+ },
+ {
+  "name": "brain-jam-12",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "3217648f-b08a-421c-88dd-ba2a58a76c52"
+ },
+ {
+  "name": "brain-jam-13",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "37ee8ffd-f446-4f5d-aced-a6270e2e7fc9"
+ },
+ {
+  "name": "brain-jam-14",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "36394a0b-f3d8-45f3-a7b0-abaf507abe44"
+ },
+ {
+  "name": "brain-jam-15",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "5e6cfaf9-9cae-448e-9c85-b249e6257628"
+ },
+ {
+  "name": "brain-jam-poster-84d3d6e4",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "1dc9965e-2f54-4f5b-a085-ced5c1ddfa6f",
+  "poster": "84d3d6e4-b2c6-4235-853b-0d443dd3c739.mp4"
+ },
+ {
+  "name": "brain-jam-poster-8f114445",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "0c10cb42-0716-408f-a6fe-1c4babb0fb00",
+  "poster": "8f114445-1189-4b28-8440-02f3b9f102df.mp4"
+ },
+ {
+  "name": "brain-jam-poster-73e2ae6a",
+  "note": "brain-jam-games-for-change-nyc",
+  "asset": "01018ee8-face-44df-8115-679fe1747fcd",
+  "poster": "73e2ae6a-01d3-433d-8ce7-31a97cc024e6.mp4"
+ }
+]

@@ -1,0 +1,11 @@
+T: Violeta Ayala’s mission: creating LUNA, the future of feminist AI
+D: Discover the journey of Violeta Ayala as she crafts LUNA, an AI that aspires to dismantle biases and champion a feminist future in technology.
+S: Violeta Ayala introduces LUNA, Learning Unbiased Neural Algorithm: a project and a documentary about building an AI that challenges bias.
+IMG: 1
+P: In a world where technology influences society, Violeta Ayala, a filmmaker, embarks on a revolutionary journey. She introduces LUNA (Learning Unbiased Neural Algorithm), a project aiming to challenge the biases in artificial intelligence and offer hope for an unbiased AI.
+P: The story of LUNA starts with a group of women with diverse perspectives coming together to create an AI that embodies equity. It's not only about technology; it's about changing the narrative and envisioning an AI that supports feminist values.
+P: Ayala faces obstacles along the way. Her documentary reveals the difficulties of collaboration, fighting against tech giants, and infusing LUNA with principles of equity. It's a personal and collective journey to address biases in current AI systems.
+P: Through Ayala's documentary, viewers get an inside look at the creation of LUNA. This story parallels the impact of historical inventions like the printing press, but with a focus on addressing bias in AI. It poses questions about dismantling biases in technology and shifting power dynamics for true transformation.
+P: With support from [Chicken and Egg through a Netflix grant](https://about.netflix.com/en/news/chicken-and-egg-pictures-and-netflix-announces-inaugural-grantees), this documentary sparks a movement for creating AI that promotes social equity. It challenges us to imagine a future where technology is a force for equity, redefining the narrative of artificial intelligence through a feminist perspective.
+P: As the story of Feminist AI unfolds, it invites us to join a movement shaping the future of technology. It's a call to action for technologists, feminists, and anyone dreaming of a future where technology benefits everyone equally.
+P: This isn't just about an documentary or an AI named LUNA; it's about the potential for collective action and visionary thinking to reshape the world.

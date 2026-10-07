@@ -1,0 +1,42 @@
+T: Construir Huk V1.0: una deidad digital para la Amazonía en llamas
+D: HUK the Jaguaress es una instalación interactiva en evolución, cocreada por artistas, tecnólogos, bailarines y narradores indígenas en Bolivia. Surgida de la devastación de los incendios de la Amazonía, HUK existe en AR, VR, escultura, performance en vivo y sistemas de datos ambientales en tiempo real. El proyecto combina datos satelitales de incendios forestales, bioelectricidad de las plantas, titiritería somática, movimiento de bailarines, edge AI y creatividad computacional, y explora cómo los saberes ancestrales y el futurismo neoandino pueden transformar la relación entre inteligencia artificial, ecología, corporalidad y memoria colectiva. Desarrollado por Violeta Ayala. Cocreado por Yasmeen Hitti, Dan Fallshaw, Brian Condori. Mila Quebec AI.
+S: Huk the Jaguaress empieza con los incendios en la Amazonía. Su primera versión conecta alertas de incendios forestales, bioelectricidad de las plantas, bailarines y edge AI.
+YT: 4cDaYOr3QBM | The Making of Huk
+P: HUK empezó con el fuego.
+P: Bosques que ardían en toda Bolivia a una escala difícil de comprender. Árboles antiguos que desaparecían bajo un humo visible desde el espacio. Territorios sagrados que se hacían ceniza mientras los sistemas satelitales contaban focos de calor más rápido de lo que los humanos podían responder.
+P: En medio de esa devastación, empezamos a hacernos una pregunta distinta sobre la IA.
+P: ¿Qué pasaría si la inteligencia artificial no surgiera solo de la extracción?
++: ¿Qué pasaría si pudiera escuchar al territorio?
++: ¿Qué pasaría si pudiera cargar memoria en vez de borrarla?
+P: HUK the Jaguaress surgió de esas preguntas.
+P: La imaginamos como el espíritu de una jaguaresa de dos millones de años que se levanta de la Amazonía en llamas, moldeada por cosmologías indígenas, futurismo neoandino, detección ambiental en tiempo real, sistemas XR, performance somática y creatividad computacional. No es asistente, chatbot ni avatar humanoide.
+P: Su forma se inspira en las geometrías de Nazca, la mitología del jaguar y los ecosistemas vivos. Su conciencia se alimenta de alertas de incendios forestales, sistemas satelitales, movimientos de bailarines, sensores corporales y señales bioeléctricas de las plantas. Ella metaboliza los datos.
+P: Cuando los incendios se intensifican en la Amazonía, HUK se inquieta.
++: Cuando los bosques se recuperan, sus movimientos se suavizan.
++: Cuando los visitantes bailan, ella responde.
++: Cuando las plantas emiten actividad eléctrica, se vuelven parte de su voz.
+P: Construir HUK V1.0 significó crear una relación completamente nueva entre el cuerpo, el entorno y la percepción de las máquinas.
+P: En el laboratorio desarrollamos sistemas de animación somática a medida, programados en Python, capaces de traducir el movimiento humano en tiempo real al comportamiento de criaturas no humanas. En lugar de trajes de captura de movimiento y ciclos de animación predefinidos, el sistema usa cámaras OAK-D, seguimiento con MediaPipe, esqueletos de Blender, pipelines UDP y sensores ambientales para crear la performance en vivo de las criaturas.
+P: Las expresiones humanas se convierten en movimientos de plantas.
++: Los latidos animan flores.
++: Los bailarines de Tinku se convierten en vuelo de cóndor.
++: La respiración altera la luz y el sonido.
+P: La arquitectura se construyó a propósito en torno a la inteligencia relacional, en vez de la inteligencia de una máquina aislada. HUK existe como un ecosistema de sistemas que interactúan:
++: datos satelitales,
++: plantas bioeléctricas,
++: seguimiento somático,
++: sistemas de voz,
++: edge AI,
++: detección ambiental,
++: estructuras de memoria,
++: interacción con el público.
+P: La privacidad también se volvió parte de la filosofía de diseño. El sistema procesa el movimiento y el afecto de forma local, con pipelines de edge AI que corren directamente en los dispositivos OAK-D. Las imágenes crudas se descartan. No se guardan rostros. La interacción se vuelve efímera en vez de extractiva.
+P: Pero HUK cobró vida de verdad cuando el público entró al sistema.
+P: En CPH:DOX, en Copenhague, los visitantes empezaron a doblar grullas de origami después de que HUK notó una que colgaba cerca. Al final de la exposición, cientos de grullas llenaban el espacio de la instalación y convertían el entorno en un ritual colectivo.
+P: En NewImages, en París, un niño empezó a bailar. HUK cambió de idioma, sincronizó el ritmo e invitó a otros a moverse con ella. La galería dejó de comportarse como una galería. Se volvió coreografía participativa.
+P: Esos momentos cambiaron el proyecto mismo.
+P: Nos dimos cuenta de que HUK nunca podría ser una obra terminada. Evoluciona con cada público, territorio, idioma y condición ecológica que encuentra. La instalación se reescribe continuamente a través de la interacción.
+P: La versión 1.0 es el primer organismo estable. El proceso sigue.
+P: De la residencia en Mila, en Montreal, a las exposiciones en Copenhague y París, y hacia futuras presentaciones en Cochabamba, Tokio y más allá, HUK sigue evolucionando como un sistema cinematográfico vivo que surge desde Bolivia hacia el mundo.
+P: Una inteligencia relacional.
+P: Aprende a través del fuego, la memoria, el movimiento y la presencia colectiva.

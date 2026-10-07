@@ -1,0 +1,14 @@
+T: Dos máquinas, una pregunta: IA feminista en el VIP Studio
+D: En febrero de 2025, Violeta Ayala y Yasmeen Hitti se sumaron a la residencia de IA feminista FAIR FUTURE en el VIP Studio de la Universidad de Nottingham, con la profesora Helen Kennedy como anfitriona. Construyeron el VIP Chatbot, que pone a OpenAI y a DeepSeek lado a lado para que los sesgos de los modelos sean visibles para artistas.
+S: Violeta Ayala y Yasmeen Hitti se suman a la residencia de IA feminista en el VIP Studio de la Universidad de Nottingham. Construyen el VIP Chatbot, donde OpenAI y DeepSeek responden al mismo prompt lado a lado.
+H: Residencia de IA feminista en la Universidad de Nottingham
+IMG: 1
+A: Prueba el chatbot aquí | https://feminist-chatbot.onrender.com
+IMG: 2 | https://miro.com/app/board/uXjVL9VKSec=/
+A: Diapositivas de la presentación | https://gamma.app/docs/AI-for-Feminist-Art-Practitioners-Access-Speed-and-Inclusion-k97x2ryy2ya1h9n
+P: Violeta Ayala y Yasmeen Hitti llegan a Nottingham como residentes de IA feminista, recibidas por la profesora Helen Kennedy en el VIP Studio de la Universidad de Nottingham. Su encargo tiene tres palabras: acceso, velocidad e inclusión. Su pregunta es práctica. ¿Cómo usan la IA, en sus propios términos, quienes hacen arte feminista?
+P: El trabajo empieza en papel. Un frontend en HTML está arriba en la página. Dos flechas bajan. Una llega a OpenAI en Estados Unidos. La otra llega a DeepSeek en China. Este boceto se vuelve el VIP Chatbot. Dos modelos de dos sistemas políticos responden al mismo prompt en una sola ventana. Peach habla a través de ChatGPT. Dragon habla a través de DeepSeek. Donde sus respuestas se separan, el sesgo se vuelve visible.
+P: Un segundo boceto traza a quién sirve el chatbot: gente de la danza, la música, el arte sonoro, la escritura creativa, la fotografía, la escultura, la animación y el cine.
+P: Entonces se abre el taller. Quienes participan cubren hojas grandes con marcadores y puntos de colores. Inventan personajes: un caballero, un paladín, un guía no humano con poderes mágicos y un propósito superior. Un grupo construye la Solarpunk Paladin Turtle, una guía para el autodescubrimiento formada entre humanos e IA. Otro construye un Phoenix. Los grupos pasan sus prompts por distintos generadores de imágenes y miran cómo cada sistema responde con su propio estilo. Preguntan por hongos, rizomas, suelo y futuros solarpunk. Dentro del VIP Chatbot, Phoenix y Turtle Hope discuten entre sí.
+P: FAIR FUTURE deja una herramienta que funciona y un método. Construir rápido. Comparar modelos lado a lado. Poner las herramientas en manos de artistas y dejar que decidan qué debe decir la máquina.
+GAL: 3 4 5 6 7 8 9 10 11 12

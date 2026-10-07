@@ -1,0 +1,33 @@
+T: The body decides the interface
+D: Week 13 of the Koa pipeline: gecko finger puppeteering, direct monkey retargeting, Huk V1 skeletal corrections, and the emergence of a taxonomy for nonhuman movement. Across spiders, primates, quadrupeds, plants, and jaguaresses, the research moves toward embodied intelligence where anatomy itself becomes the interface.
+S: The gecko learns finger puppeteering, the monkey begins to mirror directly, Huk the Jaguaress discovers her own skeletal logic, and a taxonomy of locomotion emerges.
+MISSING-VIDEO: 340252 | 9:16
+P: Week 13 pushed the Koa pipeline across four creature families at once. The gecko learned finger puppeteering. The monkey abandoned pose memory and began mirroring directly. Huk the Jaguaress discovered her own skeletal logic. And slowly, a taxonomy of nonhuman movement began to emerge.
+P: The week opened with a deceptively simple question: what happens when a gecko has the same number of fingers as a human?
+P: Using MediaPipe Hands, we mapped ten human fingers directly onto ten gecko digits. Every curl, joint angle, and fingertip bend streamed through UDP into Blender in real time. MCP, PIP, and DIP joints translated into the gecko’s coxa, femur, and tibia chains. Five fingers became five claws. The mapping felt immediate because anatomically it already made sense. The body decided the interface.
+P: The same architecture extended naturally into the spider. Ten human fingers became ten arachnid legs. Not metaphorically. Mechanically. Each finger curl drove a separate limb. The performer no longer controlled a puppet through abstraction; the anatomy itself became the controller.
+P: By Friday the monkey forced us to confront a deeper problem. Our original system used a k-nearest-neighbour pose teacher: the performer trained example poses and the monkey blended between them. But the result felt trapped inside a vocabulary. The monkey could only remix what it had already seen. Neutral. Hands up. Palms front. Variations of memory.
+P: So we removed the teacher entirely.
+P: Instead of interpolating between examples, the monkey now reads joint angles directly from the performer’s body frame by frame. Shoulders, elbows, hips, knees, wrists, fingers, every angle streamed live into the rig with direct retargeting. No pose database. No interpolation. No choreography library. The monkey mirrors the body exactly as it moves.
+P: The shift was technical, but also philosophical.
+P: A pose teacher trusts the curator.
++: A retargeter trusts the body.
+P: Meanwhile Huk revealed another hidden assumption inside the pipeline: rig conventions are never universal. Her head bone rotated on Y for yaw, X for pitch, and Z for tilt, but the renderer had been driving the wrong axis for weeks. The result was uncanny: her head leaned instead of turning. A single-character change across six lines fixed it. Axis 2 became axis 1. Suddenly the jaguaress could finally look to the other side.
+P: From there the body itself became specification. Brian Condori measured exact whisker translations for Huk’s snarling state directly inside Blender. Those offsets became truth inside the renderer. No inferred standard. No universal rig assumptions. Just the measurements of this body.
+P: We also introduced automatic mocap calibration. The system now watches the performer’s resting posture for three seconds at startup, learns the body’s natural offset, and subtracts it continuously. Standing still becomes actual stillness. A few hundredths of a radian were enough to distort an entire emotional performance. Calibration became essential, not optional.
+P: The eyes changed too. Using Eye Aspect Ratio calculations from MediaPipe landmarks, Huk’s eyelids now stream directly from real blinks. Procedural blinking disappears when a human performer is present. The creature borrows the timing of an actual nervous system.
+P: By Saturday the architecture itself became visible.
+P: The same MediaPipe → UDP → Blender pipeline was now driving a gecko, spider, monkey, whale, hummingbird, llama, and jaguaress. But each body demanded different logic. Bipeds mirror differently from quadrupeds. Octoped creatures require radial symmetry. Marine creatures replace locomotion with wave propagation. Plants abandon locomotion entirely and respond through sensor-driven deformation.
+P: So the week ended with the beginning of a taxonomy:
+P: Bipeds.
++: Quadrupeds.
++: Octopeds.
++: Marine bodies.
++: Plants as a fifth category.
+P: Not categories for biology. Categories for computation.
+P: The architecture is general.
++: The body is specific.
+P: And somewhere inside all of this, another pattern became impossible to ignore: every default inside a system carries someone else’s assumptions. The monkey’s pose teacher assumed which poses mattered. The jaguaress renderer assumed the wrong axis convention. The gecko pipeline assumed fingers should behave like human hands. Week 13 became a process of making those assumptions visible, then rebuilding the pipeline around bodies that existing systems were never designed to understand.
+P: Sumaq kawsay, living well with machines too.
+IMG: 1
+IMG: 2

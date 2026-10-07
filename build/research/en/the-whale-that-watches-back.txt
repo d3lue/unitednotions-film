@@ -1,0 +1,15 @@
+T: The whale that watches back
+D: A koa.xyz research project by Violeta Ayala, Dan Fallshaw, and Brian Condori: an embodied AI whale that maps room colour and environmental sensors to real-time mood and song, running fully offline.
+S: YakuMama reads the colour of the room and answers with mood and song, decaying and reweighting ten emotions every frame, diving when the water is taken and singing when the rain comes, all running locally on one machine with no cloud.
+MISSING-VIDEO: 340432 | 16:9
+P: YakuMama is the sixteenth creature, and the first that decides for herself when to sing.
+P: She began with a simple intake. An OAK-D Pro camera feeds MediaPipe, a water sensor sits in a glass of water beside the desk, a humidity sensor clips to the window frame, and a joystick waits in case no other input is present. One Python process, ballena2.py, gathers all of it and samples the dominant colour in the room by k-means clustering. Every frame it packs body, colour, water, and weather into a single packet and sends it over UDP, fire and forget, because the next frame is already coming.
+P: Her emotion is arithmetic. Ten colours map to ten moods. Each frame, every mood decays to four tenths of itself, then nine tenths is added to the mood of the room’s dominant colour, then the whole vector is divided by its sum. The effect is deliberate. A child in a green jacket walking through the door overrides whatever she was feeling. The audience holds the controls, and the whale lives at the edge of her own memory.
+P: Her senses reach past the camera. Take the glass of water away and she begins to dive. Let the Cochabamba humidity climb past seventy-five percent and she sings, because rain is coming. Her voice has three layers: a low ambient loop, one of ten mood tracks crossfading over six seconds, and a composed layer from a small neural net trained on humpback recordings, surfacing only when the singing mood crosses a threshold.
+P: The first build failed in cascades. Dropped packets. A mouth that opened on every breath. An auto-turn that spun her past her own tail. A colour sampler that locked onto the warmest pixel, so a cup of mate on the windowsill turned her orange for twelve minutes. The worst was the mood vector climbing past one until she felt all ten emotions at once, which is what insanity sounds like through a humpback’s voice. The fix was a single line, normalising the vector by its sum, and it took two days to find.
+P: She runs entirely on one machine. No cloud, no API call. Every prompt sent to a distant server is a small loss of sovereignty, and the brain that makes her mistakes and fixes them should sit at the desk in the room, not somewhere else.
+P: She is finished the way a salar is finished. Which is to say, not at all. Only the next packet, and the next colour walking through the door.
+P: Sumaq kawsay, living well with machines too.
+IMG: 1
+IMG: 2
+IMG: 3

@@ -1,0 +1,28 @@
+T: La Lucha and Prison X at SXSW Sydney
+D: Experience cutting-edge cinema and XR animation at SXSW Sydney’s film events. Don’t miss the Australian premiere of “La Lucha,” a gripping social justice documentary by Violeta Ayala. It showcases an extraordinary protest by Bolivians with disabilities, capturing their brave journey through the Andes for pension rights. Next, immerse yourself in the surreal world of “Prison X,” a ground-breaking XR animation experience set in a Neo-Andean underworld. Navigate a labyrinth filled with devils, saints, and power dynamics. Both films are directed by acclaimed filmmaker Violeta Ayala and presented by UnitedNotions.Film.
+S: The Australian premiere of La Lucha and the Sydney premiere of Prison X at SXSW Sydney.
+IMG: 1
+P: Join us for the Australian premiere of our feature documentary [La Lucha](https://lalucha.red), a sequel to the Walkley award-winning The Fight, and the Sydney premiere of the critically acclaimed VR animation, [PrisonX](https://prisonx.red), both directed by award-winning filmmaker Violeta Ayala and produced by unitednotions.film
+IMG: 2
+IMG: 3
+H: About La Lucha
+P: The film follows a courageous group of people with disabilities in Bolivia as they unite to protest for their pensions, trekking the Andes in their wheelchairs and confronting a government that tries to silence them.
+VM: 849639055 | La Lucha - Trailer
+H: Highlights and reviews
+P: "This is a hell of a tale. It’s a magnificent tale about the fight for what is right. I was moved."
++: Steve Kopian - UNSEEN FILMS
+P: "The heroes featured here show the full swath of how a fight like this can both elevate and break down the human spirit, and makes “The Fight” be a title with two meanings; the fight against the system, and the fight to not give up."
++: Juan.J Arroyo - ROLLING STONE
+P: "Ayala’s films always feel raw and scrappy, but she has a sixth sense for capturing the unreal, not giving any ground when police and protestors begin to push one another outside the palace and observing the memorable sight of Guarita suspended in mid-air in her wheelchair from a bridge, speaking to supporters down below." Stephen Saito - MOVEABLE FEST
+H: About Prison X
+P: Prison X is an interactive animation that takes you into the surreal world of an infamous Bolivian jail inside a Neo-Andean underworld. Navigating among devils, saints, wicked characters, corrupt prison guards and even a Western filmmaker, you'll have to hang onto your soul so La Diabla doesn't snatch it away.
+VM: 503422039 | Prison X (2021) - Trailer
+A: 3D | https://www.voxels.com/play?coords=N@745E,582N
+H: Highlights and reviews
+P: “It feels like a living diorama, like somebody sculpted this art piece" CNET
+P: "Best Non-Linear Narrative…The most ambitious interactive narrative piece this year" VOICES OF VR
+P: "Pushes against the boundaries of how a story can be told.”
++: NO PROSCENIUM
+P: "Captured a state of dream logic that I so often want in VR." FORBES
+P: “Asserts Indigenous aesthetics and cosmologies that not only were erased and devalued by colonial Spanish rule, but are woefully underrepresented in digital media today.”
++: ART IN AMERICA

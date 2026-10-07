@@ -1,0 +1,9 @@
+T: Del documental a los sistemas vivos
+D: Entre cine documental, creatividad computacional, XR, computación afectiva y animación de criaturas en tiempo real, el archivo de investigación de United Notions Film traza la evolución de un nuevo lenguaje cinematográfico que surge desde Cochabamba. El trabajo combina protestas, fibra óptica, pipelines de Blender, sistemas de IA, sensores, titiritería somática y memoria colectiva, y explora cómo los cuerpos, las infraestructuras, los entornos y las máquinas interactúan como sistemas vivos interconectados. El archivo funciona a la vez como testimonio político, documentación técnica, cuaderno de laboratorio y cine especulativo en movimiento.
+S: Computación afectiva entre Montreal y La Paz, nuevos mundos para Huk, y subsidios públicos, interfaces musicales, datos electorales y acueductos leídos como tecnologías de distribución.
+IMG: 1
+P: Seguimos con nuestro trabajo en computación afectiva: exploramos la inteligencia encarnada y colectiva con nuestros colegas entre Montreal y La Paz y construimos nuevos mundos para Huk, pensando en cómo la emoción, el movimiento y la percepción de las máquinas pueden dar forma al futuro de la narración.
+IMG: 2
+IMG: 3
+IMG: 4
+P: Tejemos lo económico, lo sensorial, lo político y lo elemental. Estamos viendo que los subsidios públicos, las interfaces musicales, los datos electorales y los acueductos son todos tecnologías de distribución: de comida, de sonido, de representación, de agua • sep/2025

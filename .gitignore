@@ -1,0 +1,15 @@
+# Mac noise
+.DS_Store
+
+# originals of the lab videos (1.2 GB): kept on the Mac and backed up elsewhere, not in git
+build/video-in/
+
+# web copies of the videos (1.2 GB): they live on the server; publish.sh and the GitHub action sync them
+site/assets/video/
+
+# python
+__pycache__/
+*.pyc
+
+# zips made by build/make_zip.py
+*.zip

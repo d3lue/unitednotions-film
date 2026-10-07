@@ -1,0 +1,15 @@
+T: The condor obeyed Violeta’s hand
+D: At the opening of the HKUST SURREALITY exhibition in Guangzhou, Violeta Ayala presented an early live demonstration of somatic puppeteering, where a digital condor responded directly to her hand movements in real time. Built through Blender, computer vision, and custom motion systems developed inside the koa.xyz lab, the work explored how nonhuman creatures can be animated through embodied interaction rather than traditional keyframe animation or motion capture suits. The body became the controller. The condor became data, memory, flight, and performance simultaneously.
+S: At the opening of Surreality in Guangzhou a digital condor follows Violeta Ayala’s hand in real time. No motion capture suit. An early public demonstration of somatic puppeteering.
+IMG: 1 | https://cinemagicar.com
+P: At the opening of SURREALITY in Guangzhou, the condor flew from the palm of my hand.
+P: No motion capture suit. No animation playback. Just a camera, Blender, computer vision, and a motion system built through experimentation inside our small lab in Cochabamba.
+P: The condor responded directly to hand movement in real time. Fingers became wing structures. Rotation became flight. The body stopped acting like an operator standing outside the image and instead entered the animation system itself.
+P: This was one of the first public demonstrations of what would later evolve into our broader research into somatic puppeteering and nonhuman character systems. The question was simple but difficult: what happens when creatures are not animated frame by frame, but emerge live through relationships between bodies, sensors, code, memory, and space?
+P: The condor mattered because it could not move like a human. Human-centered motion capture systems break when applied to wings, roots, tentacles, or nonhuman anatomies. We had to invent different forms of translation between performer and creature, systems based on gesture, proximity, rhythm, and relational movement instead of direct imitation.
+P: Technology became performance.
+P: The exhibition at HKUST marked an important moment in that evolution: a bridge between XR, cinema, embodied interaction, and computational creativity. The condor was no longer just a 3D model on a screen. It became responsive, unstable, alive through interaction.
+P: The body became the controller.
++: The condor became movement.
++: And movement became cinema again.
+MISSING-VIDEO: 326156 | 9:16

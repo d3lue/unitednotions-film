@@ -1,0 +1,15 @@
+T: La ballena que devuelve la mirada
+D: Un proyecto de investigación de koa.xyz, de Violeta Ayala, Dan Fallshaw y Brian Condori: una ballena de IA encarnada que traduce el color del cuarto y los sensores ambientales en ánimo y canto en tiempo real, y funciona por completo sin conexión.
+S: YakuMama lee el color del cuarto y responde con ánimo y canto: en cada fotograma hace decaer diez emociones y las vuelve a ponderar, se sumerge cuando le quitan el agua y canta cuando llega la lluvia, y todo corre localmente en una sola máquina, sin nube.
+MISSING-VIDEO: 340432 | 16:9
+P: YakuMama es la decimosexta criatura, y la primera que decide por sí misma cuándo cantar.
+P: Empezó con una entrada de datos simple. Una cámara OAK-D Pro alimenta a MediaPipe, un sensor de agua está metido en un vaso de agua junto al escritorio, un sensor de humedad va enganchado al marco de la ventana, y un joystick espera por si no hay otra entrada. Un solo proceso de Python, ballena2.py, lo reúne todo y muestrea el color dominante del cuarto con agrupamiento k-means. En cada fotograma empaqueta cuerpo, color, agua y clima en un solo paquete y lo envía por UDP, dispara y olvida, porque el siguiente fotograma ya viene.
+P: Su emoción es aritmética. Diez colores corresponden a diez ánimos. En cada fotograma, todos los ánimos decaen a cuatro décimos de sí mismos, luego se suman nueve décimos al ánimo del color dominante del cuarto, luego todo el vector se divide entre su suma. El efecto es deliberado. Un niño de chamarra verde que entra por la puerta anula lo que ella estuviera sintiendo. El público tiene los controles, y la ballena vive al borde de su propia memoria.
+P: Sus sentidos llegan más allá de la cámara. Quítale el vaso de agua y empieza a sumergirse. Deja que la humedad de Cochabamba pase del 75% y ella canta, porque viene la lluvia. Su voz tiene tres capas: un loop ambiental grave, una de diez pistas de ánimo con fundido cruzado de seis segundos, y una capa compuesta por una pequeña red neuronal entrenada con grabaciones de ballenas jorobadas, que emerge solo cuando el ánimo de canto cruza un umbral.
+P: La primera versión falló en cascada. Paquetes perdidos. Una boca que se abría con cada respiración. Un giro automático que la hacía rotar más allá de su propia cola. Un muestreador de color que se quedaba pegado al píxel más cálido, así que una taza de mate en el borde de la ventana la volvió naranja durante doce minutos. Lo peor fue el vector de ánimo, que subía más allá de 1 hasta que ella sentía las diez emociones a la vez: así suena la locura en la voz de una ballena jorobada. El arreglo fue una sola línea, normalizar el vector por su suma, y tomó dos días encontrarla.
+P: Corre entera en una sola máquina. Sin nube, sin llamadas a una API. Cada prompt enviado a un servidor lejano es una pequeña pérdida de soberanía, y el cerebro que comete sus errores y los corrige debe estar aquí, en el escritorio del cuarto.
+P: Está terminada como está terminado un salar. Es decir, para nada. Solo el siguiente paquete, y el siguiente color que entra por la puerta.
+P: Sumaq kawsay, vivir bien también con las máquinas.
+IMG: 1
+IMG: 2
+IMG: 3

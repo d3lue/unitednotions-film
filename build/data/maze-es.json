@@ -1,0 +1,2750 @@
+{
+"a": {
+"rows": 156,
+"info": {
+"score": 185.7,
+"void": 101,
+"cost": 22.3,
+"seed": 527,
+"attempt": 0,
+"halls": 4,
+"lost": [],
+"photo_share": 0.688,
+"walk_nodes": 633
+},
+"rects": [
+{
+"id": "title",
+"kind": "room",
+"role": "title",
+"x": 0,
+"y": 0,
+"w": 24,
+"h": 5
+},
+{
+"id": "intro",
+"kind": "room",
+"role": "intro",
+"x": 0,
+"y": 5,
+"w": 9,
+"h": 7
+},
+{
+"id": "police-line",
+"kind": "photo",
+"role": "",
+"x": 14,
+"y": 5,
+"w": 10,
+"h": 7
+},
+{
+"id": "work-la-lucha",
+"kind": "room",
+"role": "work",
+"x": 14,
+"y": 12,
+"w": 10,
+"h": 6
+},
+{
+"id": "megaphone",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 5,
+"w": 5,
+"h": 4
+},
+{
+"id": "gecko-on-screen",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 9,
+"w": 5,
+"h": 3
+},
+{
+"id": "masked-character",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 12,
+"w": 3,
+"h": 6
+},
+{
+"id": "green-hat",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 12,
+"w": 6,
+"h": 4
+},
+{
+"id": "jaguaress-model",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 12,
+"w": 5,
+"h": 4
+},
+{
+"id": "march-on-the-road",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 16,
+"w": 8,
+"h": 5
+},
+{
+"id": "filming-the-march",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 18,
+"w": 6,
+"h": 4
+},
+{
+"id": "whale-on-grid",
+"kind": "photo",
+"role": "",
+"x": 14,
+"y": 18,
+"w": 10,
+"h": 6
+},
+{
+"id": "bird-wings",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 21,
+"w": 8,
+"h": 4
+},
+{
+"id": "roadside-rest",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 22,
+"w": 6,
+"h": 4
+},
+{
+"id": "bird-and-cactus",
+"kind": "photo",
+"role": "",
+"x": 17,
+"y": 24,
+"w": 7,
+"h": 4
+},
+{
+"id": "stolen-poster",
+"kind": "photo",
+"role": "",
+"x": 14,
+"y": 24,
+"w": 3,
+"h": 4
+},
+{
+"id": "prison-courtyard",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 25,
+"w": 4,
+"h": 6
+},
+{
+"id": "tiff-trio",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 25,
+"w": 4,
+"h": 3
+},
+{
+"id": "quote-cocaine-prison-4",
+"kind": "room",
+"role": "quote",
+"x": 8,
+"y": 26,
+"w": 6,
+"h": 5
+},
+{
+"id": "document",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 28,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-the-bolivian-case",
+"kind": "room",
+"role": "work",
+"x": 15,
+"y": 34,
+"w": 9,
+"h": 5
+},
+{
+"id": "spider-rig",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 28,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-riot-police",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 31,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-cocaine-prison",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 37,
+"w": 9,
+"h": 5
+},
+{
+"id": "fence-banner",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 31,
+"w": 6,
+"h": 4
+},
+{
+"id": "orchid-and-web",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 35,
+"w": 6,
+"h": 4
+},
+{
+"id": "surreality-plaza",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 39,
+"w": 7,
+"h": 5
+},
+{
+"id": "prison-x-poster",
+"kind": "photo",
+"role": "",
+"x": 16,
+"y": 39,
+"w": 5,
+"h": 6
+},
+{
+"id": "quote-prison-x-2",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 42,
+"w": 9,
+"h": 3
+},
+{
+"id": "statement-0",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 45,
+"w": 24,
+"h": 4
+},
+{
+"id": "la-lucha-poster",
+"kind": "photo",
+"role": "",
+"x": 20,
+"y": 49,
+"w": 4,
+"h": 6
+},
+{
+"id": "awichas-on-the-strand",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 49,
+"w": 5,
+"h": 6
+},
+{
+"id": "sundance-marquee",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 49,
+"w": 4,
+"h": 3
+},
+{
+"id": "lone-protester",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 49,
+"w": 8,
+"h": 6
+},
+{
+"id": "red-carpet",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 49,
+"w": 3,
+"h": 4
+},
+{
+"id": "jaguar-woman",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 53,
+"w": 7,
+"h": 3
+},
+{
+"id": "march-altiplano",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 55,
+"w": 9,
+"h": 5
+},
+{
+"id": "small-plane",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 55,
+"w": 8,
+"h": 5
+},
+{
+"id": "ridge-silhouettes",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 56,
+"w": 7,
+"h": 4
+},
+{
+"id": "camera-on-the-altiplano",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 60,
+"w": 4,
+"h": 3
+},
+{
+"id": "the-bolivian-case-poster",
+"kind": "photo",
+"role": "",
+"x": 19,
+"y": 60,
+"w": 5,
+"h": 6
+},
+{
+"id": "hospital-bed",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 60,
+"w": 4,
+"h": 6
+},
+{
+"id": "whale-print",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 60,
+"w": 6,
+"h": 3
+},
+{
+"id": "head-rig",
+"kind": "photo",
+"role": "",
+"x": 10,
+"y": 60,
+"w": 5,
+"h": 3
+},
+{
+"id": "prison-from-above",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 63,
+"w": 8,
+"h": 6
+},
+{
+"id": "golden-jaguar",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 66,
+"w": 9,
+"h": 5
+},
+{
+"id": "work-huk-the-jaguaress",
+"kind": "room",
+"role": "work",
+"x": 15,
+"y": 71,
+"w": 9,
+"h": 7
+},
+{
+"id": "prison-x-player",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 63,
+"w": 7,
+"h": 5
+},
+{
+"id": "dune-at-dusk",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 69,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-stolen",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 75,
+"w": 9,
+"h": 6
+},
+{
+"id": "quote-prison-x-3",
+"kind": "room",
+"role": "quote",
+"x": 9,
+"y": 68,
+"w": 6,
+"h": 4
+},
+{
+"id": "red-neon-portrait",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 72,
+"w": 6,
+"h": 3
+},
+{
+"id": "whale-and-robot",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 75,
+"w": 6,
+"h": 3
+},
+{
+"id": "prison-x-masks",
+"kind": "photo",
+"role": "",
+"x": 17,
+"y": 78,
+"w": 7,
+"h": 4
+},
+{
+"id": "cph-dox",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 78,
+"w": 8,
+"h": 4
+},
+{
+"id": "statement-1",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 82,
+"w": 24,
+"h": 3
+},
+{
+"id": "orchid-hummingbird",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 85,
+"w": 7,
+"h": 4
+},
+{
+"id": "todo-nace-dancers",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 85,
+"w": 4,
+"h": 6
+},
+{
+"id": "plaza-screen",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 85,
+"w": 7,
+"h": 5
+},
+{
+"id": "huk-installation",
+"kind": "photo",
+"role": "",
+"x": 18,
+"y": 85,
+"w": 6,
+"h": 4
+},
+{
+"id": "shout-at-night",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 90,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-the-fight",
+"kind": "room",
+"role": "work",
+"x": 11,
+"y": 96,
+"w": 9,
+"h": 5
+},
+{
+"id": "pink-blanket",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 89,
+"w": 7,
+"h": 5
+},
+{
+"id": "awards-selfie",
+"kind": "photo",
+"role": "",
+"x": 20,
+"y": 89,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-x-booth",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 91,
+"w": 4,
+"h": 3
+},
+{
+"id": "fence-at-night",
+"kind": "photo",
+"role": "",
+"x": 20,
+"y": 92,
+"w": 4,
+"h": 3
+},
+{
+"id": "quote-the-fight-1",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 94,
+"w": 5,
+"h": 5
+},
+{
+"id": "microphone",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 94,
+"w": 6,
+"h": 6
+},
+{
+"id": "awicha-red",
+"kind": "photo",
+"role": "",
+"x": 20,
+"y": 95,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-stripes",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 99,
+"w": 5,
+"h": 6
+},
+{
+"id": "press-wall",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 100,
+"w": 6,
+"h": 4
+},
+{
+"id": "awicha-weaving",
+"kind": "photo",
+"role": "",
+"x": 20,
+"y": 100,
+"w": 4,
+"h": 6
+},
+{
+"id": "inmate-camera",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 101,
+"w": 9,
+"h": 6
+},
+{
+"id": "neon-headset",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 104,
+"w": 6,
+"h": 3
+},
+{
+"id": "vr-headset",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 105,
+"w": 5,
+"h": 4
+},
+{
+"id": "prison-x-booth-haze",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 107,
+"w": 12,
+"h": 9
+},
+{
+"id": "work-prison-x",
+"kind": "room",
+"role": "work",
+"x": 5,
+"y": 107,
+"w": 7,
+"h": 9
+},
+{
+"id": "stage-talk",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 109,
+"w": 5,
+"h": 3
+},
+{
+"id": "raised-fist",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 112,
+"w": 5,
+"h": 6
+},
+{
+"id": "blue-jaguar",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 116,
+"w": 15,
+"h": 7
+},
+{
+"id": "awichas-in-the-hand",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 116,
+"w": 4,
+"h": 7
+},
+{
+"id": "statement-2",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 123,
+"w": 24,
+"h": 3
+},
+{
+"id": "awichas-gallery",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 126,
+"w": 14,
+"h": 9
+},
+{
+"id": "work-las-awichas",
+"kind": "room",
+"role": "work",
+"x": 18,
+"y": 126,
+"w": 6,
+"h": 9
+},
+{
+"id": "three-filmmakers",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 126,
+"w": 4,
+"h": 3
+},
+{
+"id": "cocaine-prison-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 129,
+"w": 4,
+"h": 6
+},
+{
+"id": "cnn-studio",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 135,
+"w": 7,
+"h": 4
+},
+{
+"id": "blue-jungle",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 135,
+"w": 9,
+"h": 6
+},
+{
+"id": "creature-on-moss",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 135,
+"w": 8,
+"h": 4
+},
+{
+"id": "todo-nace-stage",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 139,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-todo-nace-desde-lo-pequeno",
+"kind": "room",
+"role": "work",
+"x": 6,
+"y": 145,
+"w": 9,
+"h": 7
+},
+{
+"id": "plaza-premiere",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 139,
+"w": 6,
+"h": 5
+},
+{
+"id": "checked-floor",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 141,
+"w": 4,
+"h": 6
+},
+{
+"id": "awicha-wind",
+"kind": "photo",
+"role": "",
+"x": 19,
+"y": 141,
+"w": 5,
+"h": 7
+},
+{
+"id": "the-fight-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 144,
+"w": 3,
+"h": 4
+},
+{
+"id": "screening-room",
+"kind": "photo",
+"role": "",
+"x": 3,
+"y": 144,
+"w": 3,
+"h": 4
+},
+{
+"id": "las-awichas-poster",
+"kind": "photo",
+"role": "",
+"x": 15,
+"y": 147,
+"w": 4,
+"h": 6
+},
+{
+"id": "awicha-light",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 148,
+"w": 6,
+"h": 6
+},
+{
+"id": "awicha-hands",
+"kind": "photo",
+"role": "",
+"x": 19,
+"y": 148,
+"w": 5,
+"h": 6
+},
+{
+"id": "exit",
+"kind": "room",
+"role": "exit",
+"x": 0,
+"y": 154,
+"w": 24,
+"h": 2
+}
+]
+},
+"b": {
+"rows": 188,
+"info": {
+"score": 151.5,
+"void": 60,
+"cost": 22.5,
+"seed": 18,
+"attempt": 1,
+"halls": 2,
+"lost": [],
+"photo_share": 0.702,
+"walk_nodes": 527
+},
+"rects": [
+{
+"id": "title",
+"kind": "room",
+"role": "title",
+"x": 0,
+"y": 0,
+"w": 16,
+"h": 4
+},
+{
+"id": "intro",
+"kind": "room",
+"role": "intro",
+"x": 0,
+"y": 4,
+"w": 7,
+"h": 8
+},
+{
+"id": "police-line",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 4,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-la-lucha",
+"kind": "room",
+"role": "work",
+"x": 7,
+"y": 10,
+"w": 9,
+"h": 5
+},
+{
+"id": "megaphone",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 12,
+"w": 7,
+"h": 5
+},
+{
+"id": "masked-character",
+"kind": "photo",
+"role": "",
+"x": 13,
+"y": 15,
+"w": 3,
+"h": 6
+},
+{
+"id": "green-hat",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 15,
+"w": 6,
+"h": 4
+},
+{
+"id": "march-on-the-road",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 17,
+"w": 7,
+"h": 5
+},
+{
+"id": "gecko-on-screen",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 19,
+"w": 6,
+"h": 3
+},
+{
+"id": "filming-the-march",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 22,
+"w": 6,
+"h": 4
+},
+{
+"id": "jaguaress-model",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 22,
+"w": 5,
+"h": 4
+},
+{
+"id": "bird-wings",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 22,
+"w": 5,
+"h": 3
+},
+{
+"id": "roadside-rest",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 25,
+"w": 5,
+"h": 3
+},
+{
+"id": "whale-on-grid",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 26,
+"w": 7,
+"h": 4
+},
+{
+"id": "prison-courtyard",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 26,
+"w": 4,
+"h": 7
+},
+{
+"id": "bird-and-cactus",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 28,
+"w": 5,
+"h": 3
+},
+{
+"id": "stolen-poster",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 30,
+"w": 3,
+"h": 5
+},
+{
+"id": "tiff-trio",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 30,
+"w": 4,
+"h": 3
+},
+{
+"id": "quote-cocaine-prison-4",
+"kind": "room",
+"role": "quote",
+"x": 11,
+"y": 31,
+"w": 5,
+"h": 5
+},
+{
+"id": "document",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 33,
+"w": 8,
+"h": 5
+},
+{
+"id": "work-the-bolivian-case",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 38,
+"w": 8,
+"h": 5
+},
+{
+"id": "spider-rig",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 36,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-riot-police",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 39,
+"w": 8,
+"h": 5
+},
+{
+"id": "work-cocaine-prison",
+"kind": "room",
+"role": "work",
+"x": 8,
+"y": 44,
+"w": 8,
+"h": 5
+},
+{
+"id": "fence-banner",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 43,
+"w": 8,
+"h": 6
+},
+{
+"id": "statement-0",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 49,
+"w": 16,
+"h": 3
+},
+{
+"id": "orchid-and-web",
+"kind": "photo",
+"role": "",
+"x": 11,
+"y": 52,
+"w": 5,
+"h": 4
+},
+{
+"id": "surreality-plaza",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 52,
+"w": 6,
+"h": 4
+},
+{
+"id": "prison-x-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 52,
+"w": 5,
+"h": 6
+},
+{
+"id": "quote-prison-x-2",
+"kind": "room",
+"role": "quote",
+"x": 9,
+"y": 56,
+"w": 7,
+"h": 3
+},
+{
+"id": "la-lucha-poster",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 56,
+"w": 4,
+"h": 6
+},
+{
+"id": "awichas-on-the-strand",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 58,
+"w": 5,
+"h": 6
+},
+{
+"id": "sundance-marquee",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 59,
+"w": 4,
+"h": 3
+},
+{
+"id": "red-carpet",
+"kind": "photo",
+"role": "",
+"x": 13,
+"y": 59,
+"w": 3,
+"h": 4
+},
+{
+"id": "lone-protester",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 62,
+"w": 8,
+"h": 5
+},
+{
+"id": "small-plane",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 64,
+"w": 5,
+"h": 3
+},
+{
+"id": "march-altiplano",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 67,
+"w": 7,
+"h": 4
+},
+{
+"id": "ridge-silhouettes",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 67,
+"w": 5,
+"h": 3
+},
+{
+"id": "camera-on-the-altiplano",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 67,
+"w": 4,
+"h": 3
+},
+{
+"id": "the-bolivian-case-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 70,
+"w": 4,
+"h": 6
+},
+{
+"id": "whale-print",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 70,
+"w": 5,
+"h": 3
+},
+{
+"id": "jaguar-woman",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 71,
+"w": 7,
+"h": 3
+},
+{
+"id": "head-rig",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 73,
+"w": 5,
+"h": 3
+},
+{
+"id": "hospital-bed",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 74,
+"w": 4,
+"h": 7
+},
+{
+"id": "prison-from-above",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 76,
+"w": 7,
+"h": 5
+},
+{
+"id": "golden-jaguar",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 81,
+"w": 11,
+"h": 6
+},
+{
+"id": "work-huk-the-jaguaress",
+"kind": "room",
+"role": "work",
+"x": 5,
+"y": 87,
+"w": 11,
+"h": 5
+},
+{
+"id": "prison-x-player",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 76,
+"w": 5,
+"h": 4
+},
+{
+"id": "quote-prison-x-3",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 80,
+"w": 5,
+"h": 5
+},
+{
+"id": "red-neon-portrait",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 85,
+"w": 5,
+"h": 3
+},
+{
+"id": "dune-at-dusk",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 92,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-stolen",
+"kind": "room",
+"role": "work",
+"x": 7,
+"y": 98,
+"w": 9,
+"h": 5
+},
+{
+"id": "whale-and-robot",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 88,
+"w": 5,
+"h": 3
+},
+{
+"id": "prison-x-masks",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 91,
+"w": 5,
+"h": 3
+},
+{
+"id": "cph-dox",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 94,
+"w": 7,
+"h": 4
+},
+{
+"id": "orchid-hummingbird",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 98,
+"w": 7,
+"h": 4
+},
+{
+"id": "statement-1",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 103,
+"w": 16,
+"h": 2
+},
+{
+"id": "todo-nace-dancers",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 105,
+"w": 4,
+"h": 6
+},
+{
+"id": "plaza-screen",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 105,
+"w": 5,
+"h": 4
+},
+{
+"id": "huk-installation",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 105,
+"w": 7,
+"h": 4
+},
+{
+"id": "shout-at-night",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 109,
+"w": 12,
+"h": 8
+},
+{
+"id": "work-the-fight",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 117,
+"w": 12,
+"h": 5
+},
+{
+"id": "pink-blanket",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 111,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-x-booth",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 114,
+"w": 4,
+"h": 3
+},
+{
+"id": "fence-at-night",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 117,
+"w": 4,
+"h": 3
+},
+{
+"id": "awards-selfie",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 120,
+"w": 4,
+"h": 3
+},
+{
+"id": "quote-the-fight-1",
+"kind": "room",
+"role": "quote",
+"x": 6,
+"y": 122,
+"w": 6,
+"h": 4
+},
+{
+"id": "press-wall",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 122,
+"w": 6,
+"h": 4
+},
+{
+"id": "microphone",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 123,
+"w": 4,
+"h": 4
+},
+{
+"id": "inmate-camera",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 126,
+"w": 8,
+"h": 5
+},
+{
+"id": "awicha-red",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 126,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-weaving",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 127,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-stripes",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 131,
+"w": 5,
+"h": 6
+},
+{
+"id": "neon-headset",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 131,
+"w": 7,
+"h": 4
+},
+{
+"id": "vr-headset",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 132,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-x-booth-haze",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 135,
+"w": 11,
+"h": 8
+},
+{
+"id": "work-prison-x",
+"kind": "room",
+"role": "work",
+"x": 5,
+"y": 143,
+"w": 11,
+"h": 5
+},
+{
+"id": "stage-talk",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 137,
+"w": 5,
+"h": 3
+},
+{
+"id": "blue-jaguar",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 140,
+"w": 5,
+"h": 3
+},
+{
+"id": "raised-fist",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 143,
+"w": 5,
+"h": 5
+},
+{
+"id": "statement-2",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 148,
+"w": 16,
+"h": 3
+},
+{
+"id": "awichas-in-the-hand",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 151,
+"w": 3,
+"h": 5
+},
+{
+"id": "awichas-gallery",
+"kind": "photo",
+"role": "",
+"x": 3,
+"y": 151,
+"w": 13,
+"h": 9
+},
+{
+"id": "work-las-awichas",
+"kind": "room",
+"role": "work",
+"x": 3,
+"y": 160,
+"w": 13,
+"h": 4
+},
+{
+"id": "cocaine-prison-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 156,
+"w": 3,
+"h": 4
+},
+{
+"id": "three-filmmakers",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 160,
+"w": 3,
+"h": 3
+},
+{
+"id": "cnn-studio",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 164,
+"w": 5,
+"h": 3
+},
+{
+"id": "blue-jungle",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 164,
+"w": 7,
+"h": 5
+},
+{
+"id": "todo-nace-stage",
+"kind": "photo",
+"role": "",
+"x": 3,
+"y": 169,
+"w": 9,
+"h": 6
+},
+{
+"id": "work-todo-nace-desde-lo-pequeno",
+"kind": "room",
+"role": "work",
+"x": 3,
+"y": 175,
+"w": 9,
+"h": 6
+},
+{
+"id": "checked-floor",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 164,
+"w": 4,
+"h": 6
+},
+{
+"id": "the-fight-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 167,
+"w": 3,
+"h": 4
+},
+{
+"id": "awicha-wind",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 170,
+"w": 4,
+"h": 6
+},
+{
+"id": "screening-room",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 171,
+"w": 3,
+"h": 4
+},
+{
+"id": "las-awichas-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 175,
+"w": 3,
+"h": 4
+},
+{
+"id": "awicha-light",
+"kind": "photo",
+"role": "",
+"x": 12,
+"y": 176,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-hands",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 179,
+"w": 3,
+"h": 4
+},
+{
+"id": "creature-on-moss",
+"kind": "photo",
+"role": "",
+"x": 9,
+"y": 181,
+"w": 7,
+"h": 4
+},
+{
+"id": "plaza-premiere",
+"kind": "photo",
+"role": "",
+"x": 3,
+"y": 181,
+"w": 6,
+"h": 4
+},
+{
+"id": "exit",
+"kind": "room",
+"role": "exit",
+"x": 0,
+"y": 185,
+"w": 16,
+"h": 3
+}
+]
+},
+"c": {
+"rows": 396,
+"info": {
+"score": 420.5,
+"void": 287,
+"cost": 27.7,
+"seed": 1,
+"attempt": 0,
+"halls": 0,
+"lost": [],
+"photo_share": 0.604,
+"walk_nodes": 717
+},
+"rects": [
+{
+"id": "title",
+"kind": "room",
+"role": "title",
+"x": 0,
+"y": 0,
+"w": 12,
+"h": 13
+},
+{
+"id": "intro",
+"kind": "room",
+"role": "intro",
+"x": 0,
+"y": 13,
+"w": 12,
+"h": 13
+},
+{
+"id": "police-line",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 26,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-la-lucha",
+"kind": "room",
+"role": "work",
+"x": 1,
+"y": 33,
+"w": 11,
+"h": 9
+},
+{
+"id": "megaphone",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 42,
+"w": 8,
+"h": 5
+},
+{
+"id": "masked-character",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 42,
+"w": 4,
+"h": 8
+},
+{
+"id": "green-hat",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 47,
+"w": 8,
+"h": 5
+},
+{
+"id": "march-on-the-road",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 52,
+"w": 8,
+"h": 5
+},
+{
+"id": "gecko-on-screen",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 52,
+"w": 4,
+"h": 3
+},
+{
+"id": "filming-the-march",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 55,
+"w": 4,
+"h": 3
+},
+{
+"id": "whale-on-grid",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 57,
+"w": 8,
+"h": 5
+},
+{
+"id": "jaguaress-model",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 58,
+"w": 4,
+"h": 3
+},
+{
+"id": "stolen-poster",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 61,
+"w": 4,
+"h": 5
+},
+{
+"id": "bird-wings",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 62,
+"w": 8,
+"h": 4
+},
+{
+"id": "roadside-rest",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 66,
+"w": 6,
+"h": 4
+},
+{
+"id": "bird-and-cactus",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 66,
+"w": 6,
+"h": 4
+},
+{
+"id": "prison-courtyard",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 70,
+"w": 4,
+"h": 6
+},
+{
+"id": "tiff-trio",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 70,
+"w": 4,
+"h": 3
+},
+{
+"id": "quote-cocaine-prison-4",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 76,
+"w": 12,
+"h": 5
+},
+{
+"id": "document",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 81,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-the-bolivian-case",
+"kind": "room",
+"role": "work",
+"x": 1,
+"y": 88,
+"w": 11,
+"h": 8
+},
+{
+"id": "spider-rig",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 96,
+"w": 4,
+"h": 3
+},
+{
+"id": "prison-riot-police",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 99,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-cocaine-prison",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 106,
+"w": 11,
+"h": 8
+},
+{
+"id": "fence-banner",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 114,
+"w": 8,
+"h": 6
+},
+{
+"id": "orchid-and-web",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 114,
+"w": 4,
+"h": 3
+},
+{
+"id": "surreality-plaza",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 117,
+"w": 4,
+"h": 3
+},
+{
+"id": "statement-0",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 120,
+"w": 12,
+"h": 5
+},
+{
+"id": "prison-x-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 125,
+"w": 5,
+"h": 6
+},
+{
+"id": "awichas-on-the-strand",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 125,
+"w": 7,
+"h": 9
+},
+{
+"id": "la-lucha-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 131,
+"w": 5,
+"h": 7
+},
+{
+"id": "lone-protester",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 134,
+"w": 7,
+"h": 5
+},
+{
+"id": "sundance-marquee",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 138,
+"w": 5,
+"h": 4
+},
+{
+"id": "jaguar-woman",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 139,
+"w": 7,
+"h": 3
+},
+{
+"id": "quote-prison-x-2",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 142,
+"w": 12,
+"h": 4
+},
+{
+"id": "march-altiplano",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 146,
+"w": 8,
+"h": 5
+},
+{
+"id": "red-carpet",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 146,
+"w": 4,
+"h": 5
+},
+{
+"id": "small-plane",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 151,
+"w": 7,
+"h": 5
+},
+{
+"id": "camera-on-the-altiplano",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 151,
+"w": 5,
+"h": 4
+},
+{
+"id": "the-bolivian-case-poster",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 155,
+"w": 5,
+"h": 7
+},
+{
+"id": "ridge-silhouettes",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 156,
+"w": 7,
+"h": 4
+},
+{
+"id": "whale-print",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 160,
+"w": 7,
+"h": 4
+},
+{
+"id": "hospital-bed",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 162,
+"w": 5,
+"h": 7
+},
+{
+"id": "head-rig",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 164,
+"w": 7,
+"h": 5
+},
+{
+"id": "prison-from-above",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 169,
+"w": 8,
+"h": 6
+},
+{
+"id": "prison-x-player",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 169,
+"w": 4,
+"h": 3
+},
+{
+"id": "golden-jaguar",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 175,
+"w": 11,
+"h": 6
+},
+{
+"id": "work-huk-the-jaguaress",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 181,
+"w": 11,
+"h": 8
+},
+{
+"id": "dune-at-dusk",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 189,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-stolen",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 196,
+"w": 11,
+"h": 9
+},
+{
+"id": "quote-prison-x-3",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 205,
+"w": 12,
+"h": 5
+},
+{
+"id": "whale-and-robot",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 210,
+"w": 11,
+"h": 6
+},
+{
+"id": "red-neon-portrait",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 216,
+"w": 7,
+"h": 4
+},
+{
+"id": "prison-x-masks",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 216,
+"w": 5,
+"h": 3
+},
+{
+"id": "statement-1",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 220,
+"w": 12,
+"h": 6
+},
+{
+"id": "cph-dox",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 226,
+"w": 7,
+"h": 4
+},
+{
+"id": "todo-nace-dancers",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 226,
+"w": 5,
+"h": 7
+},
+{
+"id": "orchid-hummingbird",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 230,
+"w": 7,
+"h": 4
+},
+{
+"id": "plaza-screen",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 233,
+"w": 5,
+"h": 4
+},
+{
+"id": "huk-installation",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 234,
+"w": 7,
+"h": 4
+},
+{
+"id": "shout-at-night",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 238,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-the-fight",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 245,
+"w": 11,
+"h": 7
+},
+{
+"id": "pink-blanket",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 252,
+"w": 6,
+"h": 4
+},
+{
+"id": "prison-x-booth",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 252,
+"w": 6,
+"h": 4
+},
+{
+"id": "fence-at-night",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 256,
+"w": 6,
+"h": 4
+},
+{
+"id": "awards-selfie",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 256,
+"w": 6,
+"h": 4
+},
+{
+"id": "quote-the-fight-1",
+"kind": "room",
+"role": "quote",
+"x": 0,
+"y": 260,
+"w": 12,
+"h": 4
+},
+{
+"id": "microphone",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 264,
+"w": 6,
+"h": 6
+},
+{
+"id": "press-wall",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 264,
+"w": 6,
+"h": 4
+},
+{
+"id": "awicha-red",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 268,
+"w": 6,
+"h": 7
+},
+{
+"id": "awicha-stripes",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 270,
+"w": 6,
+"h": 8
+},
+{
+"id": "neon-headset",
+"kind": "photo",
+"role": "",
+"x": 6,
+"y": 275,
+"w": 6,
+"h": 3
+},
+{
+"id": "inmate-camera",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 278,
+"w": 8,
+"h": 5
+},
+{
+"id": "awicha-weaving",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 278,
+"w": 4,
+"h": 6
+},
+{
+"id": "vr-headset",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 283,
+"w": 7,
+"h": 4
+},
+{
+"id": "prison-x-booth-haze",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 287,
+"w": 11,
+"h": 8
+},
+{
+"id": "work-prison-x",
+"kind": "room",
+"role": "work",
+"x": 1,
+"y": 295,
+"w": 11,
+"h": 8
+},
+{
+"id": "blue-jaguar",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 303,
+"w": 11,
+"h": 6
+},
+{
+"id": "stage-talk",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 309,
+"w": 4,
+"h": 3
+},
+{
+"id": "raised-fist",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 309,
+"w": 4,
+"h": 4
+},
+{
+"id": "awichas-in-the-hand",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 309,
+"w": 4,
+"h": 7
+},
+{
+"id": "statement-2",
+"kind": "room",
+"role": "statement",
+"x": 0,
+"y": 316,
+"w": 12,
+"h": 5
+},
+{
+"id": "awichas-gallery",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 321,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-las-awichas",
+"kind": "room",
+"role": "work",
+"x": 1,
+"y": 328,
+"w": 11,
+"h": 7
+},
+{
+"id": "three-filmmakers",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 335,
+"w": 5,
+"h": 4
+},
+{
+"id": "cnn-studio",
+"kind": "photo",
+"role": "",
+"x": 5,
+"y": 335,
+"w": 7,
+"h": 4
+},
+{
+"id": "cocaine-prison-poster",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 339,
+"w": 4,
+"h": 6
+},
+{
+"id": "blue-jungle",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 339,
+"w": 8,
+"h": 6
+},
+{
+"id": "todo-nace-stage",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 345,
+"w": 11,
+"h": 7
+},
+{
+"id": "work-todo-nace-desde-lo-pequeno",
+"kind": "room",
+"role": "work",
+"x": 0,
+"y": 352,
+"w": 11,
+"h": 8
+},
+{
+"id": "creature-on-moss",
+"kind": "photo",
+"role": "",
+"x": 1,
+"y": 360,
+"w": 11,
+"h": 6
+},
+{
+"id": "plaza-premiere",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 366,
+"w": 8,
+"h": 6
+},
+{
+"id": "checked-floor",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 366,
+"w": 4,
+"h": 6
+},
+{
+"id": "the-fight-poster",
+"kind": "photo",
+"role": "",
+"x": 8,
+"y": 372,
+"w": 4,
+"h": 5
+},
+{
+"id": "screening-room",
+"kind": "photo",
+"role": "",
+"x": 4,
+"y": 372,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-light",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 372,
+"w": 4,
+"h": 5
+},
+{
+"id": "awicha-wind",
+"kind": "photo",
+"role": "",
+"x": 0,
+"y": 377,
+"w": 7,
+"h": 12
+},
+{
+"id": "las-awichas-poster",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 377,
+"w": 5,
+"h": 6
+},
+{
+"id": "awicha-hands",
+"kind": "photo",
+"role": "",
+"x": 7,
+"y": 383,
+"w": 5,
+"h": 6
+},
+{
+"id": "exit",
+"kind": "room",
+"role": "exit",
+"x": 0,
+"y": 389,
+"w": 12,
+"h": 7
+}
+]
+}
+}

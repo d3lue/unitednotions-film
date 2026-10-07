@@ -1,0 +1,18 @@
+T: When documentary begins to think
+D: Over the last two weeks, United Notions Film moved simultaneously across computational creativity research and live documentary practice. While the lab developed real-time motion systems, hand-command interaction, responsive IoT pixel surfaces, and machine perception pipelines, the documentary work unfolded directly through protests, livestreams, social platforms, and collective public memory in Cochabamba. The research explores what happens when nonfiction stops behaving like a finished object and begins operating more like a living cognitive system, distributed across cameras, networks, bodies, algorithms, and people in real time.
+S: Two weeks on two fronts. In the lab, motion systems and pixel surfaces that react to movement. In the streets of Cochabamba, the Comteco vigil filmed and streamed as it happens.
+H: Two weeks of code streets and questions about the future
+GAL: 1 2 3
+P: At United Notions Film the last two weeks have unfolded across two fronts that keep feeding each other, technology in motion and documentary in real time.
+P: In the lab we expanded motion systems inside Blender, developed hand-command interaction through MediaPipe and TensorFlow, and brought our IoT pixel surfaces closer to a nervous system of their own. The panels respond to movement like organisms made of light. Not fully sentient yet, but no longer passive. They react. They learn. They almost feel.
+P: On the documentary front the atmosphere remains sharp and alive. We filmed abuelas y abuelos holding their vigil for more than 93 days. We recorded the Comteco worker streaming on TikTok and revealing how speech fractures when a city is tense. Protesters continue to update the system from the street and you can sense the collective brain pulsing; human logic, cellular networks, shared footage circulating like neurons.
+P: Social platforms have become part of the film itself. Not only a window but a circulation system. Vi’s TikTok surpassed one million views and her Instagram reels keep carrying testimonies further and faster than traditional distribution ever could. The documentary is no longer waiting for the edit. It is happening with us and through us. Alive, unstable, unfiltered, collaborative.
+P: Maybe this is the evolution of nonfiction. A documentary that acts like cognition in real time. Cameras as nodes. Crowds as processors. Stories breathing mutating responding like systems made of people and pixels.
+P: We return to one question again and again.
+P: What happens when documentary begins to think?
++: When it responds?
++: When it becomes sentient before we notice?
+P: For now UNF continues in two rhythms.
++: One hand in code teaching machines to listen.
++: The other in the street listening to the people who refuse to disappear.
+P: The work moves. The world moves with it.

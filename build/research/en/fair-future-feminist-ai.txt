@@ -1,0 +1,14 @@
+T: Two machines, one question: feminist AI at the VIP Studio
+D: In February 2025, Violeta Ayala and Yasmeen Hitti joined the FAIR FUTURE Feminist AI residency at the University of Nottingham's VIP Studio, hosted by Professor Helen Kennedy. They built the VIP Chatbot, which places OpenAI and DeepSeek side by side to make model bias visible to artists.
+S: Violeta Ayala and Yasmeen Hitti join the Feminist AI residency at the University of Nottingham’s VIP Studio. They build the VIP Chatbot, where OpenAI and DeepSeek answer the same prompt side by side.
+H: Feminist AI Residency at Nottingham University
+IMG: 1
+A: Try the chatbot here | https://feminist-chatbot.onrender.com
+IMG: 2 | https://miro.com/app/board/uXjVL9VKSec=/
+A: Presentation Slides | https://gamma.app/docs/AI-for-Feminist-Art-Practitioners-Access-Speed-and-Inclusion-k97x2ryy2ya1h9n
+P: Violeta Ayala and Yasmeen Hitti arrive in Nottingham as Feminist AI Residents, hosted by Professor Helen Kennedy at the University of Nottingham's VIP Studio. Their brief holds three words: access, speed, and inclusion. Their question is practical. How do feminist art practitioners use AI on their own terms?
+P: The work starts on paper. An HTML frontend sits at the top of the page. Two arrows run down. One reaches OpenAI in the United States. The other reaches DeepSeek in China. This sketch becomes the VIP Chatbot. Two models from two political systems answer the same prompt in one window. Peach speaks through ChatGPT. Dragon speaks through DeepSeek. Where their answers split, bias becomes visible.
+P: A second sketch maps who the chatbot serves: dancers, musicians, sound artists, creative writers, photographers, sculptors, animators, and filmmakers.
+P: Then the workshop opens. Participants cover large sheets with markers and coloured dots. They invent characters: a knight, a paladin, a non-human guide with magical powers and a higher purpose. One group builds the Solarpunk Paladin Turtle, a guide to self-discovery shaped by humans and AI together. Another builds a Phoenix. The groups run their prompts through different image generators and watch each system answer in its own style. They ask about mushrooms, rhizomes, soil, and solarpunk futures. Inside the VIP Chatbot, Phoenix and Turtle Hope argue with each other.
+P: FAIR FUTURE leaves a working tool and a method. Build fast. Compare models side by side. Put the tools in artists' hands and let them decide what the machine should say.
+GAL: 3 4 5 6 7 8 9 10 11 12

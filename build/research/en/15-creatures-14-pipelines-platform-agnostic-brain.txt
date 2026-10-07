@@ -1,0 +1,12 @@
+T: 15 creatures, 14 pipelines and a platform-agnostic brain
+D: After two months of intensive development, the koa.xyz computational creativity lab established a platform-agnostic real-time puppeteering framework where Python-driven creature brains operate across Blender and VR worlds in Resonite. Using hand tracking, heartbeat sensors, environmental data, local AI models, and neural networks, the system allows plants, whales, geckos, spiders, orchids, and other creatures to respond live to bodies, emotions, fire, water, and movement without motion-capture suits or traditional animation pipelines. Built from Cochabamba and grounded in Indigenous knowledge systems, the project now spans 15 creatures and 14 interconnected pipelines exploring cinema, AI, somatic interaction, and computational worldbuilding.
+S: Building real-time creature intelligence systems across Blender, VR, sensors, and XR worlds.
+H: Character Puppeteering & Co-Creation in Resonite
+MISSING-VIDEO: 337686 | 1:1
+P: Two months of building. Years of seeing where this could go. We’ve built a framework where Python drives characters in real-time, inside VR, inside Blender, across platforms. No motion capture suits. No animation studios. Just hands, a camera, sensors, and code.
+P: The characters aren’t avatars. You don’t become them. You’re beside them. Your hand curls, a wing flaps. Your heartbeat pulses, a gecko grips tighter. Water touches a sensor, a whale starts to sing. Fire burns in Bolivia, an orchid wilts.
++: Each creature has its own brain, neural networks reading your face through MediaPipe, local AI models deciding how they feel, environmental sensors connecting them to the real world. The intelligence layer is the same Python whether the creature lives in Blender or in a shared VR world in Resonite.
+P: That’s the breakthrough: the brain is platform-agnostic. Write the animation logic once. Run it anywhere. In VR, we can run as many characters as we want because we’re animating them in real-time, not playing back keyframes.
+P: This is cinema. This is neural networks. This is co-creation between human bodies and digital beings. Built from Cochabamba. Rooted in Indigenous knowledge systems. Running on open-source tools.
+P: 15 creatures. 14 pipelines. Water sensors, pulse sensors, fire satellites, hand tracking, face tracking, AI emotion. And we’re just getting started, months of building ahead.
++: We won’t let others design the rules of the world we will live in.

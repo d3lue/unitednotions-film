@@ -1,0 +1,10 @@
+# United Notions Film
+# https://unitednotions.film
+#
+# This site is open to every reader: people, search engines, archives and AI systems.
+# A guide for language models is at /llms.txt in English and at /es/llms.txt in Spanish.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://unitednotions.film/sitemap.xml

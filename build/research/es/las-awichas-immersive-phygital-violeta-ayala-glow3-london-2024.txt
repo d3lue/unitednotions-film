@@ -1,0 +1,70 @@
+T: Las Awichas, seleccionada para la gran exposición GLoW3 en Londres
+D: Conoce Las Awichas: una experiencia figital sin precedentes que funde historias ancestrales y arte generativo con IA en un relato inmersivo de realidad aumentada. Seleccionada para el prestigioso GLoW3 Artist Programme, esta instalación de la cineasta y tecnóloga creativa Violeta Ayala desafía las narrativas centradas en Occidente y honra la herencia de las mujeres quechuas. Acércate a los retratos de tamaño natural generados con IA y míralos cobrar vida en AR en el Bush House Arcade, en marzo de 2024.
+S: Las Awichas es uno de los cuatro nuevos encargos del GLoW3 Artist Programme de King’s College London. Cómo empezó la obra en Tiupampa y Pocoata, y un diario de los primeros días en Londres.
+GAL: 1 2 3 4 5 6
+P: Las Awichas es una instalación figital inmersiva que estoy creando para entrelazar memorias ancestrales, arte generativo con IA y realidad aumentada, y honrar así las historias de mis antepasadas quechuas. Como artista a cargo de este proyecto, reúno artesanía tradicional y tecnología para desafiar las narrativas centradas en Occidente y crear una representación cultural digna.
+P: Esta experiencia combina ocho representaciones visuales físicas de abuelas, generadas con IA. Los retratos en acrílico de tamaño natural (cada uno mide aproximadamente 1,5 m de ancho por 2 m de alto) son el corazón de la instalación y atraen al público hacia el relato, donde cada Awicha corresponde a un ave andina única. El relato cobra vida en realidad aumentada (AR) con la captura de movimiento de bailarines, la música y el sonido espacial. Cuenta una historia sobre cada ave y encarna los conceptos de Ch’ixi y Ch’enko. Ch’ixi representa la hibridez cultural. Ch’enko significa caos e incertidumbre. Ambos conceptos hablan de hibridez cultural y de entrelazamiento a través del tiempo y el espacio.
+H: La exposición
+P: La obra de Ayala fue uno de los cuatro nuevos encargos seleccionados en un proceso muy competitivo para el “GLoW3 Artist Programme”. El programa responde a la promesa y al potencial de las nuevas tecnologías “Web 3.0”, como la IA, el blockchain, los NFT, el metaverso y otras realidades inmersivas.
+P: [GLoW3](https://www.kcl.ac.uk/news/artists-announced-for-major-new-glow3-exhibition) busca examinar, entender y visibilizar los aportes de mujeres, personas no binarias y trans a la conceptualización, la comercialización y el potencial creativo de los medios y el arte en pantalla de la Web 3.0. La profesora Sarah Atkinson, del Department of Culture, Media & Creative Industries, dirige la beca de investigación financiada por el AHRC.
+P: El Artist Programme es una colaboración con King's Culture y King's Digital Lab. Colegas de ambos evaluaron las postulaciones al programa junto con representantes de la National Gallery, GAZELL.iO y Electric South.
+P: Las obras formarán parte de una exposición híbrida que se inaugura en marzo de 2024. Tendrá sede física en el Bush House Arcade y en Strand Aldwych, y también se podrá visitar en línea.
+H: Génesis
+P: A lo largo de 2022 me sumergí en los pueblos antiguos de mis abuelos maternos.
+IMG: 7
+P: En Tiupampa viví bajo la mirada de majestuosas montañas rojas, formaciones rocosas, suchas (águilas) y cóndores que planeaban en lo alto. En Pocoata pasé tiempo con mis tías abuelas, absorbiendo sus relatos y estudiando sus rostros.
+P: Mi objetivo era afinar mis técnicas descriptivas para crear una Awicha parecida a mi propia bisabuela. Elegí concentrarme en la experiencia en vez de capturarla con fotografías o filmaciones. Quería escribir y sentir. Así me rebelé contra la fotografía y lo que representaba: una imagen "real" observada desde un punto de vista dominante. Quería imaginar.
+P: Empecé a usar IA, específicamente GPT-3, para crear estos retratos con el fin de encontrar a mis propios antepasados, en especial a mi bisabuela Sebastiana. Su haplogrupo es uno de los únicos cinco que portaban los fundadores del Abya Yala, que hoy se conoce como América. Se remonta a un ancestro común que vivió hace casi 17.000 años en la región entre Siberia y Norteamérica.
+P: Creé imágenes cuadrado por cuadrado. Me atreví a construir mi pasado a través de la memoria digital, como acto de resistencia. La IA abrió nuevos caminos para reimaginar mi historia personal y mi historia cultural, más allá de la mera reconstrucción de un pasado brutal. Tejí memorias ancestrales con IA, buscando Awichas que fueran de todos y de nadie, y así reinterpreté mi linaje matriarcal.
+P: Unos meses después me invitaron a presentar una exposición en BIDA Fair, en El Martadero de Cochabamba, uno de los centros de arte más prestigiosos de Bolivia. Era la primera vez que mi obra se iba a exhibir en forma física. Diseñé la instalación con la ayuda de mi colaborador, Dan Fallshaw, y creé alrededor de 100 retratos. Al final elegí ocho que se parecían a mis propios antepasados.
+IMG: 8
+P: Cuando vi los retratos de Las Awichas, en acrílico y de tamaño natural, expuestos en las paredes de la galería, me acordé de los cóndores y las suchas de Tiupampa. Me inundaron los recuerdos de los aguayos y de los diseños de esos tejidos. Quería liberar a las Awichas de su existencia estática. Quería que se transformaran en aves y volaran, que trascendieran los límites bidimensionales de la fotografía y el cine. Por eso decidí desarrollar realidad extendida (XR) para ellas, para que fueran libres.
+P: Las Awichas encarna la creencia quechua en la conexión profunda entre las entidades vivas y las no vivas, y entrelaza tiempo, espacio e ilusión. La fusión de lo físico y lo digital me abre un camino para desafiar las metodologías extractivistas y centradas en Occidente de la fotografía y el cine. Ofrece una representación más matizada y más digna. ¿La fotografía y el cine son meras representaciones de la realidad, o han sido herramientas de explotación cultural? ¿Podemos usar la IA para cambiar este paradigma?
+P: Mi objetivo es tejer relatos perdidos a través de la reimaginación virtual. Las Awichas hace tangible lo intangible: crea para recordar.
+H: El proyecto
+EMBED: slides | https://gamma.app/embed/j7j04ec0ttu5wfc | Awichas XR
+H: Diario
+VID: a163ff9d-ef80-4d7e-a9e2-5adf02aea16a.mp4
+CAP: Después de un ✈️ de 24 horas desde Sydney
+VID: 1c051fe2-c45a-4da7-a281-98679521e4ea.mp4
+H: Londres, 11 de septiembre de 2023: un encuentro de mentes creativas
+P: Hoy tuve el gusto de conocer a mis colegas artistas y tecnólogas creativas en King’s College, gracias a una beca de investigación financiada por el AHRC y dirigida por la profesora [Sarah Atkinson](https://www.kcl.ac.uk/people/sarah-atkinson), del Department of Culture, Media & Creative Industries. Nos reunimos para presentar nuestros proyectos y conversar sobre las infinitas posibilidades que hay en el cruce del arte y la tecnología.
+P: [Rebecca Smith](https://www.urbanprojections.com) se robó todas las miradas con su presentación sobre “Environmental Data”. Ella transforma los datos en una experiencia inmersiva y táctil. Su plan de iluminar la iglesia con video mapping promete que los datos complejos se vean y se sientan en las entrañas. ¿Lo mejor? Está aprendiendo el software Notch sobre la marcha para darle vida a su visión. Es un mundo nuevo y audaz de expresión artística e integración tecnológica.
+P: [Yarli Allison](https://linktr.ee/yarliallison) rompió esquemas con su “Installation World Storytelling”. Tocó de todo, desde “Wrestling Blues” hasta la mezcla de dibujo e IA. Sin guardarse nada, llegó a afirmar que en un futuro no tan lejano la IA va a supervisar nuestros momentos más íntimos. Como directora en el mundo del cine para adultos, Yarli lleva ventaja en gamificación y en la fusión de espacios digitales y físicos. Además, su obra no esquiva temas de peso, como un siglo de diáspora china, que cobra vida con mapas de datos y una innovadora tecnología de células madre.
+P: Conectada por Zoom desde Estados Unidos, [Lisa Jamhoury](https://lisajamhoury.com) nos llevó hasta las raíces de una escultura llamada Norma y rastreó cómo esta representación de una mujer blanca se convirtió en un estereotipo social omnipresente. El proyecto pionero de Lisa funde la danza con la realidad aumentada y la impresión 3D. Ella es la visionaria detrás de Kinectron, una herramienta de código abierto que lleva datos de captura de movimiento de baja fidelidad y en tiempo real directo al navegador.
+P: Para cerrar el día con broche de oro, hicimos una visita privada a [gazell.io](https://gazell.io), guiada por la curadora, Imogen [Hare](https://uk.linkedin.com/in/imogen-hare). Este espacio es una galería de arte y un centro de innovación digital. La visita nos dio un momento para reflexionar y la oportunidad de empaparnos de las incontables formas en que los artistas vienen ampliando los límites desde hace bastante tiempo, a menudo en colaboración con computadoras e IA.
+VID: d5880e5f-1030-4ee6-aa3c-d81af56582e9.mp4
+IMG: 9
+VID: 58076fef-decf-49f2-8b0f-67ee01e64f3e.mp4
+CAP: [Sougwen Chung](https://sougwen.com)
+VID: 2d369cd6-2cb5-403a-aef6-34d75158cb8b.mp4
+CAP: [Stephen Willats](http://stephenwillats.com)
+VID: 1af6ed24-8b35-49c0-8b97-26ad33f837d0.mp4
+CAP: [Brendan Dawes](https://brendandawes.com)
+P: Empecé a soñar en grande con los saltos de imaginación que podemos dar con estos procesos de otro nivel, sobre todo en torno a la impresión 3D y a la materialización de lo digital en la realidad física, un concepto que suele llamarse “figital”. De ahí nacieron ideas para desarrollar nuevos lenguajes visuales y entrar de lleno al futurismo cinematográfico. El potencial es asombroso, tanto para redefinir los medios que ya existen como para abrir formas de expresión completamente nuevas.
+H: Londres, 12 de septiembre de 2023: de lienzos LED a mitos griegos
+P: Arrancamos el segundo día con la profesora [Helen Kennedy](https://www.nottingham.ac.uk/clas/departments/culturalmediaandvisualstudies/people/helen.kennedy), de la University of Nottingham, que presentó los planes para el taller de VIP Studio del próximo mes. Fue un vistazo al mundo de la experimentación y el juego. Me intrigó sobre todo la edición de cine guiada por EEG de [Richard Ramchurn](https://www.nottingham.ac.uk/research/groups/mixedrealitylab/works/the-moment.aspx).
+IMG: 10
+IMG: 11
+P: Luego Alison Duty y Jocelyn Cheek me acompañaron en un recorrido que mostró la enorme escala del espacio. Mis creaciones digitales ya tenían un lienzo tangible para transformarse en algo real. La vitalidad de The Strand me llamaba: su gente, su bullicio, su alma. Los rumores sobre la experiencia de renaturalización de Superflux insinuaban una sinergia con mi propio proyecto, Las Awichas.
+IMG: 12
+VID: b775f69b-423f-4773-9524-1cd15665d0bf.mp4
+P: Nuestra siguiente parada fue [Outernet](https://www.outernetglobal.com), el recinto digital inmersivo de Europa, con una hipnótica pantalla LED de 360°. Fue un viaje de colores, formas y texturas vivido entre desconocidos, un testimonio de los momentos compartidos.
+VID: 69c9a3d1-92dd-4a34-988d-7bdc45aa09c0.mp4
+IMG: 13
+VID: eb2fa12c-4b99-45c8-9e46-e352bc015306.mp4
+P: Siguió un taller a fondo en el [UNREAL Innovation Lab](https://www.cxnetwork.com.au/epic-games-london-innovation-lab-breaks-new-ground-in-virtual-production/). Nos instalamos en el reino de los metahumanos, las capturas faciales y un encantador set virtual de Lego. Hablamos de mundos sin vóxeles en Fortnite, de animación sin trajes y del cine del mañana. El futuro se sentía al alcance de la mano.
+VID: 7f75ad34-e210-4235-9c1f-050be7dd7e76.mp4
+IMG: 14
+IMG: 15
+P: Por recomendación de mis colegas fui a ver The Burnt City, la obra de teatro inmersivo de PunchDrunk. Un viaje nostálgico para mi fascinación de toda la vida por la mitología griega. Después no pude dormir: fue alucinante. Lloré, bailé y reí. No se permitían fotos, así que voy a atesorar esos recuerdos.
+IMG: 16
+P: Los días siguientes fueron una exploración de la luz, la conectividad y la coreografía humana, todo mientras intentaba escanear The Strand en 3D. Reencuentros con amigos, maravillas de la IA en KCL, impresión lenticular, mi primera comida impresa en 3D y el encanto esquivo de Banksy.
+IMG: 17
+IMG: 18
+IMG: 19
+IMG: 20
+P: Volví a Sydney con 25 horas de vuelo encima pero con ideas para toda una vida, acompañada por una [playlist](https://music.apple.com/us/playlist/london-2023/pl.u-xlyNqrltG7ajy1) que hace eco de mi estadía de 2023 en Londres, lista para sumergirme en el proyecto.
+IMG: 21 | https://music.apple.com/us/playlist/london-2023/pl.u-xlyNqrltG7ajy1
+P: Hamuq kutikama
++: [The Jaguaress](https://www.violetaayala.com) (Violeta. A)

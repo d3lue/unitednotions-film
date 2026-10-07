@@ -1,0 +1,1069 @@
+[
+ {
+  "slug": "the-jaguaress-learns-her-own-skeleton",
+  "key": "jaguaress-skeleton",
+  "title": "The jaguaress learns her own skeleton",
+  "page_title": "The jaguaress learns her own skeleton.",
+  "iso": "2026-06-02",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [
+   "jaguaress-skeleton-widget"
+  ],
+  "changed": "2026-09-13",
+  "blocks": 10
+ },
+ {
+  "slug": "the-whale-that-watches-back",
+  "key": "whale-watches",
+  "title": "The whale that watches back",
+  "page_title": "The whale that watches back",
+  "iso": "2026-05-26",
+  "place": "Cochabamba",
+  "images": [
+   "a5368def-895b-44b6-b92e-c3521356ca49",
+   "815cf1eb-c036-46cb-b034-084d098801f4",
+   "4d11e8cb-d8b6-4616-bf43-17520391bc60"
+  ],
+  "sizes": {
+   "a5368def-895b-44b6-b92e-c3521356ca49": [
+    1290,
+    640
+   ],
+   "815cf1eb-c036-46cb-b034-084d098801f4": [
+    1290,
+    616
+   ],
+   "4d11e8cb-d8b6-4616-bf43-17520391bc60": [
+    2560,
+    1440
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "340432"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 12
+ },
+ {
+  "slug": "the-body-decides-the-interface",
+  "key": "body-decides",
+  "title": "The body decides the interface",
+  "page_title": "The Body Decides the Interface.",
+  "iso": "2026-05-22",
+  "place": "Cochabamba",
+  "images": [
+   "fdc251cb-15d8-4271-9bcb-f4a56c3d41ef",
+   "27d4b79e-b9a1-4528-b3ef-05ecc3d45c08"
+  ],
+  "sizes": {
+   "fdc251cb-15d8-4271-9bcb-f4a56c3d41ef": [
+    4032,
+    3024
+   ],
+   "27d4b79e-b9a1-4528-b3ef-05ecc3d45c08": [
+    1290,
+    959
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "340252"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 30
+ },
+ {
+  "slug": "the-monkey-learns-the-shape-of-its-own-body",
+  "key": "monkey-body",
+  "title": "The monkey learns the shape of its own body",
+  "page_title": "The Monkey Learns the Shape of Its Own Body",
+  "iso": "2026-05-19",
+  "place": "Cochabamba",
+  "images": [
+   "c38f3995-a932-4f7f-bb20-ce40efc38ba8",
+   "8737a537-f869-44a5-828c-d64e08d6fb36",
+   "2603fc7d-672b-4425-985c-4035712db057",
+   "ac968488-f737-44f0-9726-66a2e017a69c"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "339709",
+   "339710",
+   "339910"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 25
+ },
+ {
+  "slug": "the-monkey-learns-to-move",
+  "key": "monkey-moves",
+  "title": "The monkey learns to move: quaternions, humanoid puppeteering",
+  "page_title": "The Monkey Learns to Move: Quaternions, Humanoid Puppeteering.",
+  "iso": "2026-05-09",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "339331"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 8
+ },
+ {
+  "slug": "the-llama-learns-to-feel",
+  "key": "llama-feels",
+  "title": "The llama learns to feel, the model learns to listen, and Yakumama is born",
+  "page_title": "The Llama Learns to Feel, the Model Learns to Listen, and Yakumama Is Born.",
+  "iso": "2026-05-06",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "339072"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 11
+ },
+ {
+  "slug": "when-the-heartbeat-moves-the-flower",
+  "key": "heartbeat-flower",
+  "title": "When the heartbeat moves the flower",
+  "page_title": "When the Heartbeat Moves the Flower",
+  "iso": "2026-04-28",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "338980"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 9
+ },
+ {
+  "slug": "the-spider-learns-to-weave-the-gecko-learns-to-feel",
+  "key": "spider-weaves",
+  "title": "The spider learns to weave, the gecko learns to feel, and SIGGRAPH calls",
+  "page_title": "The Spider Learns to weave, the Gecko Learns to Feel, and SIGGRAPH Calls.",
+  "iso": "2026-04-25",
+  "place": "Cochabamba",
+  "images": [
+   "f9478f84-49cf-4512-95f7-875246df2cd4",
+   "3dcc0afc-168e-4360-911a-fb34862bbc90",
+   "ea857ead-9fb5-4099-841c-83c97cb682cd",
+   "3588d82d-90d7-4b4f-ae04-b0b501c19682",
+   "b47bf492-349b-478f-aa11-4c956db202ed",
+   "236c6a9e-90e0-41a2-910a-253e4f545ed0",
+   "21514c10-cdbe-4e55-b72e-628096bee687",
+   "bd054d74-6ec8-473a-a8f6-283933fab3bc",
+   "e4b4e43f-9d69-4e4a-ba92-c9cc8bdeace8",
+   "d9e2e403-3d8a-484f-9a9c-a788808b0e55"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "338595"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 43
+ },
+ {
+  "slug": "the-gecko-learns-to-feel-qwen-finds-its-voice",
+  "key": "gecko-feels",
+  "title": "The gecko learns to feel, Qwen 3.6 finds its voice, and the recording begins",
+  "page_title": "The Gecko Learns to Feel, Qwen 3.6 Finds Its Voice, and the Recording Begins.",
+  "iso": "2026-04-18",
+  "place": "Cochabamba",
+  "images": [
+   "6c6bc98b-4981-4b7a-b0be-4a3a39209b06",
+   "30b06fc8-fbe3-4144-a2f4-dacb5f3167bb"
+  ],
+  "sizes": {
+   "6c6bc98b-4981-4b7a-b0be-4a3a39209b06": [
+    3840,
+    2160
+   ],
+   "30b06fc8-fbe3-4144-a2f4-dacb5f3167bb": [
+    3840,
+    2160
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "337816"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 8
+ },
+ {
+  "slug": "15-creatures-14-pipelines-platform-agnostic-brain",
+  "key": "15-creatures",
+  "title": "15 creatures, 14 pipelines and a platform-agnostic brain",
+  "page_title": "Character Puppeteering & Co-Creation in Resonite",
+  "iso": "2026-04-17",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "337686"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 9
+ },
+ {
+  "slug": "the-water-lily-learns-to-breathe",
+  "key": "water-lily",
+  "title": "The water lily learns to breathe, the sundew counts fingers, and the pipeline moves to WebSocket",
+  "page_title": "The Water Lily Learns to Breathe, the Sundew Counts Fingers, and the Pipeline Moves to WebSocket",
+  "iso": "2026-04-10",
+  "place": "Cochabamba",
+  "images": [
+   "495beab3-b246-4070-9f9f-c257385596cd",
+   "5ba6aab7-db40-4538-83cc-01c0d7046d08",
+   "a5ac2760-2988-4745-bcec-6dcd9d3a9a8f"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "337405",
+   "337406",
+   "337407"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 13
+ },
+ {
+  "slug": "the-tree-learns-fear-the-orchid-mourns-fire",
+  "key": "tree-fear",
+  "title": "The tree learns fear, the orchid mourns fire, and the llama finds stillness",
+  "page_title": "This week Violeta Ayala taught a tree to be shy.",
+  "iso": "2026-03-30",
+  "place": "Cochabamba",
+  "images": [
+   "1ff03fda-7ef7-4cae-9042-e400450f561b",
+   "6207677f-fa50-4b58-8372-7c84c111b6b8"
+  ],
+  "sizes": {
+   "1ff03fda-7ef7-4cae-9042-e400450f561b": [
+    1290,
+    967
+   ],
+   "6207677f-fa50-4b58-8372-7c84c111b6b8": [
+    1290,
+    967
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "336137"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 12
+ },
+ {
+  "slug": "the-2-dollar-gyroscope",
+  "key": "gyroscope",
+  "title": "The $2 gyroscope that solved what the neural network couldn’t",
+  "page_title": "The $2 Gyroscope That Solved What the Neural Network Couldn’t",
+  "iso": "2026-03-21",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "335419"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 6
+ },
+ {
+  "slug": "toward-embodied-intelligence-for-nonhuman-characters",
+  "key": "embodied-intelligence",
+  "title": "Toward embodied intelligence for nonhuman characters",
+  "page_title": "Toward Embodied Intelligence for Nonhuman Characters",
+  "iso": "2026-03-14",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "335420"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 5
+ },
+ {
+  "slug": "somatic-puppeteering-plants-condor-heartbeat-march-2026",
+  "key": "somatic-puppeteering",
+  "title": "Somatic puppeteering across plants, birds and heartbeats",
+  "page_title": "Somatic Puppeteering Across Plants, Birds, and Heartbeats.",
+  "iso": "2026-03-08",
+  "place": "Cochabamba",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "334329",
+   "334390",
+   "334330",
+   "334391"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 8
+ },
+ {
+  "slug": "when-documentary-begins-to-think",
+  "key": "documentary-thinks",
+  "title": "When documentary begins to think",
+  "page_title": "Two weeks of code streets and questions about the future",
+  "iso": "2025-11-29",
+  "place": "Cochabamba",
+  "images": [
+   "395ec599-a675-45c6-a2e7-c1c3215d5189",
+   "589d220d-fccb-48fd-98c2-d98faa4e9267",
+   "a8870957-056a-4601-a962-6a865c0d1cbc"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 15
+ },
+ {
+  "slug": "technologies-of-distribution-comteco-transparency",
+  "key": "comteco",
+  "title": "Technologies of distribution, Comteco and the fight for transparency",
+  "page_title": "Technologies of Distribution, Comteco, and the Fight for Transparency",
+  "iso": "2025-11-17",
+  "place": "Cochabamba",
+  "images": [
+   "0dc4f3be-e431-4991-943f-3fdc2a868401",
+   "2776b131-aa2f-433f-980f-3b1e686b1c61"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 8
+ },
+ {
+  "slug": "from-documentary-to-living-systems",
+  "key": "living-systems",
+  "title": "From documentary to living systems",
+  "page_title": "From Documentary to Living Systems",
+  "iso": "2025-11-15",
+  "place": "Cochabamba",
+  "images": [
+   "26e209c7-23e4-4fdf-820a-6941ef958408",
+   "3635dba0-f544-4e41-a814-ce02e64be2e2",
+   "5be9f26a-a585-4ccc-9028-e769d5e59d3b",
+   "039d6e69-0639-41c6-a0d8-196f55d353fa"
+  ],
+  "sizes": {
+   "26e209c7-23e4-4fdf-820a-6941ef958408": [
+    1290,
+    967
+   ],
+   "3635dba0-f544-4e41-a814-ce02e64be2e2": [
+    1290,
+    1290
+   ],
+   "5be9f26a-a585-4ccc-9028-e769d5e59d3b": [
+    1290,
+    1290
+   ],
+   "039d6e69-0639-41c6-a0d8-196f55d353fa": [
+    1290,
+    967
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 6
+ },
+ {
+  "slug": "the-condor-obeyed-violetas-hand",
+  "key": "condor-hand",
+  "title": "The condor obeyed Violeta’s hand",
+  "page_title": "The Condor Obeyed Violeta’s Hand",
+  "iso": "2025-06-26",
+  "place": "Guangzhou",
+  "images": [
+   "4362bada-5770-4589-b451-ef522805e871"
+  ],
+  "sizes": {
+   "4362bada-5770-4589-b451-ef522805e871": [
+    1290,
+    1290
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "326156"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 12
+ },
+ {
+  "slug": "building-huk-v1-digital-deity-amazon",
+  "key": "building-huk",
+  "title": "Building Huk V1.0: a digital deity for the burning Amazon",
+  "page_title": "Building HUK V1.0: A Digital Deity for the Burning Amazon.",
+  "iso": "2025-04",
+  "place": "Copenhagen",
+  "images": [],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-16",
+  "blocks": 39
+ },
+ {
+  "slug": "fair-future-feminist-ai",
+  "key": "feminist-ai",
+  "title": "Two machines, one question: feminist AI at the VIP Studio",
+  "page_title": "Feminist AI Residency at Nottingham University",
+  "iso": "2025-02-12",
+  "place": "Nottingham",
+  "images": [
+   "106793ed-385b-4b2b-9797-588ed6e6c33f",
+   "0fd8d87c-05ef-4977-a8bd-3df14bfc3db9",
+   "a03e65e2-77cd-4414-b97b-5c8cb10b2ed8",
+   "20a70362-8694-4020-ad19-88a1411170d9",
+   "589e6d30-9560-4546-81c6-1392f2b4ae8b",
+   "fbe99341-1f5a-4218-8c6b-3cb5cac20b38",
+   "847b5b1d-fb9b-4887-802f-5583635025a0",
+   "52fab2c9-dc69-4c6b-a499-b58524c17014",
+   "b8b79576-43de-4a53-96f5-fb5a4b4294eb",
+   "816ea1a3-f3fe-40cf-9de9-6b65bf11b515",
+   "b752b02e-e38d-44a9-a427-eb595c671e6c",
+   "97125f6d-12cf-47bf-bfa3-93d6900d6391"
+  ],
+  "sizes": {
+   "106793ed-385b-4b2b-9797-588ed6e6c33f": [
+    1146,
+    2037
+   ],
+   "0fd8d87c-05ef-4977-a8bd-3df14bfc3db9": [
+    1290,
+    1295
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-16",
+  "blocks": 11
+ },
+ {
+  "slug": "redefining-reality-xr-ai-voices-of-vr-kent-bye",
+  "key": "voices-of-vr",
+  "title": "Exploring the future of XR and AI: a conversation with Kent Bye",
+  "page_title": "Exploring the Future of XR & AI: A Conversation with Kent Bye",
+  "iso": "2023",
+  "place": "",
+  "images": [
+   "c392553c-2414-45f7-99a0-4bc23be382ae"
+  ],
+  "sizes": {},
+  "videos": [
+   "62379131-72dc-43f4-946d-b704ea06c5fd.mp4",
+   "54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4",
+   "bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4",
+   "0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4"
+  ],
+  "posters": {
+   "62379131-72dc-43f4-946d-b704ea06c5fd.mp4": "71cad09d-ae49-499e-a5fc-95a7cf069e4b",
+   "54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4": "53da19bb-63c5-47cc-a53a-a63c314bf227",
+   "bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4": "d43c9dfd-f8c8-415c-b238-d1f48913b3dc",
+   "0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4": "ceefced2-dbb6-4077-88e6-7b5ee72116fb"
+  },
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 13
+ },
+ {
+  "slug": "policy-recommendations-nsw-arts-culture-tech-equity",
+  "key": "nsw-policy",
+  "title": "Shaping policy for the arts and cultural sector",
+  "page_title": "Shaping policy for the arts and cultural sector",
+  "iso": "2023",
+  "place": "",
+  "images": [
+   "832c80d4-d7be-4694-a213-bf719d6768ed"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [
+   "253801",
+   "253802",
+   "253803",
+   "253804",
+   "253805"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 29
+ },
+ {
+  "slug": "luna-feminist-ai",
+  "key": "luna",
+  "title": "Violeta Ayala’s mission: creating LUNA, the future of feminist AI",
+  "page_title": "Violeta Ayala's Mission: Creating LUNA, the Future Feminist AI",
+  "iso": "2023-09",
+  "place": "Sydney",
+  "images": [
+   "f9b415b1-3d87-4575-87d7-6c59f323cff0"
+  ],
+  "sizes": {
+   "f9b415b1-3d87-4575-87d7-6c59f323cff0": [
+    1289,
+    959
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 8
+ },
+ {
+  "slug": "prisonx-storytelling-evolution-through-gen-z",
+  "key": "prison-x-gen-z",
+  "title": "Prison X: unlocking the Gen Z code",
+  "page_title": "Prison X: Unlocking the Gen Z Code",
+  "iso": "2023-09",
+  "place": "Sydney",
+  "images": [
+   "2e6d3465-37c2-465a-828d-93cc2b8e4d5c",
+   "91c9f60a-fab7-45f3-b5bd-67fab565f963",
+   "1044fd56-3cfb-464a-b31f-0884aca81649",
+   "aa119f81-13d0-4800-a4d8-0052a21d5226",
+   "5b8c2179-c942-4a88-9f64-6b23e0a9d6ec",
+   "f4f365b8-6462-4c06-a461-7e014cd69e0f",
+   "5c12330d-cbd7-4081-9b3a-5c57ce014ac4",
+   "3a7d003e-3e90-4268-8f99-41ca732afd1f",
+   "dce10e49-1c7e-45fe-b14c-c42e8e9a1456",
+   "992ebdff-d128-4977-a211-0b3c091acff0",
+   "f9871ec1-4850-4be9-ad18-79c09f6bc9aa",
+   "b76bc3ff-205b-4c07-85b0-7b4b1d84b5cd",
+   "8d21a94b-d2f1-459d-8cc5-77920d5d63fd",
+   "0b22aca8-6c32-487c-8be7-6759c2e0668d"
+  ],
+  "sizes": {
+   "2e6d3465-37c2-465a-828d-93cc2b8e4d5c": [
+    1024,
+    1024
+   ],
+   "91c9f60a-fab7-45f3-b5bd-67fab565f963": [
+    2250,
+    3000
+   ],
+   "1044fd56-3cfb-464a-b31f-0884aca81649": [
+    2250,
+    1687
+   ],
+   "aa119f81-13d0-4800-a4d8-0052a21d5226": [
+    1500,
+    1125
+   ],
+   "5b8c2179-c942-4a88-9f64-6b23e0a9d6ec": [
+    1500,
+    1125
+   ],
+   "f4f365b8-6462-4c06-a461-7e014cd69e0f": [
+    2250,
+    3000
+   ],
+   "5c12330d-cbd7-4081-9b3a-5c57ce014ac4": [
+    2250,
+    3000
+   ],
+   "3a7d003e-3e90-4268-8f99-41ca732afd1f": [
+    2250,
+    1687
+   ],
+   "dce10e49-1c7e-45fe-b14c-c42e8e9a1456": [
+    2250,
+    1687
+   ],
+   "992ebdff-d128-4977-a211-0b3c091acff0": [
+    1500,
+    1108
+   ],
+   "f9871ec1-4850-4be9-ad18-79c09f6bc9aa": [
+    2000,
+    3002
+   ],
+   "b76bc3ff-205b-4c07-85b0-7b4b1d84b5cd": [
+    1284,
+    723
+   ],
+   "8d21a94b-d2f1-459d-8cc5-77920d5d63fd": [
+    1284,
+    1691
+   ],
+   "0b22aca8-6c32-487c-8be7-6759c2e0668d": [
+    1792,
+    1024
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 19
+ },
+ {
+  "slug": "sxsw-sydney-2023",
+  "key": "sxsw-sydney",
+  "title": "La Lucha and Prison X at SXSW Sydney",
+  "page_title": "unitednotions.film Presents: La Lucha and Prison X at SXSW Sydney",
+  "iso": "2023-08",
+  "place": "Sydney",
+  "images": [
+   "b525fe17-a447-42ce-92c8-8223bda32afb",
+   "b5076a27-a33d-4e93-9508-5460322fb043",
+   "68f1f5dd-849f-428b-aeb0-166aaa7814a4"
+  ],
+  "sizes": {
+   "b525fe17-a447-42ce-92c8-8223bda32afb": [
+    1584,
+    396
+   ],
+   "b5076a27-a33d-4e93-9508-5460322fb043": [
+    1284,
+    1284
+   ],
+   "68f1f5dd-849f-428b-aeb0-166aaa7814a4": [
+    1284,
+    1284
+   ]
+  },
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 25
+ },
+ {
+  "slug": "las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024",
+  "key": "awichas-glow",
+  "title": "Las Awichas selected for the major GLoW3 exhibition in London",
+  "page_title": "Las Awichas Selected for Major GLoW3 Exhibition in London",
+  "iso": "2023-08",
+  "place": "London",
+  "images": [
+   "be150901-e40d-4eca-bbbf-37713c45a474",
+   "9c5fa115-ef2a-4b6a-949c-6cf1c305e81d",
+   "822bb9e0-b9c3-407c-a7e1-90601f53387d",
+   "13130ac2-9500-4ca0-a37a-00edc83915bd",
+   "99466d07-50af-4231-bcfb-2af404a303c6",
+   "7ef8c17b-cd4b-4828-8d55-b98257a5ad78",
+   "94a6fabf-857e-4482-bf0f-38c4dc29883d",
+   "1ee5f926-0317-4910-b13d-51bb9cd0204d",
+   "09368914-cd91-4702-b127-c75356139601",
+   "5f2acc88-3ccd-401d-b3f7-f74c4f6fb038",
+   "3bc6fcdb-a371-4577-907a-d49c66cc98c8",
+   "c4604f87-a716-4855-a1ea-cf652de7f3e3",
+   "ea7b5ce4-e3c0-4a51-8817-ba6b745e287d",
+   "5550b473-7bfe-4369-b237-3eb0c88eb0f0",
+   "c6d73dee-1d77-4bd9-b0f8-bc99c4a27338",
+   "f4f93e28-5a3f-49fe-9b7c-fa4beea94d99",
+   "7039afcd-a970-4005-aac7-c082733fed0e",
+   "854f4976-4ba5-423e-96db-66cfbd538b74",
+   "b623286d-a56c-42b4-bfcc-929757a4a31c",
+   "15406b66-4d1d-4ce2-8488-55bcd6bc0586",
+   "21cb0426-903d-4973-b9a8-95c179968816"
+  ],
+  "sizes": {
+   "be150901-e40d-4eca-bbbf-37713c45a474": [
+    2250,
+    2659
+   ],
+   "9c5fa115-ef2a-4b6a-949c-6cf1c305e81d": [
+    2250,
+    2379
+   ],
+   "822bb9e0-b9c3-407c-a7e1-90601f53387d": [
+    2250,
+    2841
+   ],
+   "13130ac2-9500-4ca0-a37a-00edc83915bd": [
+    2250,
+    3000
+   ],
+   "99466d07-50af-4231-bcfb-2af404a303c6": [
+    2250,
+    3138
+   ],
+   "7ef8c17b-cd4b-4828-8d55-b98257a5ad78": [
+    2250,
+    2841
+   ],
+   "94a6fabf-857e-4482-bf0f-38c4dc29883d": [
+    1536,
+    1098
+   ],
+   "1ee5f926-0317-4910-b13d-51bb9cd0204d": [
+    1280,
+    720
+   ],
+   "09368914-cd91-4702-b127-c75356139601": [
+    1536,
+    1152
+   ],
+   "5f2acc88-3ccd-401d-b3f7-f74c4f6fb038": [
+    4032,
+    3024
+   ],
+   "3bc6fcdb-a371-4577-907a-d49c66cc98c8": [
+    1284,
+    2778
+   ],
+   "c4604f87-a716-4855-a1ea-cf652de7f3e3": [
+    1600,
+    1200
+   ],
+   "ea7b5ce4-e3c0-4a51-8817-ba6b745e287d": [
+    1080,
+    1920
+   ],
+   "5550b473-7bfe-4369-b237-3eb0c88eb0f0": [
+    4032,
+    3024
+   ],
+   "c6d73dee-1d77-4bd9-b0f8-bc99c4a27338": [
+    1284,
+    2778
+   ],
+   "f4f93e28-5a3f-49fe-9b7c-fa4beea94d99": [
+    1284,
+    2778
+   ],
+   "7039afcd-a970-4005-aac7-c082733fed0e": [
+    1284,
+    2778
+   ],
+   "854f4976-4ba5-423e-96db-66cfbd538b74": [
+    1088,
+    1440
+   ],
+   "b623286d-a56c-42b4-bfcc-929757a4a31c": [
+    1284,
+    2778
+   ],
+   "15406b66-4d1d-4ce2-8488-55bcd6bc0586": [
+    1284,
+    2778
+   ],
+   "21cb0426-903d-4973-b9a8-95c179968816": [
+    1284,
+    1284
+   ]
+  },
+  "videos": [
+   "a163ff9d-ef80-4d7e-a9e2-5adf02aea16a.mp4",
+   "1c051fe2-c45a-4da7-a281-98679521e4ea.mp4",
+   "d5880e5f-1030-4ee6-aa3c-d81af56582e9.mp4",
+   "58076fef-decf-49f2-8b0f-67ee01e64f3e.mp4",
+   "2d369cd6-2cb5-403a-aef6-34d75158cb8b.mp4",
+   "1af6ed24-8b35-49c0-8b97-26ad33f837d0.mp4",
+   "b775f69b-423f-4773-9524-1cd15665d0bf.mp4",
+   "69c9a3d1-92dd-4a34-988d-7bdc45aa09c0.mp4",
+   "eb2fa12c-4b99-45c8-9e46-e352bc015306.mp4",
+   "7f75ad34-e210-4235-9c1f-050be7dd7e76.mp4"
+  ],
+  "posters": {
+   "a163ff9d-ef80-4d7e-a9e2-5adf02aea16a.mp4": "dda120a7-b6ab-4a77-9ad5-19b9e04aa05f",
+   "1c051fe2-c45a-4da7-a281-98679521e4ea.mp4": "c375ea1e-9096-461e-afd8-1d40356728db",
+   "d5880e5f-1030-4ee6-aa3c-d81af56582e9.mp4": "0c152d40-b33a-4b4d-8780-70bcea0bf9e2",
+   "58076fef-decf-49f2-8b0f-67ee01e64f3e.mp4": "fdadec71-9e55-468e-85d6-88a5b2ec85ce",
+   "2d369cd6-2cb5-403a-aef6-34d75158cb8b.mp4": "5fe49b4f-d0e4-4b57-b9c8-da0e3c9cd91c",
+   "1af6ed24-8b35-49c0-8b97-26ad33f837d0.mp4": "40bb64f4-e042-4ac3-a002-90a036969c49",
+   "b775f69b-423f-4773-9524-1cd15665d0bf.mp4": "aa832301-1af2-44b0-b503-cb585ad79c1f",
+   "69c9a3d1-92dd-4a34-988d-7bdc45aa09c0.mp4": "56b1ce9f-0f33-41c5-9cc7-fcce788c3f5e",
+   "eb2fa12c-4b99-45c8-9e46-e352bc015306.mp4": "45e9fe3f-f52d-4bcf-bb88-65571dd74a80",
+   "7f75ad34-e210-4235-9c1f-050be7dd7e76.mp4": "51968dbe-6a88-426e-9d26-25b585cd3810"
+  },
+  "missing": [],
+  "embeds": [
+   "slides"
+  ],
+  "changed": "2026-09-13",
+  "blocks": 67
+ },
+ {
+  "slug": "aug-20-2023",
+  "key": "la-lucha-outreach",
+  "title": "La Lucha receives support for outreach",
+  "page_title": "La Lucha Receives Support for Outreach",
+  "iso": "2023-08-20",
+  "place": "",
+  "images": [
+   "fe385e32-4160-4bbd-b0b0-867f3ae06927",
+   "2517455e-b98f-4295-b0d9-1596156fd199",
+   "26d87b1d-e4bd-4f1d-866f-7d4eb0257d34",
+   "1f2688c2-616e-48e5-8ef1-e133910dafad",
+   "1b0a6deb-8a7b-4f7c-81eb-de70c5e8b56e",
+   "61955862-4508-4ce4-a597-676e440c2b0c"
+  ],
+  "sizes": {},
+  "videos": [],
+  "posters": {},
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 13
+ },
+ {
+  "slug": "aug-19-2023",
+  "key": "la-lucha-blackstar",
+  "title": "La Lucha premieres at BlackStar Film Festival: a night to remember",
+  "page_title": "La Lucha Premiere at Blackstar Film Festival: A Night to Remember",
+  "iso": "2023-08-19",
+  "place": "",
+  "images": [
+   "d4eaa232-be05-47b6-9cad-f9e01610f9a6",
+   "efed534e-24ab-4ea1-b656-d36b6e9d36e3",
+   "6767baa7-cf67-41ed-b61a-02a1dcf5a140",
+   "c16d931d-aad8-4ee6-89a1-7b0d918d3dfa",
+   "4561f5bc-081a-4b47-a838-4e62a8e69666",
+   "2325ac53-0976-4ece-a70e-0586967f0462",
+   "c9e42b00-34cc-4153-898f-b2863c66965c",
+   "e354e0ea-4a09-4ef0-bae4-1f4c55a12d07",
+   "889c3f80-8188-49e7-809b-6cebded58524",
+   "f22914fa-92d5-4938-9d37-d3d93c1c2a90",
+   "14ae96e6-3319-486e-99a9-1d89612b5bbe",
+   "2c77570d-8c5b-431b-94bf-1dc8e24219e0",
+   "5ca80b26-7538-4b8b-9f7b-4b5455554b8f",
+   "27ae0570-768c-4f1c-a76f-dcd103fa2ec2"
+  ],
+  "sizes": {
+   "d4eaa232-be05-47b6-9cad-f9e01610f9a6": [
+    1500,
+    1500
+   ],
+   "efed534e-24ab-4ea1-b656-d36b6e9d36e3": [
+    1500,
+    1500
+   ],
+   "6767baa7-cf67-41ed-b61a-02a1dcf5a140": [
+    1500,
+    1500
+   ],
+   "c16d931d-aad8-4ee6-89a1-7b0d918d3dfa": [
+    1500,
+    1500
+   ],
+   "4561f5bc-081a-4b47-a838-4e62a8e69666": [
+    1500,
+    1500
+   ],
+   "2325ac53-0976-4ece-a70e-0586967f0462": [
+    1500,
+    1500
+   ],
+   "c9e42b00-34cc-4153-898f-b2863c66965c": [
+    1500,
+    1500
+   ],
+   "e354e0ea-4a09-4ef0-bae4-1f4c55a12d07": [
+    1500,
+    1500
+   ],
+   "889c3f80-8188-49e7-809b-6cebded58524": [
+    1500,
+    1500
+   ],
+   "f22914fa-92d5-4938-9d37-d3d93c1c2a90": [
+    1500,
+    1500
+   ],
+   "14ae96e6-3319-486e-99a9-1d89612b5bbe": [
+    1284,
+    723
+   ],
+   "2c77570d-8c5b-431b-94bf-1dc8e24219e0": [
+    1284,
+    1284
+   ],
+   "5ca80b26-7538-4b8b-9f7b-4b5455554b8f": [
+    1536,
+    1152
+   ],
+   "27ae0570-768c-4f1c-a76f-dcd103fa2ec2": [
+    1536,
+    1536
+   ]
+  },
+  "videos": [
+   "3c2968bd-57cd-44fd-832b-f29ceae13e92.mp4"
+  ],
+  "posters": {
+   "3c2968bd-57cd-44fd-832b-f29ceae13e92.mp4": "07692cb5-2d02-4d42-b950-21539b43c57b"
+  },
+  "missing": [],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 30
+ },
+ {
+  "slug": "brain-jam-games-for-change-nyc",
+  "key": "brain-jam",
+  "title": "Violeta Ayala wins the XR Innovation 2023 award at Brain Jam, Games for Change, New York",
+  "page_title": "Violeta Ayala Wins XR Innovation 2023 Award at Brain Jam Games for Change, New York.",
+  "iso": "2023-07",
+  "place": "New York",
+  "images": [
+   "ab079c12-8af4-4f47-b687-f19ac78c2ce2",
+   "49f93958-903d-4dc3-907c-9856b38a6878",
+   "ef4fc490-40e5-46ba-a199-b8762c32a90f",
+   "d3a4f101-73d6-4524-b1c2-926bbfb901c6",
+   "66f0e566-45c5-4cc9-8ad9-bbb7ff3ee737",
+   "f2131373-1ac4-443b-ae18-8f848fca65f5",
+   "53d96e59-349d-4d2a-a572-0f1fc4355b41",
+   "e8f4671d-370a-4770-aca6-26e594fe05e4",
+   "d7ad8f15-4221-4aa2-bba3-342c7be65e72",
+   "71f8f75a-0ff1-4b2f-a754-4759e36635c6",
+   "90065270-79f1-4f42-a503-8513e89e8642",
+   "3217648f-b08a-421c-88dd-ba2a58a76c52",
+   "37ee8ffd-f446-4f5d-aced-a6270e2e7fc9",
+   "36394a0b-f3d8-45f3-a7b0-abaf507abe44",
+   "5e6cfaf9-9cae-448e-9c85-b249e6257628"
+  ],
+  "sizes": {
+   "ab079c12-8af4-4f47-b687-f19ac78c2ce2": [
+    1536,
+    1152
+   ],
+   "49f93958-903d-4dc3-907c-9856b38a6878": [
+    2250,
+    1687
+   ],
+   "ef4fc490-40e5-46ba-a199-b8762c32a90f": [
+    2250,
+    1687
+   ],
+   "d3a4f101-73d6-4524-b1c2-926bbfb901c6": [
+    2250,
+    1687
+   ],
+   "66f0e566-45c5-4cc9-8ad9-bbb7ff3ee737": [
+    2250,
+    1687
+   ],
+   "f2131373-1ac4-443b-ae18-8f848fca65f5": [
+    1500,
+    1500
+   ],
+   "53d96e59-349d-4d2a-a572-0f1fc4355b41": [
+    2250,
+    1267
+   ],
+   "e8f4671d-370a-4770-aca6-26e594fe05e4": [
+    2250,
+    1687
+   ],
+   "d7ad8f15-4221-4aa2-bba3-342c7be65e72": [
+    2250,
+    3000
+   ],
+   "71f8f75a-0ff1-4b2f-a754-4759e36635c6": [
+    2250,
+    1687
+   ],
+   "90065270-79f1-4f42-a503-8513e89e8642": [
+    2250,
+    1687
+   ],
+   "3217648f-b08a-421c-88dd-ba2a58a76c52": [
+    1536,
+    866
+   ],
+   "37ee8ffd-f446-4f5d-aced-a6270e2e7fc9": [
+    1536,
+    1152
+   ],
+   "36394a0b-f3d8-45f3-a7b0-abaf507abe44": [
+    1152,
+    1536
+   ],
+   "5e6cfaf9-9cae-448e-9c85-b249e6257628": [
+    1536,
+    1152
+   ]
+  },
+  "videos": [
+   "84d3d6e4-b2c6-4235-853b-0d443dd3c739.mp4",
+   "8f114445-1189-4b28-8440-02f3b9f102df.mp4",
+   "73e2ae6a-01d3-433d-8ce7-31a97cc024e6.mp4"
+  ],
+  "posters": {
+   "84d3d6e4-b2c6-4235-853b-0d443dd3c739.mp4": "1dc9965e-2f54-4f5b-a085-ced5c1ddfa6f",
+   "8f114445-1189-4b28-8440-02f3b9f102df.mp4": "0c10cb42-0716-408f-a6fe-1c4babb0fb00",
+   "73e2ae6a-01d3-433d-8ce7-31a97cc024e6.mp4": "01018ee8-face-44df-8115-679fe1747fcd"
+  },
+  "missing": [
+   "252835"
+  ],
+  "embeds": [],
+  "changed": "2026-09-13",
+  "blocks": 29
+ }
+]

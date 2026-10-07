@@ -1,0 +1,28 @@
+T: The monkey learns the shape of its own body
+D: In Week 12 of the koa.xyz computational creativity lab, Violeta Ayala, Dan Fallshaw, and Brian Condori developed a new real-time creature pipeline exploring the translation of human movement into nonhuman anatomy. Using OAK-D cameras, MediaPipe, Blender Python, quaternion mathematics, procedural tail systems, and live somatic controls, the research focused on the Huk macaque creature and the deeper question of how rigs, datasets, and body assumptions shape machine perception. The week introduced swing-twist quaternion decomposition for anatomically constrained shoulders, procedural tail dynamics, live performance UI systems, and an evolving philosophy that understands rest poses themselves as embedded forms of knowledge.
+S: Procedural tails, swing-twist quaternion decomposition, performer-centered quadruped animation, and the discovery that rest poses themselves carry assumptions about bodies, movement, and intelligence.
+GAL: 1 2 3 4
+P: This week in the koa.xyz computational creativity lab, the monkey stopped behaving like a broken human and began moving like a creature with its own body.
+P: The problem seemed technical at first. MediaPipe tracked the performer correctly, the UDP pipeline transmitted data correctly, Blender received the rotations correctly, yet something still felt wrong. The monkey carried invisible assumptions inside its skeleton. Arms twisted impossibly. The tail pointed forward through the legs. The body moved as if trapped inside a humanoid logic it could never fully inhabit.
+P: So the week became a study of anatomy, orientation, and the politics hidden inside rigs.
+P: We tested macaque datasets from research institutions around the world. OpenMonkeyStudio. macaque3Dpose. ChimpACT. Many relied on animals living in captivity under observation systems designed primarily for extraction and behavioral analysis. Instead, we turned toward BigMaQ, a parametric macaque rig reconstructing anatomy computationally rather than through continuous confinement. The question was not only how to animate a monkey, but how knowledge about bodies is produced in the first place.
+P: Inside Blender, two bodies received identical performer input:
++: a humanoid metarig in T-pose,
++: and the BigMaQ quadruped rig with a horizontal spine.
+P: The difference was immediate.
+P: The quadruped moved naturally almost before correction. The humanoid rig fought every gesture. The discovery reshaped the philosophy of the pipeline itself: the rest pose of a rig is never neutral. Every armature already contains assumptions about gravity, orientation, balance, and what a body is supposed to be. Even before animation begins, the skeleton is already teaching the creature how to exist.
+P: The monkey’s tail revealed the same principle.
+P: At first it pointed forward between the legs “like a cucumber,” as we joked in the lab. The fix turned out to be mathematically small: a 180° rotation offset applied only to the first tail bone. Because of hierarchical inheritance, the remaining twenty-five tail bones corrected themselves automatically. One adjustment propagated through the entire structure. But again the deeper issue was philosophical: defaults are never neutral. Every coordinate system already contains someone else’s orientation toward the world.
+P: Then came the shoulders.
+P: MediaPipe’s monocular depth estimation cannot always distinguish whether a hand moves across the torso or toward the camera. The result was catastrophic shoulder twisting: 180° rotations impossible for real anatomy. The solution emerged through swing-twist quaternion decomposition. Instead of clamping all movement, the system separates directional freedom from rotational twisting around the bone axis. Swing remains unrestricted. Twist respects anatomical limits modeled after the rotator cuff. The monkey preserves expressive freedom without breaking its own body. Ch’ixi in mathematics: contradiction held without collapse.
+P: At the same time, the pipeline became performable.
+P: We built a live UI panel inside Blender where mouth gain, axis flips, mirror inversion, shoulder twist limits, jaw amplification, and full 360° body rotation could be adjusted during performance without restarting the system. A live creature cannot depend on hardcoded parameters frozen before the audience arrives. The interface became part of the choreography itself.
+P: Alongside the monkey, Dan Fallshaw continued building immersive VR frameworks where these creatures can eventually coexist inside shared environments, responding to audience movement, environmental sensing, and local AI systems in real time. Brian Condori expanded the anatomical rig logic, refining constraints for quadruped legs, tail structures, and movement ranges grounded in physical plausibility rather than generic animation conventions.
+P: By the end of the week, the monkey pipeline had become something larger than a technical prototype.
+P: It became evidence that bodies themselves contain knowledge.
+P: The form of a creature shapes the mathematics required to animate it. The assumptions hidden inside datasets, rigs, sensors, coordinate systems, and defaults are never merely technical decisions. They are worldviews encoded into infrastructure.
+P: The work of the lab is learning how to notice them.
+P: And sometimes, changing the movement of an entire creature begins with rotating a single bone.
+MISSING-VIDEO: 339709 | 1:1
+MISSING-VIDEO: 339710 | 1:1
+MISSING-VIDEO: 339910 | 1:1

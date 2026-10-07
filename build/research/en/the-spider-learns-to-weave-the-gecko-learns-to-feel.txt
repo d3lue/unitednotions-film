@@ -1,0 +1,46 @@
+T: The spider learns to weave, the gecko learns to feel, and SIGGRAPH calls
+D: In Week 9 of the koa.xyz computational creativity lab, Violeta Ayala, Dan Fallshaw, and Brian Condori developed new real-time creature behaviors across the spider and gecko pipelines while preparing the SIGGRAPH 2026 submission for Huk’s World: Somatic Puppeteering. The spider evolved from a static FK rig into a walking, finger-controlled web-weaving creature with autonomous orb-web construction, while the gecko’s emotional system was rebuilt after discovering stale sensor data trapped her permanently in fear responses. The week explored movement, recovery, memory, and how computational creatures inherit emotion from both code and human bodies.
+S: Orb-web systems, gecko emotional memory, Qwen integration, and SIGGRAPH documentation.
+MISSING-VIDEO: 338595 | 9:16
+P: This week had three bodies moving at once.
+P: A spider.
++: A gecko.
++: A paper trying to explain them to SIGGRAPH.
+P: The spider began as a rig. Which is a very cold thing to be: bones without intention. Forty FK leg bones, five pairs of legs, four segments each. A tiny mathematics of panic. The left side did not agree with the right side. Some bones wanted X. Some wanted Z. Some mirrored themselves like they had a secret.
+P: So we went bone by bone, asking each one:
++: What do you do?
++: What direction do you believe in?
++: Why are you like this?
+P: By the end of the week, she could walk.
+P: Not perfectly, but in that way that feels alive because it is slightly inconvenient. Her legs now move in a wave:
+P: 1L → 3R → 5L → 2R → 4L → 1R → 3L → 5R → 2L → 4R
+P: An ESP32 joystick gives her direction. Forward. Turn. Pause. Continue. A small robot animal deciding where to place her many feet.
+P: Then she learned to listen to fingers.
+P: Each human finger became a leg pair. Curl the finger and the leg lifts. Open it and the leg returns to the ground. The hand became a puppet controller, but also something stranger: a negotiation between human anatomy and spider anatomy.
+P: And then she made silk.
+P: As she moved, curves began trailing from her body and from the performer’s fingers. Blender drew them as visible tubes, thin lines becoming a web. Not a metaphorical web. A real one, made from code, motion, and little decisions.
+P: There is now another version of her too: ara_tejedora.py, the robot auto-weaver. She builds an orb web by herself: 16 spokes, 8 rings, one state after another.
+P: radial_out → arc → radial_in → next spoke
+P: A spider with a schedule.
+P: The gecko had a different week.
+P: She was afraid of something that was no longer there.
+P: For days, she kept reacting as if a fast hand was approaching. Even when the performer’s hand had left the camera, the system remembered the last velocity, often 0.66, and held onto it like a bad memory. There was no hand_detected flag. The previous hand positions never reset. So the brain kept receiving the same message:
+P: Danger is still here.
++: Danger is still here.
++: Danger is still here.
+P: This triggered the ASUSTADA reflex every cycle. The gecko was not dramatic. She was haunted by stale data.
+P: The fix was small: when no hand is detected, velocity now fades by 0.8× per frame until it reaches zero in about half a second.
+P: And suddenly she could recover.
+P: There were other ghosts. hand_near was saying a hand was close even when there was no hand. The red mood color was described as “blood and fire, danger,” which made Qwen overreact. The voice threshold was too high, so normal speech went unheard. is_talking was being sent as 0/1 but read as a boolean, which is the kind of tiny misunderstanding that can change a whole personality.
+P: None of these bugs were huge. Together, they made a creature who could not relax.
+P: Once the signals were cleaned, the brain could become less mechanical. The prompt changed. No more “Your personality is SPICY,” because Qwen took that very seriously. Now the gecko is guided as unpredictable, with mood hints, anti-repetition rules, and a new hold_seconds field.
+P: This means she can stay somewhere emotionally.
+P: If she is cansada, she holds for at least 15 seconds. She actually sleeps.
++: If she is asustada, she holds for 5 seconds. A freeze. A breath. Then she comes back.
+P: Brian began the monkey rig, Pipeline 15. Dan worked on connecting the Maxillaria orchid to NASA FIRMS live fire data, and began moving the spider into Resonite VR.
+P: And on Monday and Tuesday, we wrote, formatted, and submitted the SIGGRAPH 2026 poster for Huk’s World: Somatic Puppeteering.
+P: Week 9 felt like this:
++: a spider learning how to place her feet,
++: a gecko learning the danger has passed,
++: and a research project learning how to describe itself without killing the strange thing inside it.
+GAL: 1 2 3 4 5 6 7 8 9 10

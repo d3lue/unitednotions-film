@@ -1,0 +1,16 @@
+T: Exploring the future of XR and AI: a conversation with Kent Bye
+D: Explore how filmmaker and creative technologist Violeta Ayala leverages the power of Extended Reality (XR) and Artificial Intelligence (AI) to redefine storytelling. With her unique perspective on semantics and a daily practice in creative coding, Violeta is not only pushing the boundaries of traditional filmmaking but also addressing social biases and fostering cultural expression through immersive technologies.
+S: Violeta Ayala talks with Kent Bye on the Voices of VR podcast about XR, AI and creative sovereignty.
+IMG: 1
+P: I’m incredibly honored to have been a part of Kent Bye’s groundbreaking [Voices of VR podcast series](https://voicesofvr.com/1254-using-ai-to-upskill-creative-sovereignty-with-xr-artist-violeta-ayala/). In a detailed 17-part episode, he delves into the fascinating intersection of Extended Reality (XR) and Artificial Intelligence (AI), featuring a plethora of immersive artists and XR developers. The series probes deep into how generative AI and conversational interfaces are not just tweaking but revolutionizing production pipelines and social interactions with NPCs (Non-Player Characters).
+H: A Personal Odyssey
+P: Being part of this series prompted me to reflect on my own journey of experimentation. This wasn’t just any journey, it was one where I played with images, debunked the myths surrounding creative processes, and came to understand the construction and reconstruction of visual paradigms. It’s been a labyrinth of creativity where I’ve deconstructed and reconstructed myself, discovering a new, profound version of my artistic identity along the way. This isn’t a closed chapter but an evolving narrative.
+H: Profound Changes
+P: En este proceso de reinvención, los cambios han sido profundos. No estamos hablando de ajustes superficiales, sino de transformaciones que aún estoy lejos de comprender en su totalidad. Ha sido un camino de deconstruirme para encontrarme, de inventar y reinventar imágenes desde una perspectiva que me es entrañable.
+H: Why You Should Tune In
+P: Understanding how AI can integrate into the world of XR has never been more critical. The Voices of VR series goes beyond the surface to explore how these technological shifts are revolutionizing our industry. Whether you’re a developer, a filmmaker, an artist, or just someone fascinated by the future of technology, this series is a must-listen.
+VID: 62379131-72dc-43f4-946d-b704ea06c5fd.mp4
+VID: 54058552-e38d-4e1c-b79c-f01ae931e1b0.mp4
+VID: bcafb0c1-32b1-477b-bc3f-f5465b330dfe.mp4
+VID: 0793ddbe-9cd8-4608-8617-389a0cee15e3.mp4
+A: Tune In | https://voicesofvr.com/1254-using-ai-to-upskill-creative-sovereignty-with-xr-artist-violeta-ayala/

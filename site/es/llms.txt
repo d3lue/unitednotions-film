@@ -1,0 +1,88 @@
+# United Notions Film
+
+> United Notions Film es un estudio premiado de cine y tecnología creativa con base en Bolivia y Australia, fundado en 2006 por Violeta Ayala y Dan Fallshaw. Hacemos documentales, experiencias de realidad virtual e instalaciones cinematográficas. Tenemos un laboratorio que desarrolla sistemas de cine, IA y robótica.
+
+La imaginación es la clave. El Sur Global construye su propio futuro. La tecnología es una herramienta.
+
+- United Notions Film también se escribe UNF.
+- Huk es un proyecto en curso. Huk the Jaguaress (2025) es una obra dentro de ese proyecto. Son dos nombres para dos cosas.
+- Este sitio existe en inglés y en español, con las mismas páginas en cada idioma. Esta guía cubre las páginas en español. La guía en inglés está en https://unitednotions.film/llms.txt.
+- Cada página es HTML simple y se lee sin scripts. Las direcciones de esta guía son las públicas.
+
+## Obra
+
+- [La Lucha](https://unitednotions.film/es/work/la-lucha): Largometraje documental, 2023. Personas con discapacidad marchan por los Andes hasta La Paz para exigir una pensión. Estreno mundial en BlackStar Film Festival, Filadelfia, 2023. Premio NYWIFT a la Excelencia en Dirección. Se estrenó en las plazas de Cochabamba, La Paz y Potosí en 2024. Se emitió por PBS en 2024.
+- [The Fight](https://unitednotions.film/es/#the-fight): Cortometraje documental, 2017. El cortometraje de esa misma marcha. The Guardian lo publicó en todo el mundo.
+- [Cocaine Prison](https://unitednotions.film/es/#cocaine-prison): Largometraje documental, 2017. Filmada dentro de la cárcel de San Sebastián en Cochabamba, en parte por los propios internos. Se estrenó en el Festival Internacional de Cine de Toronto.
+- [The Bolivian Case](https://unitednotions.film/es/#the-bolivian-case): Largometraje documental, 2015. Tres adolescentes noruegas son arrestadas en Bolivia con 22 kilos de cocaína. La película sigue cómo los medios moldearon cada uno de sus casos. Se estrenó en Hot Docs.
+- [Stolen](https://unitednotions.film/es/#stolen): Largometraje documental, 2009. Un documental sobre la esclavitud en los campamentos de refugiados saharauis. Se estrenó en el Sydney Film Festival y en el Festival Internacional de Cine de Toronto. Se emitió por PBS.
+- [Todo Nace Desde Lo Pequeño](https://unitednotions.film/es/#todo-nace-desde-lo-pequeno): Performance en vivo, 2025. Una performance en vivo donde la cosmovisión andina se encuentra con la IA. Cuatro bailarines encarnan a Tierra, Agua, Viento y Jaguar. Se estrenó en El Martadero, Cochabamba.
+- [Huk the Jaguaress](https://unitednotions.film/es/#huk-the-jaguaress): Instalación de IA, 2025. Una instalación de IA creada en la residencia de Mila, el Instituto de IA de Quebec. Se estrenó en CPH:DOX, en Copenhague. Se mostró en NewImages Festival, en París. Parte de Huk, un proyecto en curso.
+- [Las Awichas](https://unitednotions.film/es/#las-awichas): Instalación de realidad aumentada, 2024. Ocho abuelas andinas generadas con IA, cada una con su espíritu animal robótico. Mejor Documental Interactivo / Inmersivo, AIDC Awards 2025. Se mostró en King's College London, en el Strand. Las Awichas VR se estrenó en Surreality, HKUST (Guangzhou), en 2025. Personajes animados en 3D de Brian Condori Marza.
+- [Prison X](https://unitednotions.film/es/#prison-x): Realidad virtual, 2021. Una experiencia de realidad virtual ambientada en una cárcel boliviana. Se estrenó en el Festival de Cine de Sundance. Salió en Steam en 2024.
+- [Yakumama](https://unitednotions.film/es/#now): Llega en 2026. Una instalación con una ballena robótica. Su estreno está previsto en MozFest 2026, en Barcelona.
+
+## En cartelera
+
+- [Ver La Lucha](https://sala.video/film.php?slug=la-lucha): En sala.video
+- [Ver Cocaine Prison](https://sala.video/film.php?slug=cocaine-prison): En sala.video
+- [Ver The Bolivian Case](https://www.theboliviancase.com/watch.php): En theboliviancase.com
+- [Ver Stolen](https://sala.video/film.php?slug=stolen): En sala.video
+- [Ver The Fight](https://www.theguardian.com/world/ng-interactive/2017/may/05/fighting-for-a-pension-disability-rights-protesters-in-bolivia-face-barricades): En The Guardian
+- [Conseguir Prison X en Steam](https://store.steampowered.com/app/1502900/Prison__X__Chapter_1_The_Devil_and_The_Sun/): Realidad virtual en Steam
+
+## Estudio
+
+- [Historia](https://unitednotions.film/es/about): La historia de United Notions Film, el estudio de cine y tecnología creativa fundado en 2006 por Violeta Ayala y Dan Fallshaw. De Stolen (2009) a Huk the Jaguaress (2025): documentales, realidad virtual, instalaciones y un laboratorio, hechos entre Bolivia y Australia.
+- [Gente](https://unitednotions.film/es/people): La gente de United Notions Film: los cofundadores Violeta Ayala y Dan Fallshaw, la productora Redelia Shaw, la científica Yasmeen Hitti y el artista 3D Brian Condori Marza.
+- [Violeta Ayala](https://unitednotions.film/es/people/violeta-ayala): Cofundadora. Cineasta, artista y tecnóloga creativa.
+- [Dan Fallshaw](https://unitednotions.film/es/people/dan-fallshaw): Cofundador. Cineasta, productor y diseñador de interacción.
+- [Redelia Shaw](https://unitednotions.film/es/people/redelia-shaw): Productora.
+- [Yasmeen Hitti](https://unitednotions.film/es/people/yasmeen-hitti): Científica. Sistemas de IA encarnada.
+- [Brian Condori Marza](https://unitednotions.film/es/people/brian-condori-marza): Artista 3D y colaborador técnico.
+- [Futurismo fílmico](https://unitednotions.film/es/film-futurism): El futurismo fílmico va más allá de la narrativa fija, hacia sistemas vivos de cine. United Notions Film reúne IA, robótica, mecánicas de juego y entornos inmersivos para crear historias que responden, se adaptan y evolucionan en tiempo real.
+- [Noticias](https://unitednotions.film/es/news): Lo que la prensa escribió sobre las películas, la realidad virtual y las instalaciones de United Notions Film. Cada recorte lleva al artículo.
+- [Para prensa y medios](https://unitednotions.film/es/press): La página de prensa de United Notions Film: entrevistas, materiales de prensa, imágenes y contexto sobre las películas, la realidad virtual, las instalaciones y el laboratorio.
+
+## Notas de laboratorio
+
+- [Investigación](https://unitednotions.film/es/research): United Notions Film investiga nuevas formas de cine entre la pantalla, el espacio y el código. Las notas de laboratorio tratan de futurismo fílmico, creatividad computacional, XR, IA feminista, personajes no humanos, acceso y distribución.
+- [La jaguaresa aprende su propio esqueleto](https://unitednotions.film/es/research/the-jaguaress-learns-her-own-skeleton): 2 de junio de 2026, Cochabamba. Huk the Jaguaress recuperó sus veinticuatro poses reales de una exportación que solo parecía terminada: un carrusel fiel dejó al descubierto una interpolación suave, un exportador reescrito para leer los verdaderos fotogramas clave del rig trajo el cuerpo de vuelta, y la pregunta pasó de cómo se mueve a por qué se mueve.
+- [La ballena que devuelve la mirada](https://unitednotions.film/es/research/the-whale-that-watches-back): 26 de mayo de 2026, Cochabamba. YakuMama lee el color del cuarto y responde con ánimo y canto: en cada fotograma hace decaer diez emociones y las vuelve a ponderar, se sumerge cuando le quitan el agua y canta cuando llega la lluvia, y todo corre localmente en una sola máquina, sin nube.
+- [El cuerpo decide la interfaz](https://unitednotions.film/es/research/the-body-decides-the-interface): 22 de mayo de 2026, Cochabamba. La gecko aprende la titiritería con los dedos, el mono empieza a reflejar el cuerpo directamente, Huk the Jaguaress descubre su propia lógica esquelética y surge una taxonomía de la locomoción.
+- [El mono aprende la forma de su propio cuerpo](https://unitednotions.film/es/research/the-monkey-learns-the-shape-of-its-own-body): 19 de mayo de 2026, Cochabamba. Colas procedurales, descomposición swing-twist de cuaterniones, animación de cuadrúpedos centrada en la intérprete y el descubrimiento de que las propias poses de reposo cargan supuestos sobre los cuerpos, el movimiento y la inteligencia.
+- [El mono aprende a moverse: cuaterniones y titiritería humanoide](https://unitednotions.film/es/research/the-monkey-learns-to-move): 9 de mayo de 2026, Cochabamba. Retargeting con cuaterniones, seguimiento híbrido de cuerpo y manos, sistemas de cascada para la columna y el primer pipeline de criatura humanoide de cuerpo completo dentro de nuestro ecosistema.
+- [La llama aprende a sentir, el modelo aprende a escuchar y nace Yakumama](https://unitednotions.film/es/research/the-llama-learns-to-feel): 6 de mayo de 2026, Cochabamba. Entrenamiento de ánimos con red neuronal, sistemas de respiración cardíaca, el surgimiento de Yakumama y la filosofía ch’ixi que entra al pipeline de animación.
+- [Cuando el latido mueve la flor](https://unitednotions.film/es/research/when-the-heartbeat-moves-the-flower): 28 de abril de 2026, Cochabamba. Sensores de pulso, sistemas ESP32, sístole y diástole traducidas en animación de plantas en tiempo real y creatividad computacional encarnada.
+- [La araña aprende a tejer, la gecko aprende a sentir y SIGGRAPH llama](https://unitednotions.film/es/research/the-spider-learns-to-weave-the-gecko-learns-to-feel): 25 de abril de 2026, Cochabamba. Sistemas de tela orbicular, memoria emocional de la gecko, integración de Qwen y documentación para SIGGRAPH.
+- [La gecko aprende a sentir, Qwen 3.6 encuentra su voz y empieza la grabación](https://unitednotions.film/es/research/the-gecko-learns-to-feel-qwen-finds-its-voice): 18 de abril de 2026, Cochabamba. Fusión de sensores, sistemas de estados emocionales, recuerdos de sabor, narración con IA y cognición de criaturas en tiempo real.
+- [15 criaturas, 14 pipelines y un cerebro independiente de la plataforma](https://unitednotions.film/es/research/15-creatures-14-pipelines-platform-agnostic-brain): 17 de abril de 2026, Cochabamba. Construimos sistemas de inteligencia de criaturas en tiempo real entre Blender, VR, sensores y mundos XR.
+- [El nenúfar aprende a respirar, la drosera cuenta dedos y el pipeline se muda a WebSocket](https://unitednotions.film/es/research/the-water-lily-learns-to-breathe): 10 de abril de 2026, Cochabamba. Detección de agua para la Victoria Regia, seguimiento de dedos para la Drosera, sistemas de mirada para el colibrí y migración de la arquitectura a WebSocket.
+- [El árbol aprende el miedo, la orquídea llora el fuego y la llama encuentra la quietud](https://unitednotions.film/es/research/the-tree-learns-fear-the-orchid-mourns-fire): 30 de marzo de 2026, Cochabamba. Datos en vivo de incendios forestales de la NASA, árboles tímidos con detección infrarroja y sistemas de calibración para encarnar criaturas no humanas.
+- [El giroscopio de 2 dólares que resolvió lo que la red neuronal no pudo](https://unitednotions.film/es/research/the-2-dollar-gyroscope): 21 de marzo de 2026, Cochabamba. Fusión de sensores, seguimiento del cuerpo en 360°, giroscopios, límites de MediaPipe e inteligencia espacial encarnada.
+- [Hacia una inteligencia encarnada para personajes no humanos](https://unitednotions.film/es/research/toward-embodied-intelligence-for-nonhuman-characters): 14 de marzo de 2026, Cochabamba. Detección de profundidad, cámaras robóticas, integración con MediaPipe y sistemas de movimiento espacial más allá de los conjuntos de datos de poses humanas.
+- [Titiritería somática entre plantas, aves y latidos](https://unitednotions.film/es/research/somatic-puppeteering-plants-condor-heartbeat-march-2026): 8 de marzo de 2026, Cochabamba. Sprint de investigación de marzo de 2026 que explora sistemas de criaturas movidas por el cuerpo en tiempo real entre plantas, cóndores, shaders y entornos que responden al pulso.
+- [Cuando el documental empieza a pensar](https://unitednotions.film/es/research/when-documentary-begins-to-think): 29 de noviembre de 2025, Cochabamba. Dos semanas en dos frentes. En el laboratorio, sistemas de movimiento y superficies de píxeles que reaccionan al movimiento. En las calles de Cochabamba, la vigilia de Comteco filmada y transmitida mientras ocurre.
+- [Tecnologías de distribución, Comteco y la lucha por la transparencia](https://unitednotions.film/es/research/technologies-of-distribution-comteco-transparency): 17 de noviembre de 2025, Cochabamba. Los socios adultos mayores de la cooperativa de telecomunicaciones Comteco llevan 88 días en vigilia por elecciones, auditorías y respuestas. TikTok se vuelve un archivo vivo de la protesta.
+- [Del documental a los sistemas vivos](https://unitednotions.film/es/research/from-documentary-to-living-systems): 15 de noviembre de 2025, Cochabamba. Computación afectiva entre Montreal y La Paz, nuevos mundos para Huk, y subsidios públicos, interfaces musicales, datos electorales y acueductos leídos como tecnologías de distribución.
+- [El cóndor obedeció a la mano de Violeta](https://unitednotions.film/es/research/the-condor-obeyed-violetas-hand): 26 de junio de 2025, Guangzhou. En la inauguración de Surreality en Guangzhou un cóndor digital sigue la mano de Violeta Ayala en tiempo real. Sin traje de captura de movimiento. Una temprana demostración pública de titiritería somática.
+- [Construir Huk V1.0: una deidad digital para la Amazonía en llamas](https://unitednotions.film/es/research/building-huk-v1-digital-deity-amazon): Abril de 2025, Copenhagen. Huk the Jaguaress empieza con los incendios en la Amazonía. Su primera versión conecta alertas de incendios forestales, bioelectricidad de las plantas, bailarines y edge AI.
+- [Dos máquinas, una pregunta: IA feminista en el VIP Studio](https://unitednotions.film/es/research/fair-future-feminist-ai): 12 de febrero de 2025, Nottingham. Violeta Ayala y Yasmeen Hitti se suman a la residencia de IA feminista en el VIP Studio de la Universidad de Nottingham. Construyen el VIP Chatbot, donde OpenAI y DeepSeek responden al mismo prompt lado a lado.
+- [Explorar el futuro de la XR y la IA: una conversación con Kent Bye](https://unitednotions.film/es/research/redefining-reality-xr-ai-voices-of-vr-kent-bye): 2023. Violeta Ayala conversa con Kent Bye en el podcast Voices of VR sobre XR, IA y soberanía creativa.
+- [Dar forma a las políticas para el sector artístico y cultural](https://unitednotions.film/es/research/policy-recommendations-nsw-arts-culture-tech-equity): 2023. La propuesta de United Notions Film para la política de Artes, Cultura e Industrias Creativas de NSW: programas interdisciplinarios, diversidad cultural y un intercambio de arte y tecnología.
+- [La misión de Violeta Ayala: crear LUNA, el futuro de la IA feminista](https://unitednotions.film/es/research/luna-feminist-ai): Septiembre de 2023, Sydney. Violeta Ayala presenta LUNA, Learning Unbiased Neural Algorithm: un proyecto y un documental sobre la construcción de una IA que desafía los sesgos.
+- [Prison X: descifrar el código de la generación Z](https://unitednotions.film/es/research/prisonx-storytelling-evolution-through-gen-z): Septiembre de 2023, Sydney. De Sundance a París y SXSW Sydney, los visitantes de la generación Z recorren Prison X por instinto mientras el público de más edad camina en círculos.
+- [La Lucha y Prison X en SXSW Sydney](https://unitednotions.film/es/research/sxsw-sydney-2023): Agosto de 2023, Sydney. El estreno australiano de La Lucha y el estreno en Sydney de Prison X, en SXSW Sydney.
+- [Las Awichas, seleccionada para la gran exposición GLoW3 en Londres](https://unitednotions.film/es/research/las-awichas-immersive-phygital-violeta-ayala-glow3-london-2024): Agosto de 2023, London. Las Awichas es uno de los cuatro nuevos encargos del GLoW3 Artist Programme de King’s College London. Cómo empezó la obra en Tiupampa y Pocoata, y un diario de los primeros días en Londres.
+- [La Lucha recibe apoyo para su difusión](https://unitednotions.film/es/research/aug-20-2023): 20 de agosto de 2023. El Perspective Fund respalda la difusión de La Lucha por América Latina.
+- [La Lucha se estrena en el BlackStar Film Festival: una noche para recordar](https://unitednotions.film/es/research/aug-19-2023): 19 de agosto de 2023. La Lucha se estrena en el BlackStar Film Festival, en Filadelfia. El equipo, los invitados, las reseñas y la noche inaugural.
+- [Violeta Ayala gana el Premio a la Innovación XR 2023 en Brain Jam, Games for Change, Nueva York](https://unitednotions.film/es/research/brain-jam-games-for-change-nyc): Julio de 2023, New York. En el Brain Jam de Nueva York, seis creadores construyen doce mundos de autorrepresentación en 27 horas, a partir de la tía Victoria en Tiupampa. El trabajo gana un Premio a la Innovación.
+
+## Optional
+
+- [sala.red](https://sala.red): Periodismo de investigación sobre tecnología, desde Bolivia
+- [sala.video](https://sala.video/home.php): Distribución independiente de cine
+- [koa.xyz](https://koa.xyz): Laboratorio de creatividad computacional
+- [violetaayala.com](https://www.violetaayala.com): El sitio de Violeta Ayala
+- [danfallshaw.com](https://danfallshaw.com): El sitio de Dan Fallshaw
+- [United Notions Film en inglés](https://unitednotions.film/llms.txt): La guía para las páginas en inglés

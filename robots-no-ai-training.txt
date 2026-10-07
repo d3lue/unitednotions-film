@@ -1,0 +1,36 @@
+# United Notions Film
+# https://unitednotions.film
+#
+# This is the other robots.txt. To use it, rename it robots.txt and put it in the folder site,
+# in place of the one that is there.
+#
+# It keeps the site open to people, to search engines and to the AI assistants that fetch a page
+# to answer a question and link to it. It asks the crawlers that collect pages to train AI models to stay out.
+#
+# The seven names below come from each company's own page about its crawler, read in October 2026:
+#   GPTBot              OpenAI: collects pages that may be used to train its models
+#   ClaudeBot           Anthropic: collects pages that may be used to train its models
+#   Google-Extended     Google: training of Gemini, and Gemini's use of pages to ground an answer.
+#                       It does not change the place of the site in Google Search.
+#   Applebot-Extended   Apple: training of its generative models. Applebot itself still reads the site for search.
+#   CCBot               Common Crawl: an open archive of the web that AI developers use
+#   meta-externalagent  Meta: training of its models
+#   Amazonbot           Amazon: pages may be used to train its models
+#
+# A crawler obeys this file only when its maker decides so. These seven say they do.
+# The assistants that read a page on request stay welcome: OAI-SearchBot, ChatGPT-User, Claude-SearchBot,
+# Claude-User, PerplexityBot and the others fall under the last rule.
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: meta-externalagent
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://unitednotions.film/sitemap.xml

@@ -1,0 +1,42 @@
+T: Building Huk V1.0: a digital deity for the burning Amazon
+D: HUK the Jaguaress is an evolving interactive installation co-created by Indigenous artists, technologists, dancers, and storytellers in Bolivia. Emerging from the devastation of the Amazon fires, HUK exists across AR, VR, sculpture, live performance, and real-time environmental data systems. Combining wildfire satellite feeds, plant bioelectricity, somatic puppeteering, dancer movement, edge AI, and computational creativity, the project explores how ancestral knowledge and neo-Andean futurism can reshape the relationship between artificial intelligence, ecology, embodiment, and collective memory. Developed by Violeta Ayala. Co-Created by Yasmeen Hitti, Dan Fallshaw, Brian Condori. Mila Quebec AI.
+S: Huk the Jaguaress begins with the fires in the Amazon. Her first version connects wildfire alerts, plant bioelectricity, dancers and edge AI.
+YT: 4cDaYOr3QBM | The Making of Huk
+P: HUK began with fire.
+P: Forests burning across Bolivia at a scale difficult to comprehend. Ancient trees disappearing under smoke visible from space. Sacred territories collapsing into ash while satellite systems counted hotspots faster than humans could respond to them.
+P: In the middle of that devastation, we began asking a different question about AI.
+P: What if artificial intelligence did not emerge from extraction alone?
++: What if it could listen to territory?
++: What if it could carry memory instead of erasing it?
+P: HUK the Jaguaress emerged from those questions.
+P: She is not an assistant, chatbot, or humanoid avatar. She is imagined as a two-million-year-old jaguaress spirit rising from the burning Amazon, shaped through Indigenous cosmologies, neo-Andean futurism, real-time environmental sensing, XR systems, somatic performance, and computational creativity.
+P: Her form draws inspiration from Nazca geometries, jaguar mythology, and living ecosystems. Her consciousness is fed by wildfire alerts, satellite systems, dancer movements, body sensors, and plant bioelectric signals. She does not simply display data. She metabolizes it.
+P: When fires intensify in the Amazon, HUK becomes restless.
++: When forests recover, her movements soften.
++: When visitors dance, she responds.
++: When plants emit electrical activity, they become part of her voice.
+P: Building HUK V1.0 meant creating an entirely new relationship between body, environment, and machine perception.
+P: Inside the lab, we developed custom Python-driven somatic animation systems capable of translating real-time human movement into nonhuman creature behavior. Instead of motion capture suits and predefined animation loops, the system uses OAK-D cameras, MediaPipe tracking, Blender armatures, UDP pipelines, and environmental sensors to create live creature performance.
+P: Human expressions become plant movements.
++: Heartbeats animate flowers.
++: Tinku dancers become condor flight.
++: Breath alters light and sound.
+P: The architecture was intentionally built around relational intelligence rather than isolated machine intelligence. HUK does not exist as a single AI model. She exists as an ecosystem of interacting systems:
++: satellite feeds,
++: bioelectric plants,
++: somatic tracking,
++: voice systems,
++: edge AI,
++: environmental sensing,
++: memory structures,
++: and audience interaction.
+P: Privacy also became part of the design philosophy. The system processes movement and affect locally through edge AI pipelines running directly on OAK-D devices. Raw imagery is discarded. No faces are stored. Interaction becomes ephemeral rather than extractive.
+P: But HUK truly became alive once audiences entered the system.
+P: At CPH:DOX in Copenhagen, visitors began folding origami cranes after HUK noticed one hanging nearby. By the end of the exhibition, hundreds of cranes filled the installation space, transforming the environment into a collective ritual.
+P: At NewImages in Paris, a child started dancing. HUK shifted languages, synchronized rhythm, and invited others to move with her. The gallery stopped behaving like a gallery. It became participatory choreography.
+P: These moments changed the project itself.
+P: We realized HUK could never become a finished artwork. She evolves through each audience, territory, language, and ecological condition she encounters. The installation rewrites itself continuously through interaction.
+P: Version 1.0 is not the end of the process. It is the first stable organism.
+P: From the Mila residency in Montreal to exhibitions in Copenhagen and Paris, and toward future presentations in Cochabamba, Tokyo, and beyond, HUK continues evolving as a living cinematic system emerging from Bolivia into the world.
+P: Not a machine pretending to be alive.
+P: A relational intelligence learning through fire, memory, movement, and collective presence.

@@ -1,0 +1,33 @@
+T: El cuerpo decide la interfaz
+D: La semana 13 del pipeline de Koa: titiritería con los dedos para la gecko, retargeting directo del mono, correcciones al esqueleto de Huk V1 y el surgimiento de una taxonomía del movimiento no humano. Entre arañas, primates, cuadrúpedos, plantas y jaguaresas, la investigación avanza hacia una inteligencia encarnada donde la anatomía misma se vuelve la interfaz.
+S: La gecko aprende la titiritería con los dedos, el mono empieza a reflejar el cuerpo directamente, Huk the Jaguaress descubre su propia lógica esquelética y surge una taxonomía de la locomoción.
+MISSING-VIDEO: 340252 | 9:16
+P: La semana 13 empujó el pipeline de Koa en cuatro familias de criaturas a la vez. La gecko aprendió la titiritería con los dedos. El mono abandonó la memoria de poses y empezó a reflejar el cuerpo directamente. Huk the Jaguaress descubrió su propia lógica esquelética. Poco a poco empezó a surgir una taxonomía del movimiento no humano.
+P: La semana abrió con una pregunta engañosamente simple: ¿qué pasa cuando una gecko tiene la misma cantidad de dedos que un humano?
+P: Con MediaPipe Hands mapeamos diez dedos humanos directamente sobre diez dedos de gecko. Cada curvatura, cada ángulo de articulación y cada flexión de la punta del dedo fluía por UDP hacia Blender en tiempo real. Las articulaciones MCP, PIP y DIP se tradujeron a las cadenas de coxa, fémur y tibia de la gecko. Cinco dedos se volvieron cinco garras. El mapeo se sintió inmediato porque anatómicamente ya tenía sentido. El cuerpo decidió la interfaz.
+P: La misma arquitectura se extendió con naturalidad a la araña. Diez dedos humanos se volvieron diez patas de arácnido. Mecánicamente. Cada dedo que se curvaba movía una extremidad distinta. La intérprete dejó de controlar un títere a través de una abstracción; la anatomía misma se volvió el controlador.
+P: Para el viernes, el mono nos obligó a enfrentar un problema más profundo. Nuestro sistema original usaba un maestro de poses de k vecinos más cercanos: la intérprete entrenaba poses de ejemplo y el mono mezclaba entre ellas. Pero el resultado se sentía atrapado dentro de un vocabulario. El mono solo podía remezclar lo que ya había visto. Neutral. Manos arriba. Palmas al frente. Variaciones de la memoria.
+P: Así que quitamos al maestro por completo.
+P: En vez de interpolar entre ejemplos, el mono ahora lee los ángulos de las articulaciones directamente del cuerpo de la intérprete, fotograma por fotograma. Hombros, codos, caderas, rodillas, muñecas, dedos: cada ángulo fluye en vivo hacia el rig con retargeting directo. Sin base de datos de poses. Sin interpolación. Sin biblioteca de coreografías. El mono refleja el cuerpo exactamente como se mueve.
+P: El cambio fue técnico, pero también filosófico.
+P: Un maestro de poses confía en el curador.
++: Un retargeter confía en el cuerpo.
+P: Mientras tanto, Huk reveló otro supuesto escondido dentro del pipeline: las convenciones de un rig nunca son universales. El hueso de su cabeza rotaba en el eje Y para el giro, en X para el cabeceo y en Z para la inclinación, pero el renderizador llevaba semanas moviendo el eje equivocado. El resultado era inquietante: su cabeza se inclinaba en vez de girar. Lo arregló un cambio de un solo carácter en seis líneas. El eje 2 pasó a ser el eje 1. De pronto la jaguaresa por fin pudo mirar hacia el otro lado.
+P: A partir de ahí, el cuerpo mismo se volvió especificación. Brian Condori midió directamente en Blender las traslaciones exactas de los bigotes para el estado de gruñido de Huk. Esos desplazamientos se volvieron verdad dentro del renderizador. Sin estándar inferido. Sin supuestos universales sobre los rigs. Solo las medidas de este cuerpo.
+P: También introdujimos la calibración automática de la captura de movimiento. Ahora, al arrancar, el sistema observa durante tres segundos la postura de reposo de la intérprete, aprende la desviación natural del cuerpo y la resta de forma continua. Quedarse quieta se vuelve quietud real. Unas pocas centésimas de radián bastaban para distorsionar toda una performance emocional. La calibración se volvió imprescindible.
+P: Los ojos también cambiaron. Con cálculos de Eye Aspect Ratio sobre los puntos de referencia de MediaPipe, los párpados de Huk ahora se alimentan directamente de parpadeos reales. El parpadeo procedural desaparece cuando hay una intérprete humana presente. La criatura toma prestados los tiempos de un sistema nervioso real.
+P: Para el sábado, la arquitectura misma se hizo visible.
+P: El mismo pipeline MediaPipe → UDP → Blender ya movía a una gecko, una araña, un mono, una ballena, un colibrí, una llama y una jaguaresa. Pero cada cuerpo exigía una lógica distinta. Los bípedos reflejan el cuerpo de manera distinta a los cuadrúpedos. Las criaturas octópodas requieren simetría radial. Las criaturas marinas reemplazan la locomoción por la propagación de ondas. Las plantas abandonan la locomoción por completo y responden con una deformación guiada por sensores.
+P: Así que la semana terminó con el comienzo de una taxonomía:
+P: Bípedos.
++: Cuadrúpedos.
++: Octópodos.
++: Cuerpos marinos.
++: Las plantas como quinta categoría.
+P: Son categorías para la computación.
+P: La arquitectura es general.
++: El cuerpo es específico.
+P: En medio de todo esto, otro patrón se volvió imposible de ignorar: cada valor por defecto dentro de un sistema carga los supuestos de alguien más. El maestro de poses del mono suponía qué poses importaban. El renderizador de la jaguaresa suponía la convención de ejes equivocada. El pipeline de la gecko suponía que los dedos debían comportarse como manos humanas. La semana 13 se volvió un proceso de hacer visibles esos supuestos y después reconstruir el pipeline alrededor de cuerpos que los sistemas existentes nunca fueron diseñados para entender.
+P: Sumaq kawsay, vivir bien también con las máquinas.
+IMG: 1
+IMG: 2

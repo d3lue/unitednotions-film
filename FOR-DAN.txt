@@ -1,0 +1,118 @@
+United Notions Film: the new site, packed for DreamHost
+Packed on 7 October 2026.
+
+WHAT IS IN THIS FOLDER
+
+  site/                        the site. Everything inside it goes on the server.
+  build/                       the workshop that writes the pages. It stays on a computer.
+  htaccess.txt                 a spare copy of site/.htaccess, in case the hidden file gets lost
+  robots-no-ai-training.txt    the other robots.txt (see ROBOTS at the end)
+
+  To look at the site on your own computer, paste this in Terminal from inside this folder:
+    cd site && (sleep 1 && open http://localhost:8765 &) && python3 -m http.server 8765
+  The Spanish site is at http://localhost:8765/es/
+  That small server knows nothing of the rules in .htaccess, so there the short addresses (/about) do not answer.
+  The links of the pages all work.
+
+BEFORE THE DOMAIN MOVES: THE LAB VIDEOS
+
+  28 videos of the lab notes are not in this zip. The old site only streams them, from its own video host,
+  and it still hands each one out as an MP4. They can be fetched only while unitednotions.film is the old site.
+  Once the domain points to DreamHost, that door is closed.
+
+  From inside this folder:
+    python3 build/fetch_lab_videos.py        takes them from the old site into build/video-in. About 1 GB.
+    python3 build/make_research_media.py     makes a web copy and a still of each one. Needs ffmpeg (brew install ffmpeg).
+    python3 build/build.py                   puts them in their notes. Needs: pip3 install pillow numpy fonttools brotli
+  Then upload site/.
+
+  Violeta can also run the first line on her Mac and have the rest done there. Ask her which of you does it,
+  so it is done once. Until then 17 lab notes show without their videos.
+
+PUT IT ON DREAMHOST
+
+  1. In the DreamHost panel, add unitednotions.film as a website with hosting.
+     It must be the usual Apache hosting. The site depends on its file .htaccess, and DreamHost says
+     an .htaccess file does not work on DreamPress, which runs Nginx.
+  2. The folder of the site on the server is /home/USERNAME/unitednotions.film
+     Make an SFTP user for this site alone. Keep its password out of this folder and out of any chat.
+  3. Upload by SFTP everything that is inside site/ into that folder. The folder site itself does not go up.
+     Two files start with a dot, and a Mac hides them:
+         site/.htaccess        the rules of the server
+         site/es/.htaccess     one line, for the Spanish pages
+     In Finder, Command Shift . shows them. In the SFTP program, turn on "show hidden files".
+     Check on the server that both arrived. Files should be 644 and folders 755.
+     build/ and the two spare files stay at home.
+  4. Look at the site before the domain moves. DreamHost describes two ways:
+     a hosts file on your computer, or a free dreamhosters.com subdomain. The pages link to each other
+     with relative addresses, so both ways show the whole site.
+  5. Try these on the server:
+         /                                       the maze, in English
+         /es/                                    the maze, in Spanish
+         /about      /research      /people      the short addresses
+         /research/the-whale-that-watches-back   a lab note, at the address it had on the old site
+         /for-press-media                        an address of the old site: it must land on /press
+         /this-is-wrong                          the 404 page, in the look of the site
+         /es/esto-no-existe                      the 404 page in Spanish
+         /robots.txt   /llms.txt   /es/llms.txt   /sitemap.xml
+  6. Move the domain. At the company where unitednotions.film is registered, set the nameservers to
+         ns1.dreamhost.com   ns2.dreamhost.com   ns3.dreamhost.com
+     DreamHost says the change takes 4 to 72 hours.
+     Before that, copy to DreamHost every DNS record the domain uses today. Email comes first:
+     if the domain receives mail, its MX records must exist at DreamHost before the move.
+  7. HTTPS. DreamHost says it sends visitors to https by itself once the certificate is installed.
+     Nothing in .htaccess forces it, so the site also works in the hours before the certificate.
+  8. www. Every page names itself https://unitednotions.film, without www.
+     In the panel, choose to remove www (DreamHost: "Add or remove www from a domain").
+  9. When the site answers at its own name, give Google the map: in Search Console, add
+         https://unitednotions.film/sitemap.xml
+
+IF SOMETHING GOES WRONG
+
+  "500 Internal Server Error" right after the upload
+      One line of .htaccess is not allowed on that server. Put a # in front of the lines of one block
+      at a time until the site comes back. Start with the block OPTIONS. Then tell Violeta which block it was.
+  The home page works, /about.html works, /about says 404
+      .htaccess did not arrive. Upload htaccess.txt into the folder of the site and rename it .htaccess
+  Spanish letters look broken in /es/llms.txt
+      Same cause: .htaccess did not arrive.
+  A page shows without its pictures
+      The folder assets did not finish uploading. It holds about 100 MB.
+
+WHAT THE RULES IN .htaccess DO
+
+  Short addresses. /about shows about.html, /research/a-note shows research/a-note.html.
+      These are the addresses the pages give to Google, and the ones the old site used.
+  The old site. Its 50 addresses lead to the new pages. /for-press-media, /films, /xr, /now-playing,
+      /research-archive and the seven /news/... pages are sent on. /birdbot and /educational-collection
+      are not built yet and lead home for now.
+  A wrong address gets the 404 page of the site, in English or in Spanish.
+  A folder shows no list of its files.
+  build/, README.txt and this file answer 404 if someone uploads them by mistake.
+  Browsers keep the pictures 30 days, the stylesheet and the script a year, a page ten minutes.
+  Text travels compressed.
+
+  Tested on Apache 2.4 on another machine: 150 checks, all passed, in three set-ups of the server.
+  In a fourth, without the modules for keeping and compressing, every address still answered.
+  The checks cover every page in both languages, every address of the old site, every address in sitemap.xml
+  and every link in the two llms.txt. The rules have not run on DreamHost itself yet. Step 5 is that test.
+
+TO CHANGE THE SITE LATER
+
+  The texts are in build/content.py, build/content_pages.py, build/strings_es.py and build/research/.
+  Then:   python3 build/build.py      It rewrites site/. About two minutes.
+  It needs Python 3 with:   pip3 install pillow numpy fonttools brotli
+  Upload site/ again. The same texts and pictures always give the same pages.
+  robots.txt, sitemap.xml, llms.txt, es/llms.txt, the 404 pages and .htaccess are written by the build too.
+  Their words are in build/extras.py.
+
+ROBOTS
+
+  site/robots.txt is open to everyone: people, search engines, archives and AI systems.
+  The old site was open in the same way.
+  robots-no-ai-training.txt is the other choice. It keeps search engines and AI assistants that link to
+  their source, and asks seven crawlers that collect pages to train AI models to stay out.
+  To use it, rename it robots.txt and put it in site/ in place of the other one.
+  Violeta decides which one goes live.
+
+  site/llms.txt is a guide to the site for language models, in English. site/es/llms.txt is the same in Spanish.

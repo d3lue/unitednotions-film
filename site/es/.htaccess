@@ -1,0 +1,3 @@
+# The Spanish pages answer a wrong address in Spanish.
+# The other rules come from the .htaccess one folder up. This file holds nothing else on purpose.
+ErrorDocument 404 /es/404.html

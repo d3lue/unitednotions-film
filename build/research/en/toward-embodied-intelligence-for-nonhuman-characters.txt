@@ -1,0 +1,8 @@
+T: Toward embodied intelligence for nonhuman characters
+D: Working from a small lab in the mountains of Cochabamba, Violeta Ayala and collaborators are developing new approaches for animating non-humanoid digital characters through sensor fusion, stereo depth sensing, and real-time body tracking. By combining MediaPipe with robotic depth cameras and spatial measurement systems, the research explores forms of embodied intelligence that move beyond conventional human pose datasets and 2D image recognition toward creatures that understand movement, orientation, and physical space in real time.
+S: Depth sensing, robotic cameras, MediaPipe integration, and spatial movement systems beyond human pose datasets.
+MISSING-VIDEO: 335420 | 16:9
+P: Working from our small lab in the mountains in Cochabamba, we are developing new approaches to animate non-humanoid digital characters.
+P: Most computer vision frameworks were trained on human pose datasets. When working with creatures, plants, or unconventional bodies, these systems quickly reach their limits. There is also little data about spatial behavior, how bodies actually move through depth, rotation, and real physical space. We optimized vision systems to recognize humans in images, but not necessarily to understand how movement unfolds in the real world. W ere missing embodied intelligence.
+P: To address this, we are integrating MediaPipe tracking with stereo depth sensing from a robotic camera. This allows us to estimate spatial orientation and body rotation using real-world measurements in millimeters rather than relying purely on 2D image heuristics.
+P: Much of the work happens through hands-on experimentation: prototyping new pipelines, combining sensing systems, and testing ideas through iteration.

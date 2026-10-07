@@ -1,0 +1,18 @@
+T: Cuando el documental empieza a pensar
+D: En las últimas dos semanas, United Notions Film se movió al mismo tiempo entre la investigación en creatividad computacional y la práctica documental en vivo. Mientras el laboratorio desarrollaba sistemas de movimiento en tiempo real, interacción por comandos de mano, superficies reactivas de píxeles IoT y pipelines de percepción artificial, el trabajo documental se desplegaba directamente en las protestas, las transmisiones en vivo, las redes sociales y la memoria pública colectiva de Cochabamba. La investigación explora qué pasa cuando la no ficción deja de comportarse como un objeto terminado y empieza a funcionar más como un sistema cognitivo vivo, distribuido entre cámaras, redes, cuerpos, algoritmos y personas en tiempo real.
+S: Dos semanas en dos frentes. En el laboratorio, sistemas de movimiento y superficies de píxeles que reaccionan al movimiento. En las calles de Cochabamba, la vigilia de Comteco filmada y transmitida mientras ocurre.
+H: Dos semanas de código, calles y preguntas sobre el futuro
+GAL: 1 2 3
+P: En United Notions Film las últimas dos semanas han transcurrido en dos frentes que se siguen alimentando entre sí: la tecnología en movimiento y el documental en tiempo real.
+P: En el laboratorio ampliamos los sistemas de movimiento dentro de Blender, desarrollamos la interacción por comandos de mano con MediaPipe y TensorFlow, y acercamos nuestras superficies de píxeles IoT a un sistema nervioso propio. Los paneles responden al movimiento como organismos hechos de luz. Dejaron de ser pasivos, aunque todavía no son del todo sintientes. Reaccionan. Aprenden. Casi sienten.
+P: En el frente documental el ambiente sigue afilado y vivo. Filmamos a abuelas y abuelos que llevan más de 93 días en vigilia. Grabamos al trabajador de Comteco transmitiendo por TikTok y revelando cómo se fractura la palabra cuando una ciudad está tensa. Quienes protestan siguen actualizando el sistema desde la calle y se siente latir el cerebro colectivo: lógica humana, redes celulares, imágenes compartidas que circulan como neuronas.
+P: Las redes sociales se han vuelto parte de la película misma. Son ventana y también sistema de circulación. El TikTok de Vi superó el millón de vistas y sus reels de Instagram siguen llevando testimonios más lejos y más rápido de lo que jamás pudo la distribución tradicional. El documental ha dejado de esperar la edición. Está sucediendo con nosotros y a través de nosotros. Vivo, inestable, sin filtro, colaborativo.
+P: Tal vez esta sea la evolución de la no ficción. Un documental que actúa como cognición en tiempo real. Cámaras como nodos. Multitudes como procesadores. Historias que respiran mutan responden como sistemas hechos de personas y píxeles.
+P: Volvemos una y otra vez a una pregunta.
+P: ¿Qué pasa cuando el documental empieza a pensar?
++: ¿Cuando responde?
++: ¿Cuando se vuelve sintiente antes de que nos demos cuenta?
+P: Por ahora UNF sigue a dos ritmos.
++: Una mano en el código enseñando a las máquinas a escuchar.
++: La otra en la calle escuchando a la gente que se niega a desaparecer.
+P: El trabajo se mueve. El mundo se mueve con él.
