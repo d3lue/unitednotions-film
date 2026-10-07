@@ -5,6 +5,8 @@ AuthName "United Notions Film: editing"
 AuthUserFile /home/danfal17/unf-workshop/.htpasswd
 Require valid-user
 DirectoryIndex index.php
+DirectorySlash On
+# /edit is sent to /edit/: the site's own rules do not run in this folder, and without the slash Apache would list the folder instead.
 RewriteEngine Off
 Header set X-Robots-Tag "noindex, nofollow"
 Header set Cache-Control "no-store"
